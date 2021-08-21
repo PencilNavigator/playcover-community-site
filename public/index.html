@@ -124,16 +124,17 @@
                                 rounded-md
                                 px-3
                                 py-1
-                                hover:border-yellow-400
+                                hover:border-gold-light
                                 transition-colors
                                 duration-200
+                                group
                             "
                         >
                             <a
                                 href=""
                                 class="
                                     text-lg text-gold
-                                    hover:text-yellow-400
+                                    group-hover:text-gold-light
                                     transition-colors
                                     duration-200
                                 "
@@ -142,6 +143,7 @@
                         </button>
                         <!-- language btn and menu-->
                         <ul>
+                            <!--'x-data' is alpine js -->
                             <li class="relative" x-data="{dropdownOpen:false}">
                                 <!-- language btn -->
                                 <button
@@ -158,8 +160,7 @@
                                         group
                                         hover:border-pink-500
                                     "
-                                    @click="dropdownOpen = !dropdownOpen"
-                                >
+                                    @click="dropdownOpen = !dropdownOpen"> <!-- @click is alpine js -->
                                     <span
                                         href=""
                                         class="
@@ -207,7 +208,8 @@
                                         py-3
                                     "
                                     :class="{'hidden':!dropdownOpen, 'flex flex-col':dropdownOpen}"
-                                >
+                                > 
+								<!-- :class is alpine js -->
                                     <ul class="space-y-4">
                                         <li>
                                             <a
@@ -257,12 +259,8 @@
             </div>
         </nav>
 
-        <div
-            class="bg-pink-100"
-            style="height: 600px"
-            @click="dropdownOpen = !dropdownOpen"
-        ></div>
+        <div class="bg-pink-100" style="height: 600px"></div>
 
-        <footer class="bg-[#d9c727] border-8 m-auto">Footer</footer>
+        <footer class="border-8 m-auto">Footer</footer>
     </body>
 </html>
