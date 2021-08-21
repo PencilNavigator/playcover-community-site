@@ -1,9 +1,13 @@
 module.exports = {
-	mode: 'jit',
-    purge: ['./public/**/*.html'],
-    darkMode: false, // or 'media' or 'class'
+    mode: "jit",
+    purge: ["./public/**/*.html"],
+    darkMode: "media", // false or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                gold: "#D2AC4A",
+            },
+        },
     },
     variants: {
         extend: {},
