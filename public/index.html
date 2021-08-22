@@ -28,7 +28,16 @@
     <body class="bg-gray-100 font-body" style="height: 500px">
         <!-- nav bar -->
         <nav class="sticky top-0 bg-white filter drop-shadow-md">
-            <div class="max-w-screen-2xl pr-12 mx-auto pl-14">
+            <div
+                class="
+                    max-w-screen-2xl
+                    px-6
+                    lg:pr-12 lg:pl-14
+                    mx-auto
+                    py-3
+                    lg:py-1
+                "
+            >
                 <div class="flex justify-between">
                     <!-- logo -->
                     <div class="flex items-center">
@@ -36,13 +45,13 @@
                             href="./"
                             class="
                                 font-logo font-extrabold
-                                text-[28px]
+                                text-[25px]
+                                lg:text-[28px]
                                 bg-gradient-to-r
                                 from-pink-500
                                 to-purple-500
                                 text-transparent
                                 bg-clip-text
-                                pt-1
                             "
                         >
                             PlayCover
@@ -50,21 +59,20 @@
                     </div>
 
                     <!-- primary nav -->
-                    <div class="flex items-center space-x-10">
+                    <div class="hidden lg:flex items-center space-x-10">
                         <a
                             href=""
                             class="
-                                text-lg text-pink-500
+                                text-[17px] text-pink-500
                                 border-b-2 border-pink-500
                                 py-3
-                                m-1
                             "
                             >Home</a
                         >
                         <a
                             href=""
                             class="
-                                text-gray-800 text-lg
+                                text-gray-800 text-[17px]
                                 hover:text-pink-400
                                 transition-colors
                                 duration-150
@@ -74,17 +82,17 @@
                         <a
                             href=""
                             class="
-                                text-gray-800 text-lg
+                                text-gray-800 text-[17px]
                                 hover:text-pink-400
                                 transition-colors
                                 duration-150
                             "
-                            >Report Bug</a
+                            >Update Log</a
                         >
                         <a
                             href=""
                             class="
-                                text-gray-800 text-lg
+                                text-gray-800 text-[17px]
                                 hover:text-pink-400
                                 transition-colors
                                 duration-150
@@ -94,27 +102,17 @@
                         <a
                             href=""
                             class="
-                                text-gray-800 text-lg
+                                text-gray-800 text-[17px]
                                 hover:text-pink-400
                                 transition-colors
                                 duration-150
                             "
-                            >Discord</a
-                        >
-                        <a
-                            href=""
-                            class="
-                                text-gray-800 text-lg
-                                hover:text-pink-400
-                                transition-colors
-                                duration-150
-                            "
-                            >GitHub</a
+                            >Contact Us</a
                         >
                     </div>
 
                     <!-- secondary nav -->
-                    <div class="flex items-center space-x-5">
+                    <div class="hidden lg:flex items-center space-x-5">
                         <!-- donate btn -->
                         <button
                             class="
@@ -131,7 +129,7 @@
                             <a
                                 href=""
                                 class="
-                                    text-lg text-gold
+                                    text-[17px] text-gold
                                     group-hover:text-gold-light
                                     transition-colors
                                     duration-200
@@ -162,7 +160,7 @@
                                     <span
                                         href=""
                                         class="
-                                            text-lg text-gray-800
+                                            text-[17px] text-gray-800
                                             transition-colors
                                             duration-200
                                             group-hover:text-pink-500
@@ -203,7 +201,7 @@
                                         bg-white
                                         right-0
                                         rounded-md
-                                        text-lg
+                                        text-[17px]
                                         px-[18px]
                                         py-3
                                     "
@@ -279,6 +277,47 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- mobile button -->
+                    <div class="lg:hidden flex items-center">
+                        <button
+                            class="
+                                mobile-button
+                                text-pink-600
+                                active:text-pink-300
+                                transition-colors
+                            "
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-7 w-7"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- mobile menu -->
+                <div class="mobile-menu hidden">
+                    <div class="flex flex-col items-center space-y-5 pt-5 pb-3">
+                        <a href="" class="block font-bold text-pink-500"
+                            >Home</a
+                        >
+                        <a href="" class="block">Download</a>
+                        <a href="" class="block">Update Log</a>
+                        <a href="" class="block">FAQs</a>
+                        <a href="" class="block">Contact Us</a>
+                        <button>Language</button>
+                        <a href="" class="block text-gold">Donate</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -288,5 +327,6 @@
 
         <!-- js -->
         <script src="language-button.js"></script>
+        <script src="mobile-button.js"></script>
     </body>
 </html>
