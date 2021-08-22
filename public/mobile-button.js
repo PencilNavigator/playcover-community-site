@@ -4,5 +4,5 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 // add event listeners
 mobileBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+	mobileMenu.classList.toggle("hidden");
 });

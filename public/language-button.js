@@ -4,5 +4,5 @@ const menu = document.querySelector(".language-menu");
 
 // add event listeners
 btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
+	menu.classList.toggle("hidden");
 });
