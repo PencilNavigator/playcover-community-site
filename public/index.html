@@ -23,11 +23,15 @@
             rel="stylesheet"
         />
         <!-- custom css -->
-        <style>
+        <!-- <style>
             body {
                 font-family: "Open Sans", sans-serif;
             }
-        </style>
+            .logo {
+                font-family: "Roboto", sans-serif;
+                font-weight: 800;
+            }
+        </style> -->
         <!-- importing alpine js to use x-data for creating drop down menu -->
         <script
             defer
@@ -36,19 +40,27 @@
     </head>
 
     <!-- temp height style applied -->
-    <body class="bg-gray-100" style="height: 500px">
+    <body class="bg-gray-100 font-body" style="height: 500px">
         <!-- nav bar -->
         <nav class="sticky top-0 bg-white filter drop-shadow-md">
             <div class="max-w-screen-2xl pr-12 mx-auto pl-14">
                 <div class="flex justify-between">
                     <!-- logo -->
                     <div class="flex items-center">
-                        <a href="index.html" class="py-1">
-                            <img
+                        <a
+                            href="index.html"
+                            class="
+                                font-logo font-extrabold
+                                text-[28px] text-pink-500
+                                pt-1
+                            "
+                        >
+                            <!-- <img
                                 class="max-h-14"
                                 src="assets/logo.svg"
                                 alt=""
-                            />
+                            /> -->
+                            PlayCover
                         </a>
                     </div>
 
@@ -160,7 +172,9 @@
                                         group
                                         hover:border-pink-500
                                     "
-                                    @click="dropdownOpen = !dropdownOpen"> <!-- @click is alpine js -->
+                                    @click="dropdownOpen = !dropdownOpen"
+                                >
+                                    <!-- @click is alpine js -->
                                     <span
                                         href=""
                                         class="
@@ -208,8 +222,8 @@
                                         py-3
                                     "
                                     :class="{'hidden':!dropdownOpen, 'flex flex-col':dropdownOpen}"
-                                > 
-								<!-- :class is alpine js -->
+                                >
+                                    <!-- :class is alpine js -->
                                     <ul class="space-y-4">
                                         <li>
                                             <a

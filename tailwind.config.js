@@ -5,9 +5,13 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                "gold": "#D2AC4A",
+                gold: "#D2AC4A",
                 "gold-light": "#FFD700",
             },
+        },
+        fontFamily: {
+            body: '"Open Sans", Arial, sans-serif',
+            logo: "Roboto, Arial, sans-serif",
         },
     },
     variants: {
