@@ -22,11 +22,6 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
             rel="stylesheet"
         />
-        <!-- importing alpine js to use x-data for creating drop down menu -->
-        <script
-            defer
-            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-        ></script>
     </head>
 
     <!-- temp height style applied -->
@@ -146,11 +141,11 @@
                         </button>
                         <!-- language btn and menu-->
                         <ul>
-                            <!--'x-data' is alpine js -->
-                            <li class="relative" x-data="{dropdownOpen:false}">
+                            <li class="relative">
                                 <!-- language btn -->
                                 <button
                                     class="
+                                        language-button
                                         flex
                                         items-center
                                         space-x-2
@@ -163,9 +158,7 @@
                                         group
                                         hover:border-pink-500
                                     "
-                                    @click="dropdownOpen = !dropdownOpen"
                                 >
-                                    <!-- @click is alpine js -->
                                     <span
                                         href=""
                                         class="
@@ -204,6 +197,8 @@
                                 <!-- language menu -->
                                 <div
                                     class="
+                                        language-menu
+                                        hidden
                                         absolute
                                         bg-white
                                         right-0
@@ -212,9 +207,7 @@
                                         px-[18px]
                                         py-3
                                     "
-                                    :class="{'hidden':!dropdownOpen, 'flex flex-col':dropdownOpen}"
                                 >
-                                    <!-- :class is alpine js -->
                                     <ul class="space-y-4">
                                         <li>
                                             <a
@@ -292,5 +285,8 @@
         <!-- content goes here -->
 
         <!-- footer goes here -->
+
+        <!-- js -->
+        <script src="language-button.js"></script>
     </body>
 </html>
