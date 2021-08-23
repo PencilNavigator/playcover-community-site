@@ -12,6 +12,7 @@ module.exports = {
 		fontFamily: {
 			body: '"Roboto", Arial, sans-serif',
 			logo: "Roboto, Arial, sans-serif",
+			opensans: '"Open Sans", Arial, sans-serif',
 		},
 	},
 	variants: {
