@@ -1462,6 +1462,10 @@ video {
     position: sticky;
   }
 
+  .lg\:mt-auto {
+    margin-top: auto;
+  }
+
   .lg\:flex {
     display: flex;
   }
