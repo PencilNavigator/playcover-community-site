@@ -17,13 +17,12 @@
         <!-- Roboto Font -->
         <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
-        <!-- Open Sans Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
-
+        <!-- Montserrat font-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     </head>
 
     <body
-        class="bg-gray-100 font-body" ">
+        class="bg-gray-100 font-montserrat" ">
         <!-- nav bar -->
         <nav class="max-w-screen-2xl px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixedw-screen top-0 bg-white filter drop-shadow-md z-20">
             <div
@@ -36,7 +35,7 @@
                 </div>
 
                 <!-- primary nav -->
-                <div class="hidden lg:flex items-center space-x-10">
+                <div class="hidden lg:flex items-center space-x-10 pt-1">
                     <a href="" class="text-[17px] text-yellow-600 border-b-2 border-yellow-600 py-3">
                         Home
                     </a>
@@ -167,7 +166,7 @@
             <div
                 class="max-w-full flex flex-col items-center md:block">
                 <!-- logo -->
-                <h1 class="font-logo font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
+                <h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
 
 
                 <!-- hero text -->
@@ -192,23 +191,31 @@
 
         <!-- footer-->
         <footer
-            class="bg-white">
+            class="bg-white text-gray-500">
+
             <!-- above line -->
             <div
-                class="flex justify-between max-w-7xl mx-auto pt-8 pl-6 pr-10 flex-col md:flex-row">
+                class="flex justify-between max-w-7xl mx-auto pt-8 pl-6 pr-10 flex-col-reverse md:flex-row">
                 <!-- text -->
                 <div
-                    class="md:pl-2">
+                    class="pt-6 md:pt-0 md:pl-2">
                     <!-- logo -->
-                    <h1 class="font-logo font-extrabold text-2xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
+                    <h1 class="pb-1 font-extrabold text-2xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
                     <p class="max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, temporibus! Corrupti, obcaecati. Cupiditate, dolores minus nam ea possimus, harum optio facere aperiam natus aut tenetur aspernatur. Provident iusto cupiditate pariatur eveniet, vitae modi corporis odio excepturi quasi voluptatum repellat, corrupti, eum eaque atque ullam commodi temporibus. Dolore vitae illo nisi?</p>
                 </div>
                 <!-- links -->
-                <div class="flex justify-between lg:flex-col mt-auto pt-8 lg:pt-0">
-                    <h3 class="">Links</h3>
+                <div class="flex justify-between items-start flex-col mt-auto md:pt-0">
+                    <h3 class="text-xl p-[3px] pb-4">Links</h3>
+                    <!-- icons -->
                     <div class="flex space-x-5">
-                        <a href="">Icon 1</a>
-                        <a href="">Icon 2</a>
+                        <a href="" class="flex flex-col group">
+                            <img class="h-12 pl-[2px] pb-1" src="assets/github.svg" alt="github">
+                            <span class="group-hover:text-yellow-500 text-sm">GitHub</span>
+                        </a>
+                        <a href="" class="flex flex-col group">
+                            <img class="h-12 pl-[2px] pb-1" src="assets/discord.svg" alt="discord">
+                            <span class="group-hover:text-yellow-500 text-sm">Discord</span>
+                        </a>
                     </div>
                 </div>
             </div>
