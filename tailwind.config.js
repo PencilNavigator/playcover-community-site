@@ -7,6 +7,8 @@ module.exports = {
 			colors: {
 				gold: "#D2AC4A",
 				"gold-light": "#FFD700",
+				"logo-pink": "#FF0F7B",
+				"logo-orange": "#F89B29",
 			},
 		},
 		fontFamily: {
