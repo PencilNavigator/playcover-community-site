@@ -635,6 +635,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -711,6 +715,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-\[5000px\] {
+  height: 5000px;
 }
 
 .w-5 {
@@ -1075,6 +1083,30 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-\[500px\] {
+  padding-top: 500px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1316,6 +1348,10 @@ video {
 
   .md\:pb-4 {
     padding-bottom: 1rem;
+  }
+
+  .md\:pl-1 {
+    padding-left: 0.25rem;
   }
 
   .md\:text-left {
