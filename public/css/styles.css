@@ -1902,6 +1902,11 @@ video {
   color: rgba(68, 68, 68, var(--tw-text-opacity));
 }
 
+.dark .dark\:text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgba(52, 211, 153, var(--tw-text-opacity));
+}
+
 .dark .dark\:hover\:border-gold:hover {
   --tw-border-opacity: 1;
   border-color: rgba(210, 172, 74, var(--tw-border-opacity));
