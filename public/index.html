@@ -22,7 +22,8 @@
     </head>
 
     <body
-        class="bg-gray-100 font-montserrat" ">
+        class="dark:bg-gray-700 bg-gray-100 transition-colors duration-500 font-montserrat">
+
         <!-- nav bar -->
         <nav class="max-w-screen-2xl px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white filter drop-shadow-md z-20">
             <div
@@ -114,6 +115,7 @@
                             </div>
                         </li>
                     </ul>
+                    <button class="switch-theme rounded-full h-6 w-6 bg-gray-500"></button>
                 </div>
 
                 <!-- mobile button -->
@@ -198,7 +200,6 @@
 
                     </div>
                 </div>
-
             </div>
 
             <!-- image -->
@@ -250,5 +251,7 @@
         <!-- js -->
         <script src="js/language-button.js"></script>
         <script src="js/mobile-button.js"></script>
+        <script src="js/dark-mode.js"></script>
+        <script src="js/local-storage-track.js"></script>
     </body>
 </html>
