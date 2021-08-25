@@ -4,7 +4,9 @@ const menu = document.querySelector(".language-menu");
 
 // add event listeners
 btn.addEventListener("click", () => {
-	menu.classList.toggle("hidden");
+	menu.classList.toggle("-translate-y-2/4");
+	menu.classList.toggle("scale-0");
+	menu.classList.toggle("opacity-0");
 });
 
 const mobileLangBtn = document.querySelector("button.mobile-language-button");
