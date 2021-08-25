@@ -37,7 +37,7 @@
                 </div>
 
                 <!-- primary nav -->
-                <div class="hidden lg:flex items-center space-x-10 pt-1">
+                <div class="hidden xl:flex items-center space-x-10 pt-1">
                     <a href="" class="text-[17px] text-yellow-600 border-b-2 border-yellow-600 py-3">
                         Home
                     </a>
@@ -57,7 +57,7 @@
 
                 <!-- secondary nav -->
                 <div
-                    class="hidden lg:flex items-center space-x-5">
+                    class="hidden xl:flex items-center space-x-5">
                     <!-- donate btn -->
                     <button class="border border-gold rounded-md px-3 py-1 hover:border-gold-light transition-colors duration-200 group">
                         <a href="" class="text-[17px] text-gold group-hover:text-gold-light transition-colors duration-200">
@@ -117,7 +117,7 @@
                 </div>
 
                 <!-- mobile button -->
-                <div class="lg:hidden flex items-center">
+                <div class="xl:hidden flex items-center">
                     <button
                         class="mobile-button text-yellow-600 active:text-yellow-400 transition-colors">
                         <!-- icon -->
@@ -164,31 +164,42 @@
 
         <!-- content -->
         <div
-            class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-40 pt-28 pb-10  lg:mt-auto">
+            id="hero-content" class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-40 pt-28 pb-10  lg:mt-auto">
 
             <!-- text -->
             <div
-                class="max-w-full flex flex-col items-center md:block">
-                <!-- logo -->
-                <h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
+                id="hero-text" class="flex flex-col space-y-6">
+                <!-- intro text -->
+                <div
+                    id="intro-text" class="max-w-full flex flex-col items-center md:block">
+                    <!-- logo -->
+                    <h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
 
+                    <!-- hero text -->
+                    <p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">an app that allows you to run iOS apps & games on M1 & Intel Mac with mouse, keyboard and controller support.</p>
 
-                <!-- hero text -->
-                <p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">an app that allows you to run iOS apps & games on M1 & Intel Mac with mouse, keyboard and controller support.</p>
-
-                <!-- Download buttons -->
-                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 pt-4 md:pt-6">
-                    <a class="py-2 px-4 drop-shadow-md bg-yellow-500 text-white hover:bg-yellow-400 active:bg-pink-600 transition-colors duration-400 rounded-md cursor-pointer" href="">
-                        Download for M1 Mac
-                    </a>
-                    <a class="py-2 px-4 drop-shadow-md bg-gray-50 text-gray-800 hover:bg-white active:bg-gray-100 transition-colors duration-400 rounded-md cursor-pointer" href="">
-                        Download for Intel Mac
-                    </a>
+                    <!-- Download buttons -->
+                    <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 pt-4 lg:pt-6 text-center">
+                        <a class="py-2 px-4 drop-shadow-md bg-yellow-500 text-white hover:bg-yellow-400 active:bg-pink-600 transition-colors duration-400 rounded-md cursor-pointer" href="">
+                            Download for M1 Mac
+                        </a>
+                        <a class="py-2 px-4 drop-shadow-md bg-gray-50 text-gray-800 hover:bg-white active:bg-gray-100 transition-colors duration-400 rounded-md cursor-pointer" href="">
+                            Download for Intel Mac
+                        </a>
+                    </div>
                 </div>
+
+                <!-- build text -->
+                <div id="latest-build-text" class="hidden overflow-hidden hover:overflow-y-auto lg:flex rounded-lg max-h-[17rem] w-[27.5rem] bg-green-200">
+                    <div class="m-6 p-3">
+                        <p>Latest Build Latest Build Latest Build Latest Build Latest Build Latest Build Latest Build</p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- image -->
-            <div>
+            <div id="hero-image">
                 <img class="max-w-xs md:max-w-sm rounded shadow" src="assets/screenshot-1.jpeg" alt="genshin-impact"/>
             </div>
         </div>
@@ -216,8 +227,8 @@
                             <img class="h-12 pl-[2px] pb-1" src="assets/github.svg" alt="github">
                             <span class="group-hover:text-yellow-500 text-sm">GitHub</span>
                         </a>
-                        <a href="" class="flex flex-col group">
-                            <img class="h-12 pl-[2px] pb-1" src="assets/discord.svg" alt="discord">
+                        <a href="https://discord.gg/FYVuF6CNzP" target="_blank" class="flex flex-col group">
+                            <img class="h-12 pb-1" src="assets/discord.svg" alt="discord">
                             <span class="group-hover:text-yellow-500 text-sm">Discord</span>
                         </a>
                     </div>
