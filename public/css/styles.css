@@ -817,6 +817,12 @@ video {
   transform: var(--tw-transform);
 }
 
+.scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: var(--tw-transform);
+}
+
 .transform {
   transform: var(--tw-transform);
 }
@@ -1071,6 +1077,10 @@ video {
           background-clip: text;
 }
 
+.fill-current {
+  fill: currentColor;
+}
+
 .p-\[3px\] {
   padding: 3px;
 }
@@ -1183,6 +1193,10 @@ video {
   padding-left: 2px;
 }
 
+.pl-\[1px\] {
+  padding-left: 1px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1288,6 +1302,11 @@ video {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 
 .caret-logo-pink {
@@ -1706,6 +1725,11 @@ video {
 .dark .dark\:border-\[\#444444\] {
   --tw-border-opacity: 1;
   border-color: rgba(68, 68, 68, var(--tw-border-opacity));
+}
+
+.dark .dark\:border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgba(17, 24, 39, var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-gray-700 {
