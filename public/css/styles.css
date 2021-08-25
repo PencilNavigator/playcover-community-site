@@ -1309,6 +1309,16 @@ video {
   color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
 .caret-logo-pink {
   caret-color: #FF0F7B;
 }
