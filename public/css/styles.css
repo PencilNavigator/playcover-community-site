@@ -806,6 +806,11 @@ video {
   transform: var(--tw-transform);
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: var(--tw-transform);
+}
+
 .scale-0 {
   --tw-scale-x: 0;
   --tw-scale-y: 0;
