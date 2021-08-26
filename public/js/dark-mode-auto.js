@@ -5,9 +5,8 @@ function checkDarkMode() {
 	return false;
 }
 
-if (checkDarkMode()) {
-	if (localStorage.theme != "light" && localStorage.theme != "dark") {
+if (localStorage.getItem("theme") == null) {
+	if (checkDarkMode()) {
 		document.querySelector("html").classList.add("dark");
-		localStorage.theme = "dark";
 	}
 }

@@ -14,12 +14,10 @@ const themeBtn = document.querySelector(".switch-theme");
 // });
 
 themeBtn.addEventListener("click", () => {
-	let htmlClasses = htmlTag.classList;
-	if (localStorage.theme == "dark") {
-		htmlClasses.remove("dark");
-		localStorage.theme = "light";
-	} else {
-		htmlClasses.add("dark");
-		localStorage.theme = "dark";
+	let localTheme = localStorage.getItem("theme");
+	if (localTheme == null || localTheme == "light") {
+		localStorage.setItem("theme", "dark");
+	} else if (localTheme == "dark") {
+		localStorage.setItem("theme", "light");
 	}
 });
