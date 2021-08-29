@@ -153,19 +153,35 @@
 		</nav>
 
 		<!-- content -->
-		<main>
-			<header class="pt-32 pl-24"><span class="font-semibold text-3xl text-gray-700">Frequently asked questions</span></header>
-			<section class="w-screen flex flex-col items-center pt-20 space-y-9 text-lg">
-				<div class="flex items-center justify-between px-3 w-96 min-h-[3rem] rounded-md border-2 border-gray-500 bg-gray-50 shadow">
-					<span>Question 1</span>
-					<span>
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-					</span>
+		<main class="pb-16">
+			<header class="pt-32 pl-24"><span class="font-semibold text-4xl text-gray-700 dark:text-gray-300 transition duration-200">Frequently asked questions</span></header>
+
+			<section class="w-screen flex flex-col items-center pt-16 space-y-14 text-lg">
+				<!-- questions -->
+				<div class="flex flex-col items-center space-y-8">
+					<!-- question -->
+					<div class="text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 w-[68rem] min-h-[4rem] font-semibold rounded-md border-2 border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow transition duration-200">
+						<p class="max-w-[61rem] py-3">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either!</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>
+							You could either: <br />
+							1. Delete and reinstall the app with 'clear app cache' checked. <br />
+							2. Run the following command to remove the .plist file which contains keybindings settings:
+						</p>
+						<!-- code -->
+						<div class="overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out mt-3 p-3 rounded">
+							<code class="text-yellow-400">rm&nbsp;~/Library/Containers/com.miHoYo.GenshinImpact/Data/Library/Preferences/com.miHoYo.GenshinImpact.plist</code>
+						</div>
+					</div>
 				</div>
-
-				<div class="flex items-center justify-between px-3 w-96 min-h-[3rem] rounded-md border-2 border-gray-500 bg-gray-50 shadow"><span>Question 2</span> <span>icon</span></div>
-
-				<div class="flex items-center justify-between px-3 w-96 min-h-[3rem] rounded-md border-2 border-gray-500 bg-gray-50 shadow"><span>Question 3</span> <span>icon</span></div>
 			</section>
 		</main>
 
