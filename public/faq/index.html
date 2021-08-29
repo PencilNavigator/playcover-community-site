@@ -157,20 +157,20 @@
 			<header class="pt-32 pl-24"><span class="font-semibold text-4xl text-gray-700 dark:text-gray-300 transition duration-200">Frequently asked questions</span></header>
 
 			<section class="w-screen flex flex-col items-center pt-16 space-y-14 text-lg">
-				<!-- questions -->
-				<div class="flex flex-col items-center space-y-8">
+				<!-- question -->
+				<div class="question flex flex-col items-center space-y-8">
 					<!-- question -->
-					<div class="text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 w-[68rem] min-h-[4rem] font-semibold rounded-md border-2 border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow transition duration-200">
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 w-[68rem] min-h-[4rem] font-semibold rounded-md border-2 border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow transition duration-200 cursor-pointer">
 						<p class="max-w-[61rem] py-3">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either!</p>
 
 						<!-- arrow icon -->
 						<span>
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
 						</span>
 					</div>
 
 					<!-- answer -->
-					<div class="w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+					<div class="answer hidden w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<p>
 							You could either: <br />
 							1. Delete and reinstall the app with 'clear app cache' checked. <br />
@@ -234,5 +234,6 @@
 		<script src="js/language-button.js"></script>
 		<script src="js/mobile-buttons.js"></script>
 		<script src="js/dark-mode.js"></script>
+		<script src="js/question-activator.js"></script>
 	</body>
 </html>
