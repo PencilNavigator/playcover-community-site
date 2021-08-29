@@ -10,6 +10,7 @@ class activator {
 			this.icon.classList.toggle("rotate-180");
 			this.answer.classList.toggle("hidden");
 
+			this.activator.classList.toggle("shadow");
 			this.activator.classList.toggle("dark:shadow");
 			this.activator.classList.toggle("border-transparent");
 			this.activator.classList.toggle("dark:border-transparent");
