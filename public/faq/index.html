@@ -154,7 +154,7 @@
 
 		<!-- content -->
 		<main class="pb-16">
-			<header class="pt-32 pl-24"><span class="font-semibold text-4xl text-gray-700 dark:text-gray-300 transition duration-200">Frequently asked questions</span></header>
+			<header class="pt-36 pb-2 flex justify-center"><span class="font-semibold text-5xl text-gray-700 dark:text-gray-300 transition duration-200">Frequently asked questions</span></header>
 
 			<section class="w-screen flex flex-col items-center pt-16 space-y-14 text-lg">
 				<!-- question -->
@@ -229,6 +229,11 @@
 				</div>
 			</section>
 		</footer>
+
+		<!-- fixer for css classes used in js files but not compiled by tailwind-->
+		<!-- when JIT mode is run again, it checks html file and removes all the classes from styles.css that doesn't exist in the file even tho they exist in the js files hence it breaks stuff -->
+		<!-- hence add the classes used in js files here -->
+		<div class="hidden rotate-180 dark:shadow border-transparent dark:border-transparent bg-gray-300 dark:bg-[#1a1a1a]"></div>
 
 		<!-- js -->
 		<script src="js/language-button.js"></script>
