@@ -231,12 +231,21 @@
 			</section>
 
 			<!-- below line -->
-			<section class="container pb-4 mx-auto">
+			<section class="container flex flex-col space-y-1 pl-6 md:pl-0 pb-5 mx-auto">
 				<div>
-					<p class="text-center">© 2021 PlayCover - All rights reserved</p>
+					<p class="">A PlayCover Team Product</p>
+				</div>
+				<div class="flex flex-col md:flex-row justify-between">
+					<a href="./" class="underline text-left inline pb-1 pt-2 md:pt-0 md:pb-0">Legal Notices</a>
+					<p class="inline md:text-right">Copyright © 2021 ProfiSpieler (BeiJing) Culture Development. Co.Ltd. All rights reserved.</p>
 				</div>
 			</section>
 		</footer>
+
+		<!-- fixer for css classes used in js files but not compiled by tailwind-->
+		<!-- when JIT watch mode is run again, it checks html file and removes all the classes from styles.css that doesn't exist in the html file even tho they exist in the js files hence it breaks stuff -->
+		<!-- add the classes used in js files here to fix -->
+		<div class="hidden rotate-180 dark:shadow border-transparent dark:border-transparent bg-gray-300 dark:bg-[#1a1a1a]"></div>
 
 		<!-- js -->
 		<script src="js/language-button.js"></script>
