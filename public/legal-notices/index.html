@@ -22,7 +22,7 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#1E1E1E] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-3 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
 				<div class="flex items-center lg:mr-10 xl:pl-10">
@@ -34,10 +34,10 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="/public/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
-					<a href="/public/download/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
-					<a href="/public/faq/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> FAQ </a>
+					<a href="/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
+					<a href="/download/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
+					<a href="/changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
+					<a href="/faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
 					<a href="" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Contact Us </a>
 				</div>
 
@@ -120,10 +120,10 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
+					<a href="../" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Home</a>
 					<a href="" class="block text-gray-600 dark:text-gray-300">Download</a>
 					<a href="" class="block text-gray-600 dark:text-gray-300">Update Log</a>
-					<a href="faq/" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">FAQ</a>
+					<a href="faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
 					<a href="" class="block text-gray-600 dark:text-gray-300">Contact Us</a>
 
 					<!-- mobile language button -->
@@ -209,7 +209,7 @@
 					<p class="">A PlayCover Team Product</p>
 				</div>
 				<div class="flex flex-col md:flex-row justify-between">
-					<a href="/legal notices/" class="underline text-left inline pb-1 pt-2 md:pt-0 md:pb-0">Legal Notices</a>
+					<a href="/legal-notices/" class="underline text-left inline pb-1 pt-2 md:pt-0 md:pb-0">Legal Notices</a>
 					<p class="inline md:text-right">2021 ProfiSpieler © (BeiJing) Culture Development. Co.Ltd. All rights reserved.</p>
 				</div>
 			</section>
@@ -224,6 +224,5 @@
 		<script src="js/language-button.js"></script>
 		<script src="js/mobile-buttons.js"></script>
 		<script src="js/dark-mode.js"></script>
-		<script src="js/question-activator.js"></script>
 	</body>
 </html>

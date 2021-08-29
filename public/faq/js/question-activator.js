@@ -12,8 +12,12 @@ class activator {
 
 			this.activator.classList.toggle("shadow");
 			this.activator.classList.toggle("dark:shadow");
+			this.activator.classList.toggle("border-gray-500");
+			this.activator.classList.toggle("dark:border-[#555555]");
 			this.activator.classList.toggle("border-transparent");
 			this.activator.classList.toggle("dark:border-transparent");
+			this.activator.classList.toggle("bg-gray-50");
+			this.activator.classList.toggle("dark:bg-[#242424]");
 			this.activator.classList.toggle("bg-gray-300");
 			this.activator.classList.toggle("dark:bg-[#1a1a1a]");
 		});
