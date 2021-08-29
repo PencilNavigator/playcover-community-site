@@ -804,6 +804,10 @@ video {
   cursor: default;
 }
 
+.resize {
+  resize: both;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1089,18 +1093,6 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-px {
-  padding-top: 1px;
 }
 
 .text-center {
