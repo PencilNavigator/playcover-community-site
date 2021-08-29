@@ -637,21 +637,9 @@ video {
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1536px) {
   .container {
-    max-width: 1680px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1920px;
-  }
-}
-
-@media (min-width: 3840px) {
-  .container {
-    max-width: 3840px;
+    max-width: 1536px;
   }
 }
 
@@ -1633,8 +1621,8 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pb-4 {
-    padding-bottom: 1rem;
+  .md\:pb-\[1\.1vw\] {
+    padding-bottom: 1.1vw;
   }
 
   .md\:pb-\[0\] {
@@ -1647,14 +1635,6 @@ video {
 
   .md\:pb-\[1\.2vw\] {
     padding-bottom: 1.2vw;
-  }
-
-  .md\:pb-\[1\.1vw\] {
-    padding-bottom: 1.1vw;
-  }
-
-  .md\:pb-\[11\.1vw\] {
-    padding-bottom: 11.1vw;
   }
 
   .md\:text-left {
@@ -1822,81 +1802,5 @@ video {
 
   .xl\:text-\[1\.8vw\] {
     font-size: 1.8vw;
-  }
-}
-
-@media (min-width: 1920px) {
-  .FHD\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
-  .FHD\:pb-\[1\.4vw\] {
-    padding-bottom: 1.4vw;
-  }
-
-  .FHD\:pb-\[1\.8vw\] {
-    padding-bottom: 1.8vw;
-  }
-
-  .FHD\:pb-\[1\.5vw\] {
-    padding-bottom: 1.5vw;
-  }
-
-  .FHD\:pb-\[1vw\] {
-    padding-bottom: 1vw;
-  }
-
-  .FHD\:pb-\[0\.4vw\] {
-    padding-bottom: 0.4vw;
-  }
-
-  .FHD\:pb-\[0\.6vw\] {
-    padding-bottom: 0.6vw;
-  }
-
-  .FHD\:drop-shadow-lg {
-    --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
-    filter: var(--tw-filter);
-  }
-
-  .FHD\:hover\:shadow-xl:hover {
-    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-}
-
-@media (min-width: 3840px) {
-  .\34K\:pb-\[1vw\] {
-    padding-bottom: 1vw;
-  }
-
-  .\34K\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
-  .\34K\:pb-10 {
-    padding-bottom: 2.5rem;
-  }
-
-  .\34K\:pb-14 {
-    padding-bottom: 3.5rem;
-  }
-
-  .\34K\:pb-\[1\.2vw\] {
-    padding-bottom: 1.2vw;
-  }
-
-  .\34K\:pb-\[1\.4vw\] {
-    padding-bottom: 1.4vw;
-  }
-
-  .\34K\:drop-shadow-xl {
-    --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
-    filter: var(--tw-filter);
-  }
-
-  .\34K\:hover\:shadow-2xl:hover {
-    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
