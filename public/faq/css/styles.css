@@ -989,6 +989,12 @@ video {
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -1313,6 +1319,22 @@ video {
 
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pr-\[10\%\] {
+  padding-right: 10%;
+}
+
+.pr-\[5\%\] {
+  padding-right: 5%;
+}
+
+.pl-\[5\%\] {
+  padding-left: 5%;
 }
 
 .text-left {
@@ -1798,6 +1820,25 @@ video {
     align-items: flex-end;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:pl-1 {
     padding-left: 0.25rem;
   }
@@ -1824,6 +1865,18 @@ video {
 
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
+  .md\:pl-\[5\%\] {
+    padding-left: 5%;
   }
 
   .md\:text-left {
@@ -1855,6 +1908,10 @@ video {
 
   .lg\:mt-auto {
     margin-top: auto;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1920,6 +1977,11 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
   .lg\:pr-12 {
     padding-right: 3rem;
   }
@@ -1974,6 +2036,11 @@ video {
     padding-right: 0px;
   }
 
+  .xl\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
   .xl\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -1985,6 +2052,13 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 }
 
