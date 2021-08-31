@@ -168,12 +168,376 @@
 				</span>
 			</header>
 
-			<section class="w-screen flex flex-col items-center pt-16 space-y-14 text-md xl:text-lg">
-				<!-- question/answer -->
+			<section class="w-screen flex flex-col items-center pt-20 space-y-14 text-md xl:text-lg">
+                <!-- copy - question/answer -->
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
-					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[68rem] min-h-[4rem] font-semibold rounded-md border-2 border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] py-3">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either!</p>
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Keybindings Instructions</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<ul class="list-inside list-disc">
+                            <h2 class="text-xl font-bold">Keymapper Toggle</h2>
+                            <li class=""><kbd>CTRL + P</kbd>&nbsp; →&nbsp; Toggle keymapping mode</li>
+
+                            <br>
+
+                            <h2 class="text-xl font-bold">Button Events:</h2>
+                            <li class=""><kbd>CTRL + J</kbd>&nbsp; →&nbsp; Add W/A/S/D Joystick</li>
+                            <li class=""><kbd>CTRL + N</kbd>&nbsp; →&nbsp; Add New Button</li>
+                            <li class=""><kbd>CTRL + M</kbd>&nbsp; →&nbsp; Mouse/Camera Movements</li>
+
+                            <br>
+
+                            <h2 class="text-xl font-bold">After Selecting a New Button:</h2>
+                            <li class=""><kbd>*key*</kbd>&nbsp; →&nbsp; Press any key to bind it</li>
+                            <li class=""><kbd>SHIFT + L  (L key on keyboard)</kbd>&nbsp; →&nbsp; Bind Left Mouse Click</li>
+                            <li class=""><kbd>SHIFT + R  (R key on keyboard)</kbd>&nbsp; →&nbsp; Bind Right Mouse Click</li>
+                            <li class=""><kbd>CTRL + ‘+’</kbd>&nbsp; →&nbsp; Increase Button Size</li>
+                            <li class=""><kbd>CTRL + ‘-’</kbd>&nbsp; →&nbsp; Decrease Button Size</li>
+                            <li class=""><kbd>CTRL + DEL (Backspace)</kbd>&nbsp; →&nbsp; Delete Button</li>
+
+                            <br>
+
+                            <h2 class="text-xl font-bold">Miscellaneous:</h2>
+                            <li class=""><kbd>CTRL + F</kbd>&nbsp; →&nbsp; Adjust resolution</li>
+
+                            <br>
+
+                            <h2 class="text-xl font-bold">Macros:</h2>
+                            <li class=""><kbd>CTRL + U</kbd>&nbsp; →&nbsp; Start Recording</li>
+                            <li class=""><kbd>CTRL + I</kbd>&nbsp; →&nbsp; End Recording</li>
+                            <li class=""><kbd>CTRL + O</kbd>&nbsp; →&nbsp; Replay Macro</li>
+
+                            <br>
+
+                            <h2 class="text-xl font-bold">Flow Control:</h2>
+                            <li class=""><kbd>Press option</kbd>&nbsp; →&nbsp; Show/Hide cursor</li>
+                            <li class=""><kbd>CTRL + W/A/S/D</kbd>&nbsp; →&nbsp; Nudge button</li>
+                        </ul>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">What is the supporter version of PlayCover?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>The supporter version is a build that is pushed to supporters before releasing to the general public. It generally has newer and more features, but is more buggy. Check #how-to-donate channel in our <a href="https://discord.com/invite/FYVuF6CNzP" class="underline">discord server</a> for more info.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">When will the next version of Playcover be released?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>We may not be able to provide an ETA on the next release, but rest assured that we are working hard to develop the app and release new features!</p>
+					</div>
+				</div>
+
+                <!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Is there any step by step guide that I could follow?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<a href="https://www.youtube.com/watch?v=H3CoI84s_FI" class="underline">YouTube Video Guide</a>
+                        <p><br></p>
+                        <p>Note: some options in PlayCover might differ from the video due to different versions being used however, the major steps remain the same.</p>
+					</div>
+				</div>
+
+                 
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Do I have to disable SIP (System Integrity Protection) and is it safe to?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Currently, yes. But disabling SIP will not be required in future releases. It is also very safe, especially on M1 Macs.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How can I change Genshin settings?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Press <kbd>option</kbd> key on your keyboard while playing to enable the cursor, then click top left icon (next to map) and click setting. There you can change all settings.</p>
+					</div>
+				</div>
+
+                <!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How do I add mouse left or right clicks? </p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>To add mouse clicks, select a button and press 'Shift + L or R' (the actual L or R keys on keyboard, not the mouse buttons).</p>
+					</div>
+				</div>
+
+                <!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Camera movement is not working in games? </p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<ul class="list-outside list-disc">
+                            <li>Press   CTRL + M   in keymapper and place it in the middle.</li>
+                            <li>Try disconnecting and reconnecting your mouse if an external one.</li>
+                        </ul>
+					</div>
+				</div>
+
+                <!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I have followed all steps correctly as shown in the video but my keybindings still don't work? </p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Please check if you moved the game to Applications folder after install. If yes, delete it and reinstall. Let it remain in the documents folder.</p>
+					</div>
+				</div>
+
+                <!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">PlayCover is not working even though I did all the steps correctly (even troubleshoot says that my system is correct)? </p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>You will need to install XCode from the app store.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Do I have to reinstall Genshin Impact every PlayCover release?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Yes, in order to apply latest changes to the app you need to install the .ipa again, however you won’t need to download any game data, since that is just going to replace the old patched version.</p>
+					</div>
+				</div>
+
+                <!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How do I reset the "sudo nvram boot-args..." command?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>By running the following command: <br>
+                        <div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+							<code class="text-yellow-400">sudo nvram boot-args=""</code>
+						</div>
+                        </p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Why do I see random text when I restart or switch my Mac on?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>That's called verbose mode, it displays what's going on inside the system. It was enabled by the following command: 
+                        <div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+							<code class="text-yellow-400">sudo nvram boot-args...</code>
+						</div> <br>
+                        You can disable the texts by running the following commands in order:
+                        <div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+							<code class="text-yellow-400">sudo nvram boot-args=""</code>
+						</div> <br>
+                        <div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+							<code class="text-yellow-400">sudo nvram boot-args="cs_enforcement_disable=1 amfi_get_out_of_my_way=1 keepsyms=1 intcoproc_unrestricted=1 amfi_unrestrict_task_for_pid=1 amfi_allow_any_signature=1 cs_debug=1"</code>
+						</div>
+                        </p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I can’t disable SIP or add boot-args because of a *blank password*?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>This is normal. *nix systems blank out the password while you’re typing it. This is a form of security and it’s completely expected. Just type your password normally and press enter once you’re done.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I am getting "This application is not supported on this Mac" error?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Intel machines are currently not supported on Playcover. However, the devs are trying to make this happen so stay tuned.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I am getting "You do not have permission" error?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<ol class="list-decimal">
+							<li>Make sure you have disabled SIP.</li>
+							<li>
+								Or go in terminal and type: (without the <> text) <br>
+								<!-- code -->
+								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+									<code class="text-yellow-400">chmod -R 755 &#60;drag app here&#62;</code>
+								</div>
+							</li>
+							<li>
+								Or go in terminal and type: (without the <> text) <br>
+								<!-- code -->
+								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+									<code class="text-yellow-400">xattr -rd com.apple.quarantine &#60;drag app here&#62;</code>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#242424] shadow dark:shadow transition duration-200 cursor-pointer">
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -190,7 +554,7 @@
 							2. Run the following command to remove the .plist file which contains keybindings settings:
 						</p>
 						<!-- code -->
-						<div class="overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out mt-3 p-3 rounded">
+						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
 							<code class="text-yellow-400">rm&nbsp;~/Library/Containers/com.miHoYo.GenshinImpact/Data/Library/Preferences/com.miHoYo.GenshinImpact.plist</code>
 						</div>
 					</div>
