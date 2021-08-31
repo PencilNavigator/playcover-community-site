@@ -17,7 +17,7 @@ class activator {
 			this.activator.classList.toggle("border-transparent");
 			this.activator.classList.toggle("dark:border-transparent");
 			this.activator.classList.toggle("bg-gray-50");
-			this.activator.classList.toggle("dark:bg-[#242424]");
+			this.activator.classList.toggle("dark:bg-[#2b2b2b]");
 			this.activator.classList.toggle("bg-gray-300");
 			this.activator.classList.toggle("dark:bg-[#1a1a1a]");
 		});
