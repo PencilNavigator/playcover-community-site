@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="this is my site description" />
 		<meta name="keywords" content="8-12 words max" />
-		<title>PlayCover App</title>
+		<title>Changelog</title>
 		<link href="css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="assets/favicon.png" />
 		<script src="js/local-storage-track.js"></script>
@@ -34,9 +34,9 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Home </a>
+					<a href="/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
 					<a href="/download/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="/changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
+					<a href="/changelog/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Changelog </a>
 					<a href="/faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
 					<a href="" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Contact Us </a>
 				</div>
@@ -123,9 +123,9 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Home</a>
+					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
 					<a href="" class="block text-gray-600 dark:text-gray-300">Download</a>
-					<a href="/changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
+					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Changelog</a>
 					<a href="/faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
 					<a href="" class="block text-gray-600 dark:text-gray-300">Contact Us</a>
 
@@ -157,43 +157,109 @@
 		</nav>
 
 		<!-- content -->
-		<main>
-			<!-- hero section -->
-			<section id="hero-content" class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-40 pt-28 pb-10 lg:mt-auto">
-				<!-- text -->
-				<div id="hero-text" class="flex flex-col space-y-6">
-					<!-- intro text -->
-					<div id="intro-text" class="max-w-full flex flex-col items-center md:block dark:text-gray-300">
-						<!-- logo -->
-						<h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
+		<main class="pb-16">
+			<!-- heading -->
+			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
+				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Changelog</span>
+				<span class="lg:hidden flex flex-col items-center text-4xl font-semibold text-gray-700 dark:text-yellow-500 transition duration-200 space-y-3">
+					<p>Changelog</p>
+				</span>
+			</header>
 
-						<!-- hero text -->
-						<p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">an app that allows you to run iOS apps & games on M1 & Intel Mac with mouse, keyboard and controller support.</p>
-
-						<!-- Download buttons -->
-						<div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 pt-4 lg:pt-6 text-center">
-							<a class="py-2 px-4 drop-shadow-md bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 hover:bg-yellow-400 dark:hover:bg-[#8f220e] active:bg-yellow-700 dark:active:bg-[#6e1a0b] transition-colors duration-400 rounded-md cursor-pointer" href=""> Download for M1 Mac </a>
-							<a class="py-2 px-4 drop-shadow-md bg-gray-50 dark:bg-[#3f3f3f] text-gray-800 dark:text-gray-200 hover:bg-white dark:hover:bg-[#505050] active:bg-gray-100 dark:active:bg-[#2e2e2e] transition-colors duration-400 rounded-md cursor-pointer" href=""> Download for Intel Mac </a>
-						</div>
+			<section class="px-[12%] pt-14 flex space-x-5 text-gray-700 dark:text-gray-300">
+				<!-- left side -->
+				<aside class="flex flex-col items-center">
+					<!-- spinning circle and dotted line -->
+					<div class="flex flex-col items-center">
+						<!-- spinning circle -->
+						<div class="h-4 w-4 rounded-full border border-solid border-t-yellow-500 border-transparent animate-spin"></div>
+						<!-- dotted line -->
+						<div class="dotted-line border-l-2 border-dotted border-gray-300 dark:border-gray-600 h-[4.5rem]"></div>
 					</div>
 
-					<!-- build text -->
-					<div id="latest-build-text" class="hidden group lg:flex rounded-lg max-h-[17rem] w-[27.5rem] cursor-default border-2 dark:border-[#444444] hover:border-transparent dark:hover:border-transparent hover:shadow-lg hover:bg-white dark:hover:bg-[#363636] transition-all duration-300">
-						<div class="mt-6 mb-[24px] ml-8 mr-2 pr-2 overflow-hidden group-hover:overflow-y-auto text-gray-400 dark:text-[#444444] group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all duration-300 relative">
-							<p class="font-semibold text-lg">Latest Build Info (0.6.3b)</p>
-							<br />
-							<p>
-								- Keymapping elements will resize on Window size change <br /><br />
-								- Special indicator will be shown on entering and leaving editor mode <br /><br />- All parent UIViews scaled properly ( Web announcements inside Genshin are fixed, some games as genshin currently requires to restart for proper scale after window change) <br /><br />- Fixed MenuBar that covered game window in Windowed mode <br /><br />- Resolved problem of not saving key mappings for some users <br /><br />- Fixed crash on entering party menu in Genshin Impact for some users <br /><br />- Improved graphics in 3x times <br /><br />- Total average memory usage by games decreased by x2 times <br /><br />- Fixed problem when camera movement vanished after cutscene <br /><br />- Camera now properly appears after mapping without additional manipulations <br /><br />- Now PlayCover contains automated crashes report system, which works not only inside app, but also every game converted with PlayCover <br /><br />- Started migrate games settings to PlayCover for synchronisation and easily management
-							</p>
-						</div>
+					<!-- copy for latest release -->
+					<div class="flex flex-col items-center">
+						<!-- yellow circle -->
+						<div class="h-3 w-3 rounded-full border-2 border-solid border-yellow-500"></div>
+						<!-- vertical line -->
+						<div class="changelog-ruler h-10 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
 					</div>
-				</div>
 
-				<!-- image -->
-				<div id="hero-image">
-					<img class="max-w-xs md:max-w-sm rounded shadow" src="assets/screenshot-1.jpeg" alt="genshin-impact" />
-				</div>
+					<!-- copy for past releases -->
+					<div class="flex flex-col items-center">
+						<!-- yellow circle -->
+						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
+						<!-- vertical line -->
+						<div class="hidden changelog-ruler h-10 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
+					</div>
+				</aside>
+
+				<!-- right side -->
+				<article class="flex flex-col">
+					<div class="h-20"><p class="text-sm">More new features are under development...</p></div>
+
+					<!-- copy for latest release -->
+					<article class="changelog-text pb-8">
+						<!-- latest release text -->
+						<div class="flex flex-col">
+							<!-- each release -->
+							<div class="flex flex-col">
+								<!-- version and date -->
+								<div class="flex space-x-5 items-center pb-1">
+									<h2 class="text-yellow-500 font-medium text-xl">1.0.1</h2>
+									<p class="text-sm">(12-12-2021)</p>
+								</div>
+
+								<!-- release notes -->
+								<div>
+									<ul class="text-sm space-y-2">
+										<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, atque.</li>
+										<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+										<li>Lorem ipsum dolor sit.</li>
+										<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat itaque nulla.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- line divide -->
+						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
+
+						<!-- github release button -->
+						<a href="" class="bg-gray-800 rounded-sm text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
+					</article>
+
+					<!-- copy for past releases -->
+					<article class="changelog-text pb-8">
+						<!-- latest release text -->
+						<div class="flex flex-col">
+							<!-- each release -->
+							<div class="flex flex-col">
+								<!-- version and date -->
+								<div class="flex space-x-5 items-center pb-1">
+									<h2 class="font-medium text-xl">1.0.0</h2>
+									<p class="text-sm">(12-12-2021)</p>
+								</div>
+
+								<!-- release notes -->
+								<div>
+									<ul class="text-sm space-y-2">
+										<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, atque.</li>
+										<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+										<li>Lorem ipsum dolor sit.</li>
+										<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat itaque nulla.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- line divide -->
+						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
+
+						<!-- github release button -->
+						<a href="" class="bg-gray-800 rounded-sm text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
+					</article>
+				</article>
 			</section>
 		</main>
 
@@ -319,5 +385,6 @@
 		<script src="js/mobile-buttons.js"></script>
 		<script src="js/dark-mode.js"></script>
 		<script src="js/donate-popup.js"></script>
+		<script src="js/changelog.js"></script>
 	</body>
 </html>
