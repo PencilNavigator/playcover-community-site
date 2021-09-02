@@ -1,4 +1,5 @@
 const autoCloser = document.querySelector(".auto-closer");
+
 const toggleAutoCloser = function (autoCloser) {
 	autoCloser.classList.toggle("hidden");
 };
@@ -14,6 +15,9 @@ autoCloser.addEventListener("click", () => {
 	if (isLangMenuOpen) {
 		hideLangMenu(menu);
 		isLangMenuOpen = false;
+	} else if (isMobileMenuOpen) {
+		toggleMobileMenu();
+		isMobileMenuOpen = false;
 	}
 
 	toggleAutoCloser(autoCloser);
