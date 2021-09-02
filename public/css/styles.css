@@ -641,8 +641,16 @@ video {
   z-index: 20;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .z-40 {
   z-index: 40;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -764,6 +772,42 @@ video {
   height: 5rem;
 }
 
+.h-\[100wv\] {
+  height: 100wv;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[100100\%\] {
+  height: 100100%;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[3000px\] {
+  height: 3000px;
+}
+
+.h-\[30000px\] {
+  height: 30000px;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
 .max-h-\[17rem\] {
   max-height: 17rem;
 }
@@ -818,6 +862,14 @@ video {
 
 .w-\[75\%\] {
   width: 75%;
+}
+
+.w-\[100vw\] {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-full {
@@ -1103,18 +1155,13 @@ video {
   border-color: rgba(217, 119, 6, var(--tw-border-opacity));
 }
 
-.border-gray-200 {
+.border-gray-300 {
   --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
 .border-gray-400 {
@@ -1152,6 +1199,11 @@ video {
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.7\)\] {
   background-color: rgba(0,0,0,0.7);
 }
@@ -1169,6 +1221,26 @@ video {
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+}
+
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -1537,11 +1609,6 @@ video {
 
 .drop-shadow-sm {
   --tw-drop-shadow: drop-shadow(0 1px 1px rgba(0,0,0,0.05));
-  filter: var(--tw-filter);
-}
-
-.drop-shadow {
-  --tw-drop-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
   filter: var(--tw-filter);
 }
 

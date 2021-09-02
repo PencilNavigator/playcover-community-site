@@ -156,6 +156,9 @@
 			</div>
 		</nav>
 
+		<!-- auto closer for lang menu -->
+		<div class="auto-closer hidden z-10 w-[100%] h-2 absolute"></div>
+
 		<!-- content -->
 		<main class="pb-16">
 			<!-- heading -->
@@ -168,7 +171,7 @@
 				</span>
 			</header>
 
-			<section class="w-screen flex flex-col items-center pt-20 space-y-14 text-md xl:text-lg">
+			<section class="w-full flex flex-col items-center pt-20 space-y-14 text-md xl:text-lg">
                 <!-- copy - question/answer -->
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
@@ -565,10 +568,10 @@
 		</main>
 
 		<!-- donate popup -->
-		<section class="hidden donate-popup z-40 fixed w-screen h-screen bg-[rgba(0,0,0,0.7)] dark:bg-[rgba(0,0,0,0.7)]">
+		<section class="hidden donate-wrapper donate-popup z-40 fixed w-screen h-screen bg-[rgba(0,0,0,0.7)] dark:bg-[rgba(0,0,0,0.7)]">
 			<!-- modal -->
 			<div class="w-screen h-screen flex flex-col items-center justify-center">
-				<div class="flex flex-col items-center lg:w-[30rem] bg-white dark:bg-[#1E1E1E] rounded-xl shadow">
+				<div class="donate-modal flex flex-col items-center lg:w-[30rem] bg-white dark:bg-[#1E1E1E] rounded-xl shadow">
 					<!-- close button -->
 					<div class="relative pt-4">
 						<button class="donate-close-button absolute top-5 lg:top-4 left-[7.5rem] lg:left-48">
@@ -687,5 +690,6 @@
 		<script src="js/dark-mode.js"></script>
 		<script src="js/question-activator.js"></script>
 		<script src="js/donate-popup.js"></script>
+		<script src="js/auto-closer.js"></script>
 	</body>
 </html>
