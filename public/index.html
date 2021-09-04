@@ -215,9 +215,9 @@
 
 						<div class="absolute overflow-hidden animate-blob animation-delay-4000 opacity-25 dark:opacity-5 mix-blend-multiply -bottom-7 left-4 filter blur-xl rounded-full bg-pink-300 h-56 w-56 md:h-[20rem] md:w-[20rem]"></div>
 
-						<img class="hero-image dark:hidden z-10 max-w-xs md:max-w-[27rem] rounded-lg drop-shadow hover:drop-shadow-2xl transition duration-700 ease-in-out" src="assets/playcover-screenshot-light.png" alt="genshin-impact" />
+						<img class="hero-image dark:hidden z-10 max-w-xs md:max-w-[27rem] rounded-lg drop-shadow-sm hover:drop-shadow-xl transition ease-out duration-700" src="assets/playcover-screenshot-light.png" alt="genshin-impact" />
 
-						<img class="hero-image hidden z-10 dark:block max-w-xs md:max-w-[27rem] rounded-lg drop-shadow hover:drop-shadow-2xl transition duration-700 ease-in-out" src="assets/playcover-screenshot-dark.png" alt="genshin-impact" />
+						<img class="hero-image hidden z-10 dark:block max-w-xs md:max-w-[27rem] rounded-lg drop-shadow-sm hover:drop-shadow-xl transition ease-out duration-700" src="assets/playcover-screenshot-dark.png" alt="genshin-impact" />
 					</div>
 				</div>
 			</section>
@@ -342,12 +342,6 @@
 		<script src="js/auto-closer.js"></script>
 		<script src="js/animator.js"></script>
 		<script src="js/vanilla-tilt-min.js"></script>
-		<script>
-			VanillaTilt.init(document.querySelectorAll(".hero-image"), {
-				reverse: true,
-				max: 10,
-				speed: 400,
-			});
-		</script>
+		<script src="js/tilt-config.js"></script>
 	</body>
 </html>
