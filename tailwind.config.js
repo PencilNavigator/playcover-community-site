@@ -12,8 +12,6 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			body: '"Roboto", Arial, sans-serif',
-			logo: "Roboto, Arial, sans-serif",
 			montserrat: "Montserrat, Arial, sans-serif",
 		},
 	},
