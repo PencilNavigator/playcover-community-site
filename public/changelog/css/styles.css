@@ -1837,6 +1837,11 @@ video {
   border-color: rgba(85, 85, 85, var(--tw-border-opacity));
 }
 
+.dark .dark\:border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
+}
+
 .dark .dark\:bg-\[\#171717\] {
   --tw-bg-opacity: 1;
   background-color: rgba(23, 23, 23, var(--tw-bg-opacity));
