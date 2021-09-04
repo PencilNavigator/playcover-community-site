@@ -383,7 +383,7 @@
 		<!-- fixer for css classes used in js files but not compiled by tailwind-->
 		<!-- when JIT watch mode is run again, it checks html file and removes all the classes from styles.css that doesn't exist in the html file even tho they exist in the js files hence it breaks stuff -->
 		<!-- add the classes used in js files here to fix -->
-		<div class="hidden rotate-180 dark:shadow border-transparent dark:border-transparent bg-gray-300 dark:bg-[#1a1a1a]"></div>
+		<div class="hidden rotate-180 dark:shadow border-transparent dark:border-transparent bg-gray-300 dark:bg-[#1a1a1a] animate-bounce animate-pulse"></div>
 
 		<!-- js -->
 		<script src="js/language-button.js"></script>
@@ -391,6 +391,7 @@
 		<script src="js/dark-mode.js"></script>
 		<script src="js/donate-popup.js"></script>
 		<script src="js/auto-closer.js"></script>
+		<script src="js/animator.js"></script>
 		<script src="js/changelog.js"></script>
 	</body>
 </html>

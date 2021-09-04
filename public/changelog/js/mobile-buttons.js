@@ -23,6 +23,10 @@ const themeBtnMob = document.querySelector(".switch-theme-mobile");
 
 // add event listeners
 themeBtnMob.addEventListener("click", () => {
+	// stop bounce animation
+	if (themeBtnMob.classList.contains("animate-pulse")) {
+		themeBtnMob.classList.remove("animate-pulse");
+	}
 	let htmlClasses = htmlTagMob.classList;
 	if (localStorage.theme == "dark") {
 		htmlClasses.remove("dark");
