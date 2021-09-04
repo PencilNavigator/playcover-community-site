@@ -1,6 +1,6 @@
 VanillaTilt.init(document.querySelectorAll(".hero-image"), {
 	reverse: true, // reverse the tilt direction
-	max: 20, // max tilt rotation (degrees)
+	max: 10, // max tilt rotation (degrees)
 	startX: 0, // the starting tilt on the X axis, in degrees.
 	startY: 0, // the starting tilt on the Y axis, in degrees.
 	perspective: 2000, // Transform perspective, the lower the more extreme the tilt gets.

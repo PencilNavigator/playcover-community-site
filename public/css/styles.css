@@ -1706,6 +1706,14 @@ video {
   opacity: 0.25;
 }
 
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
