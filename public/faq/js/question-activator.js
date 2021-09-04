@@ -19,7 +19,7 @@ class activator {
 			this.activator.classList.toggle("bg-gray-50");
 			this.activator.classList.toggle("dark:bg-[#2b2b2b]");
 			this.activator.classList.toggle("bg-gray-300");
-			this.activator.classList.toggle("dark:bg-[#1a1a1a]");
+			this.activator.classList.toggle("dark:bg-[#222222]");
 		});
 	}
 }
