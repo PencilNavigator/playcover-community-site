@@ -18,7 +18,6 @@ const hideLangMenu = function (menu) {
 	langIcon.classList.remove("rotate-180");
 };
 
-// add event listeners
 btn.addEventListener("click", (e) => {
 	if (menu.classList.contains("-translate-y-2/4")) {
 		showLangMenu(menu);
@@ -31,10 +30,11 @@ btn.addEventListener("click", (e) => {
 	e.stopPropagation();
 });
 
+// mobile lang menu
 const mobileLangBtn = document.querySelector("button.mobile-language-button");
 const mobileLangMenu = document.querySelector(".mobile-language-menu");
 
-// add event listeners
 mobileLangBtn.addEventListener("click", () => {
+	document.querySelector(".mobile-lang-icon").classList.toggle("rotate-180");
 	mobileLangMenu.classList.toggle("hidden");
 });
