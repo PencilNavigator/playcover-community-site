@@ -21,9 +21,8 @@ mobileBtn.addEventListener("click", () => {
 const htmlTagMob = document.querySelector("html");
 const themeBtnMob = document.querySelector(".switch-theme-mobile");
 
-// add event listeners
 themeBtnMob.addEventListener("click", () => {
-	// stop bounce animation
+	// stop pulse animation
 	if (themeBtnMob.classList.contains("animate-pulse")) {
 		themeBtnMob.classList.remove("animate-pulse");
 	}
