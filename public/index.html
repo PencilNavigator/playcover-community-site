@@ -226,11 +226,21 @@
 			<div class="splide">
 				<div class="splide__track mx-20">
 					<ul class="splide__list">
-						<li class="splide__slide" style="width: 10px"><div class="h-36 flex items-center justify-center rounded-lg shadow w-72 bg-green-300 my-3">Slide 1</div></li>
-						<li class="splide__slide"><div class="h-36 flex items-center justify-center rounded-lg shadow w-72 bg-yellow-300 my-3">Slide 2</div></li>
-						<li class="splide__slide"><div class="h-36 flex items-center justify-center rounded-lg shadow w-72 bg-pink-300 my-3">Slide 3</div></li>
-						<li class="splide__slide"><div class="h-36 flex items-center justify-center rounded-lg shadow w-72 bg-red-300 my-3">Slide 4</div></li>
-						<li class="splide__slide"><div class="h-36 flex items-center justify-center rounded-lg shadow w-72 bg-purple-300 my-3">Slide 5</div></li>
+						<li class="splide__slide px-10" style="width: 10px">
+							<video class="slide-video rounded-lg shadow-md my-4 w-[120%] md:w-[90%]" muted loop autoplay src="assets/Genshin Impact - compressed trailer.mp4" type="video/mp4"></video>
+						</li>
+
+						<li class="splide__slide px-10" style="width: 10px">
+							<video class="slide-video rounded-lg shadow-md my-4 w-[120%] md:w-[90%]" muted loop autoplay src="assets/Genshin Impact - compressed trailer.mp4" type="video/mp4"></video>
+						</li>
+
+						<li class="splide__slide px-10" style="width: 10px">
+							<video class="slide-video rounded-lg shadow-md my-4 w-[120%] md:w-[90%]" muted loop autoplay src="assets/Genshin Impact - compressed trailer.mp4" type="video/mp4"></video>
+						</li>
+
+						<li class="splide__slide px-10" style="width: 10px">
+							<video class="slide-video rounded-lg shadow-md my-4 w-[120%] md:w-[90%]" muted loop autoplay src="assets/Genshin Impact - compressed trailer.mp4" type="video/mp4"></video>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -375,10 +385,13 @@
 				speed: 1000,
 				width: "85%",
 				easing: "ease",
-				padding: { right: 300 },
+				// padding: { right: 300 },
 				autoplay: true,
-				interval: 3000,
+				interval: 2500,
 				breakpoints: {
+					800: {
+						perPage: 1,
+					},
 					1500: {
 						perPage: 2,
 					},

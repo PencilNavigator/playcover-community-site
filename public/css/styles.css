@@ -971,6 +971,22 @@ video {
   width: 20rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[120\%\] {
+  width: 120%;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -2176,6 +2192,10 @@ video {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:w-\[90\%\] {
+    width: 90%;
   }
 
   .md\:max-w-sm {
