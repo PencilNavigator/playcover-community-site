@@ -2179,6 +2179,10 @@ video {
     padding-left: 0px;
   }
 
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
