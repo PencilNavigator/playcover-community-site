@@ -1313,6 +1313,11 @@ video {
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 
+.bg-gold {
+  --tw-bg-opacity: 1;
+  background-color: rgba(210, 172, 74, var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1806,6 +1811,36 @@ video {
   transform: var(--tw-transform);
 }
 
+@-webkit-keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.hover\:animate-ping:hover {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .hover\:border-4:hover {
   border-width: 4px;
 }
@@ -1962,6 +1997,11 @@ video {
 .dark .dark\:border-\[\#555555\] {
   --tw-border-opacity: 1;
   border-color: rgba(85, 85, 85, var(--tw-border-opacity));
+}
+
+.dark .dark\:border-\[\#110e06\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(17, 14, 6, var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-\[\#171717\] {
@@ -2253,6 +2293,45 @@ video {
   .md\:shadow-none {
     --tw-shadow: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:hover\:translate-y-1:hover {
+    --tw-translate-y: 0.25rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:-translate-y-1:hover {
+    --tw-translate-y: -0.25rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:-translate-y-10:hover {
+    --tw-translate-y: -2.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:translate-y-\[0\.15rem\]:hover {
+    --tw-translate-y: 0.15rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:translate-y-\[-0\.15rem\]:hover {
+    --tw-translate-y: -0.15rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:translate-y-\[-0\.05rem\]:hover {
+    --tw-translate-y: -0.05rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:translate-y-\[-0\.10rem\]:hover {
+    --tw-translate-y: -0.10rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:hover\:border-b-4:hover {
+    border-bottom-width: 4px;
   }
 
   .group:hover .md\:group-hover\:scale-105 {
