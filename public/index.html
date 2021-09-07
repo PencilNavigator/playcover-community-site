@@ -386,14 +386,20 @@
 			<!-- above line -->
 			<section class="flex md:items-end justify-between max-w-screen mx-auto pt-8 pl-[6%] md:pl-[5.1%] pr-16 md:pr-[5%] flex-col-reverse md:flex-row">
 				<!-- text -->
-				<div class="pt-6 md:pt-0 flex flex-col space-y-2">
+				<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 					<!-- logo -->
 					<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
 
-					<!-- legal notice and copyright claim -->
-					<div class="md:divide-x divide-gray-300 dark:divide-gray-600 flex items-center">
-						<a href="/legal-notice/" class="pr-3 hover:text-yellow-500 underline text-left inline">Legal Notice</a>
-						<a href="mailto:ke@playcover.app" class="pl-3 underline hover:text-yellow-500">Copyright Claims</a>
+					<!-- alex credits -->
+					<div class="relative">
+						<!-- placeholder -->
+						<p class="text-lg text-transparent transition duration-200 ease-in-out">Presented by <span class="font-neon font-medium">Alexandr Forofeev</span></p>
+
+						<!-- text -->
+						<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Presented by <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Forofeev</span></p>
+
+						<!-- bg blur -->
+						<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Presented by <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Forofeev</span></p>
 					</div>
 				</div>
 
@@ -429,12 +435,13 @@
 			</section>
 
 			<!-- below line -->
-			<section class="flex flex-col md:flex-row md:justify-between pl-6 md:px-[4.40rem] pb-5 items-center">
-				<div class="relative">
-					<p class="font-neon font-medium text-lg text-transparent">Presented by Alexandr Forofeev</p>
-					<p class="font-neon font-medium text-lg absolute inset-0 z-30 dark:text-gray-300">Presented by Alexandr Forofeev</p>
-					<p class="font-neon font-medium text-lg text-transparent dark:text-red-500 absolute inset-0 blur-sm">Presented by Alexandr Forofeev</p>
+			<section class="flex flex-col md:flex-row md:justify-between pl-6 md:px-[4.40rem] pb-5 md:items-center space-y-2">
+				<!-- legal notice and copyright claim -->
+				<div class="md:divide-x divide-gray-300 dark:divide-gray-600 flex items-center">
+					<a href="/legal-notice/" class="pr-3 hover:text-yellow-500 underline text-left inline">Legal Notice</a>
+					<a href="mailto:ke@playcover.app" class="pl-3 underline hover:text-yellow-500">Copyright Claims</a>
 				</div>
+
 				<p class="inline">2021 ProfiSpieler © (BeiJing) Culture Development. Co. Ltd. All rights reserved.</p>
 			</section>
 		</footer>
