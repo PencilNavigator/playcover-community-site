@@ -22,6 +22,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 		<!-- Montserrat font-->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+		<!-- Neon font -->
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 	</head>
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
@@ -49,9 +51,11 @@
 				<!-- secondary nav -->
 				<div class="hidden xl:flex items-center space-x-5">
 					<!-- donate button -->
-					<button class="donate-nav-button border border-gold dark:border-[#c7a246] rounded-md px-3 py-1 hover:border-gold-light dark:hover:border-gold-light transition-colors duration-200 group">
-						<span class="text-[1.05rem] text-gold dark:text-[#c7a246] group-hover:text-gold-light dark:group-hover:text-gold-light transition-colors duration-200"> Donate </span>
-					</button>
+					<div class="relative">
+						<button class="group donate-nav-button border-b-2 border-yellow-500 hover:border-b-4 bg-yellow-400 dark:bg-[#791c0c] dark:border-[#410e05] active:border-none rounded-md px-3 py-1 transition duration-100 ease-linear md:hover:translate-y-[-0.15rem]">
+							<span class="text-[1.05rem] text-white transition-colors duration-200"> Donate </span>
+						</button>
+					</div>
 
 					<!-- language button and menu-->
 					<ul>
@@ -183,7 +187,7 @@
 						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4 pt-4 lg:pt-6 text-center">
 							<!-- M1 -->
 							<div class="flex items-center md:h-10 md:w-52">
-								<a class="py-2 px-4 drop-shadow-sm bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 rounded-md cursor-pointer border-b-2 border-yellow-600 md:hover:border-b-4 md:hover:translate-y-[-0.15rem] active:border-none dark:border-[#410e05] dark:active:border-none transition duration-200 ease-linear" href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip"> Download for M1 Mac </a>
+								<a class="py-2 px-4 drop-shadow-sm bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 rounded-md cursor-pointer border-b-2 md:hover:border-b-4 border-yellow-600 md:hover:translate-y-[-0.15rem] active:border-none dark:border-[#410e05] dark:active:border-none transition duration-100 ease-linear" href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip"> Download for M1 Mac </a>
 							</div>
 
 							<!-- intel -->
@@ -239,6 +243,14 @@
 							<div class="group relative">
 								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="assets/genshin-impact-gameplay.jpeg" alt="Genshin Impact gameplay image" />
 								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="assets/genshin-impact-logo.png" alt="Genshin Impact logo image" />
+							</div>
+						</li>
+
+						<!-- kart rider -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="assets/kartrider-gameplay.png" alt="kart rider gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="assets/kartrider-cover.jpeg" alt="kart rider logo image" />
 							</div>
 						</li>
 
@@ -374,9 +386,9 @@
 			<!-- above line -->
 			<section class="flex md:items-end justify-between max-w-screen mx-auto pt-8 pl-[6%] md:pl-[5.1%] pr-16 md:pr-[5%] flex-col-reverse md:flex-row">
 				<!-- text -->
-				<div class="pt-6 md:pt-0 flex flex-col space-y-3">
+				<div class="pt-6 md:pt-0 flex flex-col space-y-2">
 					<!-- logo -->
-					<h1 class="font-medium text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
+					<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
 
 					<!-- legal notice and copyright claim -->
 					<div class="md:divide-x divide-gray-300 dark:divide-gray-600 flex items-center">
@@ -417,7 +429,12 @@
 			</section>
 
 			<!-- below line -->
-			<section class="flex flex-col md:flex-row md:justify-center pl-6 md:pl-0 pb-5">
+			<section class="flex flex-col md:flex-row md:justify-between pl-6 md:px-[4.40rem] pb-5 items-center">
+				<div class="relative">
+					<p class="font-neon font-medium text-lg text-transparent">Presented by Alexandr Forofeev</p>
+					<p class="font-neon font-medium text-lg absolute inset-0 z-30 dark:text-gray-300">Presented by Alexandr Forofeev</p>
+					<p class="font-neon font-medium text-lg text-transparent dark:text-red-500 absolute inset-0 blur-sm">Presented by Alexandr Forofeev</p>
+				</div>
 				<p class="inline">2021 ProfiSpieler © (BeiJing) Culture Development. Co. Ltd. All rights reserved.</p>
 			</section>
 		</footer>

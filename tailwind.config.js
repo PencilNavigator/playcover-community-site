@@ -32,6 +32,7 @@ module.exports = {
 		},
 		fontFamily: {
 			montserrat: "Montserrat, Arial, sans-serif",
+			neon: "'Quicksand', cursive;",
 		},
 	},
 	variants: {
