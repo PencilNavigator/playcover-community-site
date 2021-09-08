@@ -1,5 +1,4 @@
 if (localStorage.getItem("visited") == null) {
-	console.log("WORKING");
 	localStorage.setItem("visited", true);
 
 	themeBtn.classList.add("animate-pulse");
