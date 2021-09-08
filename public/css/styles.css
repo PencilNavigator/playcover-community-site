@@ -692,24 +692,14 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mt-6 {
@@ -882,10 +872,6 @@ video {
 
 .w-32 {
   width: 8rem;
-}
-
-.w-\[90\%\] {
-  width: 90%;
 }
 
 .w-4 {
@@ -1517,18 +1503,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pl-\[6\%\] {
-  padding-left: 6%;
-}
-
-.pr-16 {
-  padding-right: 4rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .pb-5 {
@@ -2175,16 +2149,6 @@ video {
     margin-right: 3.5rem;
   }
 
-  .md\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .md\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -2269,51 +2233,6 @@ video {
     padding-right: 0.5rem;
   }
 
-  .md\:px-\[2vw\] {
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-
-  .md\:px-\[4\.40rem\] {
-    padding-left: 4.40rem;
-    padding-right: 4.40rem;
-  }
-
-  .md\:px-\[10vw\] {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-
-  .md\:px-\[3vw\] {
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-
-  .md\:px-\[4vw\] {
-    padding-left: 4vw;
-    padding-right: 4vw;
-  }
-
-  .md\:px-\[5vw\] {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
-  .md\:px-\[4\.9vw\] {
-    padding-left: 4.9vw;
-    padding-right: 4.9vw;
-  }
-
-  .md\:px-\[4\.95vw\] {
-    padding-left: 4.95vw;
-    padding-right: 4.95vw;
-  }
-
-  .md\:px-\[0vw\] {
-    padding-left: 0vw;
-    padding-right: 0vw;
-  }
-
   .md\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -2326,28 +2245,12 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pl-\[5\.1\%\] {
-    padding-left: 5.1%;
-  }
-
-  .md\:pr-\[5\%\] {
-    padding-right: 5%;
-  }
-
   .md\:pb-\[0\] {
     padding-bottom: 0;
   }
 
   .md\:pl-0 {
     padding-left: 0px;
-  }
-
-  .md\:pl-\[0\] {
-    padding-left: 0;
-  }
-
-  .md\:pr-\[0\] {
-    padding-right: 0;
   }
 
   .md\:text-left {
