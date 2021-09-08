@@ -826,6 +826,14 @@ video {
   max-height: 17rem;
 }
 
+.max-h-\[10rem\] {
+  max-height: 10rem;
+}
+
+.max-h-\[14rem\] {
+  max-height: 14rem;
+}
+
 .min-h-\[4\.5rem\] {
   min-height: 4.5rem;
 }
@@ -2178,6 +2186,10 @@ video {
     width: 13rem;
   }
 
+  .md\:w-56 {
+    width: 14rem;
+  }
+
   .md\:w-\[100\%\] {
     width: 100%;
   }
@@ -2192,6 +2204,18 @@ video {
 
   .md\:max-w-\[27rem\] {
     max-width: 27rem;
+  }
+
+  .md\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .md\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .md\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .md\:flex-row {
@@ -2251,6 +2275,14 @@ video {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 
   .md\:text-left {
@@ -2364,6 +2396,24 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:py-1 {
