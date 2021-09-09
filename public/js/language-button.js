@@ -34,7 +34,11 @@ btn.addEventListener("click", (e) => {
 const mobileLangBtn = document.querySelector("button.mobile-language-button");
 const mobileLangMenu = document.querySelector(".mobile-language-menu");
 
-mobileLangBtn.addEventListener("click", () => {
+const toggleMobLangMenu = function () {
 	document.querySelector(".mobile-lang-icon").classList.toggle("rotate-180");
 	mobileLangMenu.classList.toggle("hidden");
+};
+
+mobileLangBtn.addEventListener("click", () => {
+	toggleMobLangMenu();
 });

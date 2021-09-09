@@ -5,6 +5,7 @@ let isMobileMenuOpen = false;
 
 const toggleMobileMenu = function () {
 	mobileMenu.classList.toggle("hidden");
+	document.querySelector("body").classList.toggle("overflow-hidden");
 };
 
 // add event listeners
@@ -15,6 +16,10 @@ mobileBtn.addEventListener("click", () => {
 		isMobileMenuOpen = true;
 	} else {
 		isMobileMenuOpen = false;
+	}
+
+	if (!mobileLangMenu.classList.contains("hidden")) {
+		toggleMobLangMenu();
 	}
 });
 
