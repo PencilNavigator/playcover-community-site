@@ -8,6 +8,7 @@ const contactModal = document.querySelector(".contact-modal");
 
 function toggleContactPopup() {
 	contactPopup.classList.toggle("hidden");
+	document.querySelector("body").classList.toggle("overflow-hidden");
 }
 
 function toggleContactPopupMob() {

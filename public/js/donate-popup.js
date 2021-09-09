@@ -8,6 +8,7 @@ const donateModal = document.querySelector(".donate-modal");
 
 function toggleDonatePopup() {
 	donatePopup.classList.toggle("hidden");
+	document.querySelector("body").classList.toggle("overflow-hidden");
 }
 
 function toggleDonatePopupMob() {
