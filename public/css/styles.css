@@ -748,6 +748,18 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-\[0\.1rem\] {
+  margin-top: 0.1rem;
+}
+
 .block {
   display: block;
 }
@@ -1532,6 +1544,11 @@ video {
 .py-\[0\.275rem\] {
   padding-top: 0.275rem;
   padding-bottom: 0.275rem;
+}
+
+.py-\[0\.26rem\] {
+  padding-top: 0.26rem;
+  padding-bottom: 0.26rem;
 }
 
 .pl-2 {
