@@ -1808,6 +1808,16 @@ video {
   filter: var(--tw-filter);
 }
 
+.contrast-125 {
+  --tw-contrast: contrast(1.25);
+  filter: var(--tw-filter);
+}
+
+.contrast-200 {
+  --tw-contrast: contrast(2);
+  filter: var(--tw-filter);
+}
+
 .drop-shadow-sm {
   --tw-drop-shadow: drop-shadow(0 1px 1px rgba(0,0,0,0.05));
   filter: var(--tw-filter);
@@ -1966,6 +1976,10 @@ video {
 
 .group:hover .group-hover\:duration-700 {
   transition-duration: 700ms;
+}
+
+.dark .dark\:relative {
+  position: relative;
 }
 
 .dark .dark\:block {
@@ -2138,6 +2152,14 @@ video {
 
 .dark .dark\:opacity-40 {
   opacity: 0.4;
+}
+
+.dark .dark\:opacity-0 {
+  opacity: 0;
+}
+
+.dark .dark\:opacity-100 {
+  opacity: 1;
 }
 
 .dark .dark\:shadow {

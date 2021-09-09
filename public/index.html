@@ -237,7 +237,7 @@
 
 						<img class="hidden dark:block max-w-xs md:max-w-[27rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700 transform md:group-hover:scale-105" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot dark" /> -->
 
-						<img class="relative max-w-s md:max-w-3xl 2xl:max-w-4xl rounded-lg" src="/assets/hero-image.png" alt="macbook with gameplay" />
+						<img class="hero-image max-w-s md:max-w-3xl 2xl:max-w-4xl rounded-lg" src="/assets/Macbook_Pro_00.png" alt="macbook with gameplay" />
 					</div>
 				</div>
 			</section>
@@ -562,6 +562,9 @@
 						perPage: 1,
 						width: "95%",
 					},
+					1200: {
+						perPage: 2,
+					},
 					1900: {
 						perPage: 3,
 					},
@@ -571,6 +574,22 @@
 				},
 			};
 			new Splide(".splide", config).mount();
+		</script>
+
+		<script>
+			const testArray = ["/assets/Macbook_Pro_00.png", "/assets/Macbook_Pro_01.png"];
+			let heroImage = document.querySelector(".hero-image");
+
+			let index = 1;
+
+			setInterval(function () {
+				heroImage.setAttribute("src", testArray[index]);
+
+				index++;
+				if (index == testArray.length) {
+					index = 0;
+				}
+			}, 5000);
 		</script>
 	</body>
 </html>
