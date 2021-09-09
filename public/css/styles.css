@@ -831,6 +831,18 @@ video {
   max-height: 13.7rem;
 }
 
+.max-h-\[18rem\] {
+  max-height: 18rem;
+}
+
+.max-h-\[17rem\] {
+  max-height: 17rem;
+}
+
+.max-h-\[17\.5rem\] {
+  max-height: 17.5rem;
+}
+
 .min-h-\[4\.5rem\] {
   min-height: 4.5rem;
 }
@@ -2450,6 +2462,12 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(7rem * var(--tw-space-x-reverse));
+    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:py-1 {
