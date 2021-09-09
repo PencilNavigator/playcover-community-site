@@ -705,24 +705,14 @@ video {
   margin-right: 1.25rem;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mt-6 {
@@ -743,14 +733,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .mb-5 {
@@ -1179,11 +1161,6 @@ video {
   margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
 }
 
-.divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-divide-opacity));
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -1357,6 +1334,22 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
 .from-logo-pink {
   --tw-gradient-from: #FF0F7B;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 15, 123, 0));
@@ -1380,6 +1373,16 @@ video {
 .from-green-200 {
   --tw-gradient-from: #a7f3d0;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(167, 243, 208, 0));
+}
+
+.from-\[\#C33764\] {
+  --tw-gradient-from: #C33764;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(195, 55, 100, 0));
+}
+
+.from-\[\#94294b\] {
+  --tw-gradient-from: #94294b;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(148, 41, 75, 0));
 }
 
 .to-logo-orange {
@@ -1574,8 +1577,8 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pb-16 {
@@ -1608,10 +1611,6 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .pl-5 {
@@ -2288,12 +2287,6 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:divide-x > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-x-reverse: 0;
-    border-right-width: calc(1px * var(--tw-divide-x-reverse));
-    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:rounded-none {
