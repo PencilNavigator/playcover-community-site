@@ -5,7 +5,6 @@ let isMobileMenuOpen = false;
 
 const toggleMobileMenu = function () {
 	mobileMenu.classList.toggle("hidden");
-	document.querySelector("body").classList.toggle("overflow-hidden");
 };
 
 // add event listeners
