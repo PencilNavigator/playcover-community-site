@@ -41,7 +41,8 @@
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
 					<a href="./" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Home </a>
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
+					<!-- download nav download -->
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
 					<a href="../changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
 					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
 					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
@@ -198,7 +199,7 @@
 						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4 pt-8 lg:pt-6 items-center text-center">
 							<!-- M1 -->
 							<div class="flex items-center md:h-10 md:w-52">
-								<a class="py-2 px-4 drop-shadow-sm bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 rounded-md cursor-pointer border-b-2 md:hover:border-b-4 border-yellow-600 md:hover:translate-y-[-0.15rem] active:border-none dark:border-[#410e05] dark:active:border-none transition duration-100 ease-linear" href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip"> Download for M1 Mac </a>
+								<a class="py-2 px-4 drop-shadow-sm bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 rounded-md cursor-pointer border-b-2 md:hover:border-b-4 border-yellow-600 md:hover:translate-y-[-0.15rem] active:border-none dark:border-[#410e05] dark:active:border-none transition duration-100 ease-linear" href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip"> Download for M1 Mac </a>
 							</div>
 
 							<!-- intel -->
@@ -216,14 +217,26 @@
 					<!-- build text -->
 					<div id="latest-build-text" class="hidden group lg:flex rounded-lg max-h-[17.5rem] 2xl:max-h-[25rem] w-[27.7rem] cursor-default border-2 dark:border-[#3d3d3d] hover:border-transparent dark:hover:border-transparent hover:shadow-lg hover:bg-white dark:hover:bg-[#363636] transition-all duration-300">
 						<div class="mt-6 mb-[24px] ml-8 mr-2 pr-2 overflow-hidden group-hover:overflow-y-auto text-gray-400 dark:text-[#636363] group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all duration-300 relative">
-							<h2 class="font-medium text-lg pb-4">Latest Update Info (0.7.0)</h2>
+							<h2 class="font-medium text-lg pb-4">Latest Update Info (0.7.3)</h2>
 
 							<ul class="text-sm space-y-4">
-								<li>In-game native controller support (you don’t need to setup anything, just connect controller as on your iPhone)</li>
-								<li>Game controller key mapping for games, that don’t support gamepads</li>
-								<li>Fixed bug with mouse reset on Burst(Ultimate) in Genshin Impact</li>
-								<li>More smooth mouse movement</li>
-								<li>Fixed improper scaling in Windowed mode</li>
+								<li>Game controller key mapping for games that don’t support gamepads (NOTICE: Genshin Impact's native controller support is not working for now)</li>
+								<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
+								<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
+								<li>Smoother mouse movement</li>
+								<li>Fixed improper scaling in Windowed mode (edited)</li>
+								<li>App launcher now allows you run apps directly from PlayCover</li>
+								<li>With 'Update PlayTools' context-menu option you can install new versions of in-game controls without reinstalling the whole app</li>
+								<li>If something goes wrong, you can erase PlayTools settings with 'Reset PlayTools settings' option instead of whole app cache clear</li>
+								<li>'Downloads' tab of sidebar contains links for latest decrypted app versions (I will extended this list and make this dynamic next update)</li>
+								<li>Fixed error with iCloud / Dropbox documents syncing folders</li>
+								<li>Now sidebar has fixed min width and also app has new minimum size</li>
+								<li>Improved downloads UI, so it will provide download link based on your region</li>
+								<li>Improved Settings Ui, so now you can copy the command</li>
+								<li>Multi-lang Support</li>
+								<li>Fixed crash on startup for some users</li>
+								<li>Now Alt/Option button also hides/shows menu bar, so you can easily access settings of Window control buttons</li>
+								<li>PlayCover shows a notification when finished installing an app</li>
 							</ul>
 						</div>
 					</div>
@@ -252,64 +265,64 @@
 						<!-- genshin impact -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/genshin-impact-gameplay.jpeg" alt="Genshin Impact gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/genshin-impact-logo.png" alt="Genshin Impact logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-gameplay.jpeg" alt="Genshin Impact gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-logo.png" alt="Genshin Impact logo image" />
 							</div>
 						</li>
 
 						<!-- kart rider -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/kartrider-gameplay.png" alt="kart rider gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/kartrider-cover.jpeg" alt="kart rider logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-gameplay.png" alt="kart rider gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-cover.jpeg" alt="kart rider logo image" />
 							</div>
 						</li>
 
 						<!-- among us  -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/Among us gameplay.jpeg" alt="among us gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/Among us logo.jpeg" alt="among us logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us gameplay.jpeg" alt="among us gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us logo.jpeg" alt="among us logo image" />
 							</div>
 						</li>
 
 						<!-- guardian tales  -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/guardian-tales-gameplay.png" alt="Guardian Tales gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/Guardian-Tales-Cover.jpeg" alt="Guardian Tales logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/guardian-tales-gameplay.png" alt="Guardian Tales gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Guardian-Tales-Cover.jpeg" alt="Guardian Tales logo image" />
 							</div>
 						</li>
 
 						<!-- wild rift -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/wildrift-gameplay.jpeg" alt="League of Legends Wild Rift gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/wildrift-logo.jpeg" alt="League of Legends Wild Rift logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-gameplay.jpeg" alt="League of Legends Wild Rift gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-logo.jpeg" alt="League of Legends Wild Rift logo image" />
 							</div>
 						</li>
 
 						<!-- honkai impact 3  -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/honkai-impact-3-gameplay.jpeg" alt="honkai impact 3 gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/honkai-impact-3-cover.jpeg" alt="honkai impact 3 logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-gameplay.jpeg" alt="honkai impact 3 gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-cover.jpeg" alt="honkai impact 3 logo image" />
 							</div>
 						</li>
 
 						<!-- arknights global -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/arknights-global-gameplay.jpeg" alt="arknights global gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/arknights-global-logo.png" alt="arknights global logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-gameplay.jpeg" alt="arknights global gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-logo.png" alt="arknights global logo image" />
 							</div>
 						</li>
 
 						<!-- mu archangel -->
 						<li class="splide__slide px-2 md:px-2" style="width: 10px">
 							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/mu-archangel-gameplay.jpeg" alt="mu archangel gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[100%] h-52 md:h-[15rem] 3xl:w-[150%]" src="/assets/mu-archangel-logo.jpeg" alt="mu archangel logo image" />
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-gameplay.jpeg" alt="mu archangel gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-logo.jpeg" alt="mu archangel logo image" />
 							</div>
 						</li>
 					</ul>

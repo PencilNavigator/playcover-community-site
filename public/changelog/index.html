@@ -37,7 +37,8 @@
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
 					<a href="/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
+					<!-- download nav download -->
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
 					<a href="../changelog/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Changelog </a>
 					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
 					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
@@ -77,13 +78,20 @@
 										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 简体中文 </a>
 									</li>
 									<li>
-										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> русский </a>
+										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Русский </a>
 									</li>
 									<li>
-										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Deutsche </a>
+										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 日本語 </a>
 									</li>
 									<li>
-										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> français </a>
+										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Deutsch </a>
+									</li>
+									<li>
+										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Bahasa Indonesia </a>
+									</li>
+
+									<li>
+										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 한국어 </a>
 									</li>
 									<li>
 										<a href="#" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Español </a>
@@ -270,7 +278,7 @@
 				<div class="flex flex-col">
 					<div class="h-20"><p class="text-sm">More new features are under development...</p></div>
 
-					<!-- 0.7.0 -->
+					<!-- 0.7.3 -->
 					<!-- copy for latest release -->
 					<article class="changelog-text pb-8">
 						<!-- latest release text -->
@@ -279,18 +287,30 @@
 							<div class="flex flex-col">
 								<!-- version and date -->
 								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="text-yellow-500 font-medium text-xl">0.7.0</h2>
-									<p class="text-sm">(x-09-2021)</p>
+									<h2 class="text-yellow-500 font-medium text-xl">0.7.3</h2>
+									<p class="text-sm">(10-09-2021)</p>
 								</div>
 
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>In-game native controller support ( you don’t need to setup anything, just connect controller as on your iPhone)</li>
-										<li>Game controller key mapping for games, that don’t support gamepads</li>
-										<li>Fixed bug with mouse reset on Burst(Ultimate) in Genshin</li>
-										<li>More smooth mouse movement</li>
-										<li>Fixed improper scaling in Windowed mode</li>
+										<li>Game controller key mapping for games that don’t support gamepads (NOTICE: Genshin Impact's native controller support is not working for now)</li>
+										<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
+										<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
+										<li>Smoother mouse movement</li>
+										<li>Fixed improper scaling in Windowed mode (edited)</li>
+										<li>App launcher now allows you run apps directly from PlayCover</li>
+										<li>With 'Update PlayTools' context-menu option you can install new versions of in-game controls without reinstalling the whole app</li>
+										<li>If something goes wrong, you can erase PlayTools settings with 'Reset PlayTools settings' option instead of whole app cache clear</li>
+										<li>'Downloads' tab of sidebar contains links for latest decrypted app versions (I will extended this list and make this dynamic next update)</li>
+										<li>Fixed error with iCloud / Dropbox documents syncing folders</li>
+										<li>Now sidebar has fixed min width and also app has new minimum size</li>
+										<li>Improved downloads UI, so it will provide download link based on your region</li>
+										<li>Improved Settings Ui, so now you can copy the command</li>
+										<li>Multi-lang Support</li>
+										<li>Fixed crash on startup for some users</li>
+										<li>Now Alt/Option button also hides/shows menu bar, so you can easily access settings of Window control buttons</li>
+										<li>PlayCover shows a notification when finished installing an app</li>
 									</ul>
 								</div>
 							</div>
@@ -300,7 +320,7 @@
 						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
 
 						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.6.2" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
+						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.7.3" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
 					</article>
 
 					<!-- 0.6.2 -->
