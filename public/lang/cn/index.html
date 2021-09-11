@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="site description" />
 		<meta name="keywords" content="8-12 words max" />
-		<title>Changelog</title>
+		<title>PlayCover</title>
 		<link href="/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.png" />
 		<script src="/js/local-storage-track.js"></script>
+
+		<!-- splide JS -->
+		<link href="/css/splide.min.css" rel="stylesheet" />
+		<link href="/css/splide-core.min.css" rel="stylesheet" />
 
 		<!-- fonts import -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,11 +28,11 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-40">
 			<div class="flex justify-between">
 				<!-- logo -->
 				<div class="flex items-center lg:mr-10 xl:pl-10">
-					<a href="../" class="flex items-center">
+					<a href="./" class="flex items-center">
 						<img class="h-9 rounded-lg" src="/assets/logo.svg" alt="" />
 						<span class="text-2xl pl-2 bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text font-semibold">PlayCover</span>
 					</a>
@@ -36,13 +40,13 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
+					<a href="./" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> 主页 </a>
 					<!-- download nav download -->
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="../changelog/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Changelog </a>
-					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
-					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
-					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> 下载 </a>
+					<a href="./changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> 更新日志 </a>
+					<a href="./faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> 常见问题解答 </a>
+					<a href="./credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> 学分 </a>
+					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">联系我们</button>
 				</div>
 
 				<!-- secondary nav -->
@@ -138,12 +142,12 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
+					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Home</a>
 					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Download</a>
-					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Changelog</a>
-					<a href="../faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
-					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
-					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
+					<a href="./changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
+					<a href="./faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
+					<a href="./credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
+					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">联系我们</button>
 
 					<!-- mobile language button -->
 					<button class="mobile-language-button text-gray-600 dark:text-gray-300 flex items-center space-x-1">
@@ -155,6 +159,7 @@
 							</svg>
 						</div>
 					</button>
+
 					<!-- mobile language menu -->
 					<div class="mobile-language-menu hidden rounded-lg">
 						<div class="w-[85vw] bg-gray-50 dark:bg-[#1E1E1E] shadow-inner grid grid-cols-2 place-items-center py-4 gap-y-5 text-gray-600 dark:text-gray-300 transition duration-200 ease-in-out">
@@ -175,471 +180,179 @@
 		</nav>
 
 		<!-- auto closer for lang menu -->
-		<!-- auto closer for lang menu -->
 		<div class="auto-closer hidden z-10 w-[100%] h-2 absolute"></div>
 
 		<!-- content -->
-		<main class="pb-16">
-			<!-- heading -->
-			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
-				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Changelog</span>
-				<span class="lg:hidden flex flex-col items-center text-4xl font-semibold text-gray-700 dark:text-yellow-500 transition duration-200 space-y-3">
-					<p>Changelog</p>
-				</span>
-			</header>
+		<main>
+			<!-- hero section -->
+			<section id="hero-content" class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-20 2xl:space-x-48 pt-28 pb-4 md:pb-8 lg:mt-auto">
+				<!-- text -->
+				<div id="hero-text" class="flex flex-col space-y-6">
+					<!-- intro text -->
+					<div id="intro-text" class="max-w-full flex flex-col items-center md:block dark:text-gray-300">
+						<!-- logo -->
+						<h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
 
-			<section class="px-[12%] pt-14 flex space-x-5 text-gray-700 dark:text-[#ADAEAD]">
-				<!-- left side -->
-				<aside class="flex flex-col items-center">
-					<!-- spinning circle and dotted line -->
-					<div class="flex flex-col items-center">
-						<!-- spinning circle -->
-						<div class="h-4 w-4 rounded-full border border-solid border-t-yellow-500 border-transparent animate-spin"></div>
-						<!-- dotted line -->
-						<div class="dotted-line border-l-2 border-dotted border-gray-300 dark:border-gray-600 h-[4.5rem]"></div>
-					</div>
+						<!-- hero text -->
+						<p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">允许您使用鼠标、键盘和控制器在 Mac 上全屏运行 iOS 应用程序。</p>
 
-					<!-- latest release -->
-					<div class="flex flex-col items-center">
-						<!-- yellow circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-yellow-500"></div>
-					</div>
+						<!-- Download buttons -->
+						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4 pt-8 lg:pt-6 items-center text-center">
+							<!-- M1 -->
+							<div class="flex items-center md:h-10 md:w-56">
+								<a class="py-2 px-16 drop-shadow-sm bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 rounded-md cursor-pointer border-b-2 md:hover:border-b-4 border-yellow-600 md:hover:translate-y-[-0.15rem] active:border-none dark:border-[#410e05] dark:active:border-none transition duration-100 ease-linear" href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip"> 下载 M1 Mac </a>
+							</div>
 
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
+							<!-- intel -->
+							<div class="flex items-center md:w-56">
+								<a class="py-2 px-11 cursor-default bg-gray-200 dark:bg-[#272727] text-gray-400 dark:text-[#494949] transition-colors duration-200 rounded-md" href="#"> 下载 Intel Mac </a>
 
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-					<!-- COPY for past releases -->
-					<div class="flex flex-col items-center">
-						<!-- vertical line *REMOVE HIDDEN -->
-						<div class="changelog-ruler h-2 border-l-2 border-solid border-gray-300 dark:border-gray-600"></div>
-						<!-- circle -->
-						<div class="h-3 w-3 rounded-full border-2 border-solid border-gray-400 dark:border-gray-400"></div>
-					</div>
-				</aside>
-
-				<!-- right side -->
-				<div class="flex flex-col">
-					<div class="h-20"><p class="text-sm">More new features are under development...</p></div>
-
-					<!-- 0.7.3 -->
-					<!-- copy for latest release -->
-					<article class="changelog-text pb-8">
-						<!-- latest release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="text-yellow-500 font-medium text-xl">0.7.3</h2>
-									<p class="text-sm">(10-09-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>Game controller key mapping for games that don’t support gamepads (NOTICE: Genshin Impact's native controller support is not working for now)</li>
-										<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
-										<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
-										<li>Smoother mouse movement</li>
-										<li>Fixed improper scaling in Windowed mode (edited)</li>
-										<li>App launcher now allows you run apps directly from PlayCover</li>
-										<li>With 'Update PlayTools' context-menu option you can install new versions of in-game controls without reinstalling the whole app</li>
-										<li>If something goes wrong, you can erase PlayTools settings with 'Reset PlayTools settings' option instead of whole app cache clear</li>
-										<li>'Downloads' tab of sidebar contains links for latest decrypted app versions (I will extended this list and make this dynamic next update)</li>
-										<li>Fixed error with iCloud / Dropbox documents syncing folders</li>
-										<li>Now sidebar has fixed min width and also app has new minimum size</li>
-										<li>Improved downloads UI, so it will provide download link based on your region</li>
-										<li>Improved Settings Ui, so now you can copy the command</li>
-										<li>Multi-lang Support</li>
-										<li>Fixed crash on startup for some users</li>
-										<li>Now Alt/Option button also hides/shows menu bar, so you can easily access settings of Window control buttons</li>
-										<li>PlayCover shows a notification when finished installing an app</li>
-									</ul>
+								<!-- coming soon text -->
+								<div class="relative text-gray-50 dark:text-gray-200">
+									<div class="transform rotate-12 absolute shadow text-[0.75rem] bg-gray-400 dark:bg-[#353535] rounded-full py-[2px] right-[-2.125rem] bottom-[0.2rem] md:right-[-1.4rem] md:bottom-[0.45rem] transition duration-200 cursor-default"><p class="w-24 text-center">coming soon</p></div>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
+					<!-- build text -->
+					<div id="latest-build-text" class="hidden group lg:flex rounded-lg max-h-[19.5rem] 2xl:max-h-[26.5rem] w-[27.7rem] cursor-default border-2 dark:border-[#3d3d3d] hover:border-transparent dark:hover:border-transparent hover:shadow-lg hover:bg-white dark:hover:bg-[#363636] transition-all duration-300">
+						<div class="mt-6 mb-[24px] ml-8 mr-2 pr-2 overflow-hidden group-hover:overflow-y-auto text-gray-400 dark:text-[#636363] group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all duration-300 relative">
+							<h2 class="font-medium text-lg pb-4">最新更新信息 (0.7.3)</h2>
 
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.7.3" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.6.2 -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.6.2</h2>
-									<p class="text-sm">(29-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>Keymapping elements will resize on window size change</li>
-										<li>Special indicator will be shown on entering and leaving editor mode</li>
-										<li>All parent UIViews scale properly (web announcements inside Genshin Impact are fixed, some games as such as Genshin Impact currently require restarting for proper scale after window change)</li>
-										<li>Fixed MenuBar that covered game window in Windowed mode</li>
-										<li>Resolved problem of not saving key mappings for some users</li>
-										<li>Fixed crash on entering party menu in Genshin Impact for some users</li>
-										<li>Improved graphics in 3x times</li>
-										<li>Total average memory usage by games decreased by x2 times</li>
-										<li>Fixed problem when camera movement vanished after cutscene</li>
-										<li>Camera now properly appears after mapping without additional manipulations</li>
-										<li>Now PlayCover contains automated crashes report system, which works not only inside app, but also every game converted with PlayCover</li>
-										<li>Started migrate games settings to PlayCover for syncing and easily management</li>
-									</ul>
-								</div>
-							</div>
+							<ul class="text-sm space-y-4">
+								<li>不支持游戏手柄的游戏的游戏控制器键映射（注意：Genshin Impact 的本机控制器支持目前不起作用）</li>
+								<li>修复了元神冲击中爆发（终极）时鼠标重置的错误</li>
+								<li>更流畅的鼠标移动</li>
+								<li>修复了窗口模式下不正确的缩放（已编辑）</li>
+								<li>应用启动器现在允许您直接从 PlayCover 运行应用</li>
+								<li>使用“更新 PlayTools”上下文菜单选项，您无需重新安装整个应用程序即可安装新版本的游戏内控件</li>
+								<li>如果出现问题，您可以使用“重置 PlayTools 设置”选项清除 PlayTools 设置，而不是清除整个应用程序缓存</li>
+								<li>侧边栏的“下载”选项卡包含最新解密应用程序版本的链接（我将扩展此列表并在下次更新时进行动态更新）</li>
+								<li>修复了 iCloud / Dropbox 文档同步文件夹的错误</li>
+								<li>现在侧边栏有固定的最小宽度，应用程序也有新的最小尺寸</li>
+								<li>改进了下载用户界面，因此它将根据您所在的地区提供下载链接</li>
+								<li>改进了设置用户界面，现在您可以复制命令</li>
+								<li>多语言支持</li>
+								<li>修复了某些用户启动时崩溃的问题</li>
+								<li>现在 Alt/Option 按钮还隐藏/显示菜单栏，因此您可以轻松访问窗口控制按钮的设置</li>
+								<li>PlayCover 在完成安装应用程序时显示通知</li>
+							</ul>
 						</div>
+					</div>
+				</div>
 
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
+				<!-- hero image -->
+				<div id="hero-image" class="">
+					<div class="group relative">
+						<!-- bg gradient -->
+						<!-- <div class="rounded-lg absolute -inset-0.5 bg-gradient-to-b from-red-500 to-yellow-500 blur opacity-30 dark:opacity-40 md:group-hover:opacity-50 md:dark:group-hover:opacity-70 transform md:group-hover:scale-105 transition ease-out duration-1000 group-hover:duration-700"></div> -->
 
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.6.2" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
+						<img class="shadow-md dark:hidden max-w-xs md:max-w-[44.7rem] 2xl:max-w-[55rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-light.png" alt="playcover screenshot light" />
 
-					<!-- 0.6.1 -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.6.1</h2>
-									<p class="text-sm">(22-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>This release contains the most common bug fixes of 0.6.0</li>
-										<li>NSInvocation Dynamic error on launch solved</li>
-										<li>Resolved problem when dock and menu bars sometimes are not hidden in Fullscreen mode</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.6.1" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.6.0 -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.6.0</h2>
-									<p class="text-sm">(22-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>'Fix login' option is now available for everyone. Follow <a href="https://www.youtube.com/watch?v=H3CoI84s_FI&t=94s" target="_blank" class="underline">video instruction</a> to use it. Also you can find <a href="https://www.applegamingwiki.com/wiki/PlayCover" target="_blank" class="underline">text version</a> here. If you have any problems, please, click on 'Troubleshoot' button. Be aware that all this you perform at your own responsibility, I am providing help with this method only for Supporters.</li>
-										<li>App decryption was significantly improved since last release</li>
-										<li>Keymapping elements are now saved properly. No more random vanishing.</li>
-										<li>Now dock and menu dock are hidden during Gaming mode. Press Alt or Option to switch between modes.</li>
-										<li>Fixed bug with mouse stuck after cutscenes in game</li>
-										<li>Alternative decryption method is now available for everyone</li>
-										<li>LMB / RMB / MMB bind (use Shift + R , L, M to bind)</li>
-										<li>Auto screen resize. Now screen will be resized automatically in such games as Wildrift, Among Us e.t.c. No more broken resolution</li>
-										<li>However if you would like to set custom resolution, you can use Shift + Arrows to move screen, or Shift + '+' / '-' to change screen width. Or Control + Shift + '+' / '-' to change screen height</li>
-										<li>External mouse users be aware, that right now you should unplug the mouse after each setup. I'll make feature to select Trackpad/ Mouse optionally in future</li>
-										<li>Intel user notice</li>
-										<li>Now to show or hide cursor, you will just need to press 'Alt' button. No need to hold anymore</li>
-										<li>Various UI bugs were fixed</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.6.0" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.5.0 -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.5.0</h2>
-									<p class="text-sm">(12-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>For those apps which currently crashes there is a new checkbox. Now you can export such apps for Sideloadly and then install on Mac</li>
-										<li>iOS support. With PlayCover, you can also play any game with Mouse & Keyboard support. Just enable them in Assistive Touch menu. Fullscreen is ofc disabled</li>
-										<li>System specific bug fixes</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.5.0" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.4.0 -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.4.0</h2>
-									<p class="text-sm">(10-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>In this release you still can't decrypt some apps, but this system was massively improved</li>
-										<li>If you have decryption error, please download .ipa from AppDb</li>
-										<li>Better error handling for decryption</li>
-										<li>New decryption method</li>
-										<li>New patch method</li>
-										<li>Now app will clear cache on crash</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.4.0" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.1.1 -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.1.1</h2>
-									<p class="text-sm">(09-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>Now you are able to use .ipa from iMazing or M1 Checker</li>
-										<li>Keymapping fix</li>
-										<li>Dynamic screen support</li>
-										<li>Fixed file open crashes</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.1.1" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.1.0-fix -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.1.0-fix</h2>
-									<p class="text-sm">(06-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>Fixed endless loading bug on discard File Open dialog</li>
-										<li>Improved log system (real time)</li>
-										<li>Optionally Fullscreen</li>
-										<li>Fixed bug when opened .ipa file will be deleted</li>
-										<li>Now app will be save in Documents/PlayCover folder</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.1.0-fix" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.1.0-beta -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.1.0-beta</h2>
-									<p class="text-sm">(05-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>Now you can import decrypted .ipa directly</li>
-										<li>Fixed "System Error 4"</li>
-										<li>Fixed bug with copying system files to zip</li>
-										<li>Fixed bug with "Minimum required OS version is 13.0"</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.1.0-beta" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
-
-					<!-- 0.0.2-alpha -->
-					<!-- copy for past releases -->
-					<article class="changelog-text pb-8">
-						<!-- release text -->
-						<div class="flex flex-col">
-							<!-- each release -->
-							<div class="flex flex-col">
-								<!-- version and date -->
-								<div class="flex space-x-5 items-center pb-2">
-									<h2 class="font-medium text-xl">0.0.2-alpha</h2>
-									<p class="text-sm">(04-08-2021)</p>
-								</div>
-
-								<!-- release notes -->
-								<div>
-									<ul class="text-sm space-y-2">
-										<li>This release just to publish source code</li>
-										<li>Fixed "App cannot be opened" error</li>
-										<li>Now the app is able to open any decrypted .app file ( you can find them by downloading .ipa from AppDb, renaming .ipa to .zip and extracting it)</li>
-										<li>Fullscreen and game controller currently not functional</li>
-										<li>Fixed icon size</li>
-										<li>Added debug log</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- line divide -->
-						<div class="border-t w-[100%] border-gray-300 dark:border-gray-600 my-3 mb-5"></div>
-
-						<!-- github release button -->
-						<a href="https://github.com/Letscoder/PlayCover/releases/tag/0.0.2-alpha" class="bg-gray-800 rounded text-sm text-gray-200 dark:text-gray-300 px-3 py-2" target="_blank">GitHub Release</a>
-					</article>
+						<img class="shadow-md hidden dark:block max-w-xs md:max-w-[44.7rem] 2xl:max-w-[55rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot light" />
+					</div>
 				</div>
 			</section>
 		</main>
+
+		<!-- splide js -->
+		<div class="flex justify-center mt-3 md:mt-0">
+			<div class="splide">
+				<!-- content -->
+				<div class="splide__track md:mx-14">
+					<ul class="h-64 md:h-80 splide__list">
+						<!-- genshin impact -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-gameplay.jpeg" alt="Genshin Impact gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-logo.png" alt="Genshin Impact logo image" />
+							</div>
+						</li>
+
+						<!-- kart rider -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-gameplay.png" alt="kart rider gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-cover.jpeg" alt="kart rider logo image" />
+							</div>
+						</li>
+
+						<!-- among us  -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us gameplay.jpeg" alt="among us gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us logo.jpeg" alt="among us logo image" />
+							</div>
+						</li>
+
+						<!-- guardian tales  -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/guardian-tales-gameplay.png" alt="Guardian Tales gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Guardian-Tales-Cover.jpeg" alt="Guardian Tales logo image" />
+							</div>
+						</li>
+
+						<!-- wild rift -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-gameplay.jpeg" alt="League of Legends Wild Rift gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-logo.jpeg" alt="League of Legends Wild Rift logo image" />
+							</div>
+						</li>
+
+						<!-- honkai impact 3  -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-gameplay.jpeg" alt="honkai impact 3 gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-cover.jpeg" alt="honkai impact 3 logo image" />
+							</div>
+						</li>
+
+						<!-- arknights global -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-gameplay.jpeg" alt="arknights global gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-logo.png" alt="arknights global logo image" />
+							</div>
+						</li>
+
+						<!-- mu archangel -->
+						<li class="splide__slide px-2 md:px-2" style="width: 10px">
+							<div class="group relative">
+								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-gameplay.jpeg" alt="mu archangel gameplay image" />
+								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-logo.jpeg" alt="mu archangel logo image" />
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- arrows -->
+				<div class="group splide__arrows">
+					<button class="splide__arrow splide__arrow--prev">
+						<div class="bg-yellow-500 h-8 w-9 flex items-center justify-center shadow-lg md:shadow-none md:bg-transparent rounded-full md:rounded-none dark:text-gray-600 text-gray-500 md:dark:group-hover:text-gray-300 md:group-hover:text-gray-900 transition duration-300">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+							</svg>
+						</div>
+					</button>
+					<button class="splide__arrow splide__arrow--next">
+						<div class="bg-yellow-500 h-8 w-9 flex items-center justify-center shadow-lg md:shadow-none md:bg-transparent rounded-full md:rounded-none dark:text-gray-600 text-gray-500 md:dark:group-hover:text-gray-300 md:group-hover:text-gray-900 transition duration-300">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+							</svg>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
 
 		<!-- donate popup -->
 		<section class="hidden donate-wrapper donate-popup z-40 fixed w-screen h-screen bg-[rgba(0,0,0,0.8)] dark:bg-[rgba(0,0,0,0.8)]">
 			<!-- modal -->
 			<div class="w-screen h-screen flex flex-col items-center justify-center">
-				<div class="donate-modal flex flex-col items-center lg:w-[30rem] bg-gradient-to-l from-purple-900 to-[#C33764] rounded-lg shadow">
+				<div class="donate-modal flex flex-col items-center lg:w-[30rem] bg-gradient-to-bl from-purple-900 to-[#C33764] rounded-lg shadow">
 					<!-- close button -->
 					<div class="relative pt-4">
 						<button class="donate-close-button absolute top-5 lg:top-4 left-[7.5rem] lg:left-48">
@@ -770,18 +483,18 @@
 					<!-- text -->
 					<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 						<!-- logo -->
-						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
+						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover 团队产品</h1>
 
 						<!-- alex credits -->
 						<div class="relative">
 							<!-- placeholder -->
-							<p class="text-lg text-transparent transition duration-200 ease-in-out">Presented by <span class="font-neon font-medium">Alexandr Forofeev</span></p>
+							<p class="text-lg text-transparent transition duration-200 ease-in-out">提出者 <span class="font-neon font-medium">Alexandr Forofeev</span></p>
 
 							<!-- text -->
-							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Presented by <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Forofeev</span></p>
+							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">提出者 <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Forofeev</span></p>
 
 							<!-- bg blur -->
-							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Presented by <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Forofeev</span></p>
+							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">提出者 <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Forofeev</span></p>
 						</div>
 					</div>
 
@@ -820,11 +533,11 @@
 				<section class="flex flex-col md:flex-row md:justify-between pb-5 md:items-center space-y-2">
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
-						<a href="../legal-notice/" class="pr-4 hover:text-yellow-500 underline text-left inline">Legal Notice</a>
-						<a href="mailto:ke@playcover.app" class="underline hover:text-yellow-500">Copyright Claims</a>
+						<a href="./legal-notice/" class="pr-4 hover:text-yellow-500 underline text-left inline">法律声明</a>
+						<a href="mailto:ke@playcover.app" class="underline hover:text-yellow-500">版权声明</a>
 					</div>
 
-					<p class="inline">Copyright © 2021 Alexandr Forofeev. All rights reserved.</p>
+					<p class="inline">Copyright © 2021 Alexandr Forofeev. 保留所有权利.</p>
 				</section>
 			</div>
 		</footer>
@@ -842,6 +555,38 @@
 		<script src="/js/contact-popup.js"></script>
 		<script src="/js/auto-closer.js"></script>
 		<script src="/js/animator.js"></script>
-		<script src="/js/changelog.js"></script>
+
+		<!-- splide js -->
+		<script src="/js/splide.min.js"></script>
+		<script>
+			const config = {
+				type: "loop",
+				perMove: 1,
+				pagination: false,
+				speed: 800,
+				width: "100%",
+				easing: "ease",
+				// padding: { right: 300 },
+				autoplay: true,
+				interval: 4000,
+				rewind: true,
+				breakpoints: {
+					800: {
+						perPage: 1,
+						width: "95%",
+					},
+					1200: {
+						perPage: 2,
+					},
+					1900: {
+						perPage: 3,
+					},
+					4000: {
+						perPage: 4,
+					},
+				},
+			};
+			new Splide(".splide", config).mount();
+		</script>
 	</body>
 </html>
