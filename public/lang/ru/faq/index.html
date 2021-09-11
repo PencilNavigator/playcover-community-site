@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="site description" />
 		<meta name="keywords" content="8-12 words max" />
-		<title>FAQ</title>
+		<title>ЧаВо</title>
 		<link href="/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.png" />
 		<script src="/js/local-storage-track.js"></script>
@@ -24,10 +24,10 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-0 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
-				<div class="flex items-center lg:mr-10 xl:pl-10">
+				<div class="flex items-center lg:mr-4 xl:pl-10">
 					<a href="../" class="flex items-center">
 						<img class="h-9 rounded-lg" src="/assets/logo.svg" alt="" />
 						<span class="text-2xl pl-2 bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text font-semibold">PlayCover</span>
@@ -36,13 +36,13 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
+					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Домой </a>
 					<!-- download nav download -->
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="../changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
-					<a href="../faq/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> FAQ </a>
-					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
-					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Скачать </a>
+					<a href="../changelog/" class="text-gray-800 w-44 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Журнал изменений </a>
+					<a href="../faq/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> ЧаВо </a>
+					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Кредиты </a>
+					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Связаться с нами</button>
 				</div>
 
 				<!-- secondary nav -->
@@ -51,7 +51,8 @@
 					<div class="relative">
 						<div class="h-[3.5rem] flex items-center">
 							<button class="group donate-nav-button border-b-2 border-yellow-500 hover:border-b-4 bg-yellow-400 dark:bg-[#791c0c] dark:border-[#410e05] active:border-none rounded-md px-3 py-[0.29rem] transition duration-100 ease-linear md:hover:translate-y-[-0.15rem]">
-								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donate </span>
+								<span class="text-[1.05rem] text-white transition-colors duration-200"> Пожертвовать
+ </span>
 							</button>
 						</div>
 					</div>
@@ -61,7 +62,7 @@
 						<li class="relative text-[1.05rem]">
 							<!-- language btn -->
 							<button class="language-button flex items-center space-x-1 border border-gray-500 dark:border-gray-400 rounded-md px-3 py-1 transition-colors duration-200 group hover:border-yellow-600 dark:hover:border-yellow-500">
-								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"> English </span>
+								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"> Русский </span>
 								<!-- icon -->
 								<div class="">
 									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 dark:text-gray-300 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -78,7 +79,7 @@
 										<a href="/lang/cn" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 简体中文 </a>
 									</li>
 									<li>
-										<a href="/lang/ru" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Русский </a>
+										<a href="/" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> English </a>
 									</li>
 									<li>
 										<a href="/lang/jp" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 日本語 </a>
@@ -136,12 +137,12 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Download</a>
-					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
-					<a href="../faq/" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">FAQ</a>
-					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
-					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
+					<a href="../" class="block text-gray-600 dark:text-gray-300">Домой</a>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Скачать</a>
+					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Журнал изменений</a>
+					<a href="../faq/" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">ЧаВо</a>
+					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Кредиты</a>
+					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Связаться с нами</button>
 
 					<!-- mobile language button -->
 					<button class="mobile-language-button text-gray-600 dark:text-gray-300 flex items-center space-x-1">
@@ -157,7 +158,7 @@
 					<div class="mobile-language-menu hidden rounded-lg">
 						<div class="w-[85vw] bg-gray-50 dark:bg-[#1E1E1E] shadow-inner grid grid-cols-2 place-items-center py-4 gap-y-5 text-gray-600 dark:text-gray-300 transition duration-200 ease-in-out">
 							<a href="/lang/cn">简体中文</a>
-							<a href="/lang/ru">Pусский</a>
+							<a href="/">English</a>
 							<a href="/lang/de">Deutsch</a>
 							<a href="/lang/jp">ホーム </a>
 							<a href="/lang/es">Español</a>
@@ -167,7 +168,8 @@
 						</div>
 					</div>
 
-					<button class="mobile-donate-button block text-gold">Donate</button>
+					<button class="mobile-donate-button block text-gold">Пожертвовать
+</button>
 				</div>
 			</div>
 		</nav>
@@ -179,11 +181,11 @@
 		<main class="pb-16">
 			<!-- heading -->
 			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
-				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Frequently asked questions</span>
+				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Часто задаваемые вопросы</span>
 				<span class="lg:hidden flex flex-col items-center text-4xl font-semibold text-gray-700 dark:text-yellow-500 transition duration-200 space-y-3">
-					<p>Frequently</p>
-					<p>asked</p>
-					<p>questions</p>
+					<p>Часто</p>
+					<p>задаваемые</p>
+					<p>вопросы</p>
 				</span>
 			</header>
 
@@ -192,7 +194,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Is there any step by step guide that I could follow?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Есть ли пошаговая инструкция?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -202,9 +204,9 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<a href="https://www.youtube.com/watch?v=H3CoI84s_FI" class="underline">YouTube Video Guide</a>
+						<a href="https://www.youtube.com/watch?v=H3CoI84s_FI" class="underline">Видео инструкция на YouTube</a>
 						<p><br /></p>
-						<p>Note: some options in PlayCover might differ from the video due to different versions being used however, the major steps remain the same.</p>
+						<p>Внимание: некоторые опции в PlayCover могут отличаться от тех, что в видео, ввиду использования разных версий; тем не менее, основные шаги остаются теми же.</p>
 					</div>
 				</div>
 
@@ -212,7 +214,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Keybindings Instructions</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Инструкция по назначению клавиш</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -222,55 +224,55 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p class="pl-3 mb-10 border-l-4 rounded-sm border-yellow-500">Last updated for version 0.7.0</p>
+						<p class="pl-3 mb-10 border-l-4 rounded-sm border-yellow-500">Последнее обновление для версии 0.7.3</p>
 
 						<ul class="list-inside list-disc">
-							<h2 class="text-xl font-bold">Keymapper Toggle</h2>
-							<li class=""><kbd>CTRL + P</kbd>&nbsp; →&nbsp; Toggle keymapping mode</li>
+							<h2 class="text-xl font-bold">Включение настройщика клавиатуры</h2>
+							<li class=""><kbd>CTRL + P</kbd>&nbsp; →&nbsp; Переход в режим назначения клавиш</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">Controller Guide:</h2>
-							<li class=""><kbd>CTRL + N</kbd> and then <kbd>Shift + A,X,B,Y</kbd></li>
-							<li class=""><kbd>Shift + 1,2,3,4</kbd> for Dpad</li>
-							<li class=""><kbd>Shift + 5,6,7,8</kbd> for L1,L2,R1,R2</li>
-							<li class=""><kbd>Shift + 9</kbd> for Left Stick</li>
-							<li class=""><kbd>Ctrl + M</kbd> for Right Stick</li>
+							<h2 class="text-xl font-bold">Руководство по контроллеру:</h2>
+							<li class=""><kbd>CTRL + N</kbd> а затем<kbd>Shift + A,X,B,Y</kbd></li>
+							<li class=""><kbd>Shift + 1,2,3,4</kbd> Для Крест (D-pad)</li>
+							<li class=""><kbd>Shift + 5,6,7,8</kbd> Для L1,L2,R1,R2</li>
+							<li class=""><kbd>Shift + 9</kbd> Для Left Stick</li>
+							<li class=""><kbd>Ctrl + M</kbd> Для Right Stick</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">Button Events:</h2>
-							<li class=""><kbd>CTRL + J</kbd>&nbsp; →&nbsp; Add W/A/S/D Joystick</li>
-							<li class=""><kbd>CTRL + N</kbd>&nbsp; →&nbsp; Add New Button</li>
-							<li class=""><kbd>CTRL + M</kbd>&nbsp; →&nbsp; Mouse/Camera Movements</li>
+							<h2 class="text-xl font-bold">События кнопки:</h2>
+							<li class=""><kbd>CTRL + J</kbd>&nbsp; →&nbsp; Добавить W/A/S/D Джойстик</li>
+							<li class=""><kbd>CTRL + N</kbd>&nbsp; →&nbsp; Добавить New Button</li>
+							<li class=""><kbd>CTRL + M</kbd>&nbsp; →&nbsp; Движение мыши/камеры</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">After Selecting a New Button:</h2>
-							<li class=""><kbd>*key*</kbd>&nbsp; →&nbsp; Press any key to bind it</li>
-							<li class=""><kbd>SHIFT + L (L key on keyboard)</kbd>&nbsp; →&nbsp; Bind Left Mouse Click</li>
-							<li class=""><kbd>SHIFT + R (R key on keyboard)</kbd>&nbsp; →&nbsp; Bind Right Mouse Click</li>
-							<li class=""><kbd>CTRL + ‘+’</kbd>&nbsp; →&nbsp; Increase Button Size</li>
-							<li class=""><kbd>CTRL + ‘-’</kbd>&nbsp; →&nbsp; Decrease Button Size</li>
-							<li class=""><kbd>CTRL + DEL (Backspace)</kbd>&nbsp; →&nbsp; Delete Button</li>
+							<h2 class="text-xl font-bold">После выбора новой кнопки:</h2>
+							<li class=""><kbd>*key*</kbd>&nbsp; →&nbsp; Нажмите любую клавишу для привязки</li>
+							<li class=""><kbd>SHIFT + L (Клавиша L на клавиатуре)</kbd>&nbsp; →&nbsp; Привязать левую кнопку мыши</li>
+							<li class=""><kbd>SHIFT + R (Клавиша R на клавиатуре)</kbd>&nbsp; →&nbsp; Привязать правую кнопку мыши</li>
+							<li class=""><kbd>CTRL + ‘+’</kbd>&nbsp; →&nbsp; Увеличить размер кнопок</li>
+							<li class=""><kbd>CTRL + ‘-’</kbd>&nbsp; →&nbsp; Уменьшить размер кнопок</li>
+							<li class=""><kbd>CTRL + DEL (Backspace)</kbd>&nbsp; →&nbsp; Удалить кнопку</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">Miscellaneous:</h2>
-							<li class=""><kbd>CTRL + F</kbd>&nbsp; →&nbsp; Adjust resolution</li>
+							<h2 class="text-xl font-bold">Прочее:</h2>
+							<li class=""><kbd>CTRL + F</kbd>&nbsp; →&nbsp; Настроить разрешение</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">Macros:</h2>
-							<li class=""><kbd>CTRL + U</kbd>&nbsp; →&nbsp; Start Recording</li>
-							<li class=""><kbd>CTRL + I</kbd>&nbsp; →&nbsp; End Recording</li>
-							<li class=""><kbd>CTRL + O</kbd>&nbsp; →&nbsp; Replay Macro</li>
+							<h2 class="text-xl font-bold">Макросы:</h2>
+							<li class=""><kbd>CTRL + U</kbd>&nbsp; →&nbsp; Начать запись</li>
+							<li class=""><kbd>CTRL + I</kbd>&nbsp; →&nbsp; Остановить запись</li>
+							<li class=""><kbd>CTRL + O</kbd>&nbsp; →&nbsp; Снова запустить макрос</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">Flow Control:</h2>
-							<li class=""><kbd>Press option</kbd>&nbsp; →&nbsp; Show/Hide cursor</li>
-							<li class=""><kbd>CTRL + W/A/S/D</kbd>&nbsp; →&nbsp; Nudge button</li>
+							<h2 class="text-xl font-bold">Контроль потока:</h2>
+							<li class=""><kbd>Нажмите option</kbd>&nbsp; →&nbsp; Показать/скрыть курсор</li>
+							<li class=""><kbd>CTRL + W/A/S/D</kbd>&nbsp; →&nbsp; Подвинуть кнопку</li>
 						</ul>
 					</div>
 				</div>
@@ -279,7 +281,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">What is the supporter version of PlayCover?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Что такое версия PlayCover для спонсоров?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -289,7 +291,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>The supporter version is a build that is pushed to supporters before releasing to the general public. It generally has newer and more features, but is more buggy. Check #how-to-donate channel in our <a href="https://discord.com/invite/FYVuF6CNzP" class="underline">discord server</a> for more info.</p>
+						<p>Версия для сторонников - это сборка, которая передается сторонникам перед выпуском для широкой публики. Обычно он имеет более новые и новые функции, но в нем больше ошибок. Проверьте #how-to-donate канал в нашем <a href="https://discord.com/invite/FYVuF6CNzP" class="underline">discord server</a> для дополнительной информации.</p>
 					</div>
 				</div>
 
@@ -297,7 +299,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">When will the next version of Playcover be released?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Когда будет выпущена новая версия PlayCover?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -307,7 +309,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>We may not be able to provide an ETA on the next release, but rest assured that we are working hard to develop the app and release new features!</p>
+						<p>Мы не можем предоставить расчетное время выпуска новой версии, но мы усердно работаем над разработкой приложения и новых функций!</p>
 					</div>
 				</div>
 
@@ -315,7 +317,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Do I have to disable SIP (System Integrity Protection) and is it safe to?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Нужно ли мне отключать SIP (System Integrity Protection) и безопасно ли это?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -325,7 +327,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Currently, yes. But disabling SIP will not be required in future releases. It is also very safe, especially on M1 Macs.</p>
+						<p>На данный момент да. Но отключение SIP перестанет быть необходимым в будущих версиях. Это безопасно, особенно на Mac M1.</p>
 					</div>
 				</div>
 
@@ -333,7 +335,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How can I change Genshin settings?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Как мне поменять настройки Genshin Impact?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -343,7 +345,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Press <kbd>option</kbd> key on your keyboard while playing to enable the cursor, then click top left icon (next to map) and click setting. There you can change all settings.</p>
+						<p>Нажмите клавишу option на клавиатуре во время игры, чтобы включить курсор, затем нажмите на иконку сверху слева (рядом с картой) и выберите настройки.</p>
 					</div>
 				</div>
 
@@ -351,7 +353,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How do I add mouse left or right clicks?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Как мне добавить левую и правую кнопки мыши?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -361,7 +363,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>To add mouse clicks, select a button and press 'Shift + L or R' (the actual L or R keys on keyboard, not the mouse buttons).</p>
+						<p>Чтобы добавить кнопки мыши, выберите кнопку и нажмите Shift+L или R (клавиши L и R на клавиатуре, а не кнопки мыши).</p>
 					</div>
 				</div>
 
@@ -369,7 +371,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Camera movement is not working in games?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Что делать, если в игре не работает камера?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -380,8 +382,8 @@
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<ul class="list-outside list-disc">
-							<li>Press CTRL + M in keymapper and place it in the middle.</li>
-							<li>Try disconnecting and reconnecting your mouse if an external one.</li>
+							<li>Нажмите CTRL + M в режиме назначения клавиш и поместите кнопку в центре экрана.</li>
+							<li>Попробуйте отключить и заново подключить мышь, если используете подключаемую мышь.</li>
 						</ul>
 					</div>
 				</div>
@@ -390,7 +392,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I have followed all steps correctly as shown in the video but my keybindings still don't work?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Я четко следовал инструкции на видео, но привязка клавиатуры все равно не работает?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -400,7 +402,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Please check if you moved the game to Applications folder after install. If yes, delete it and reinstall. Let it remain in the documents folder.</p>
+						<p>Проверьте, переместили ли вы игру в папку Программы после установки. Если да, удалите ее и переустановите. Оставьте ее в папке Документы.</p>
 					</div>
 				</div>
 
@@ -408,7 +410,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">PlayCover is not working even though I did all the steps correctly (even troubleshoot says that my system is correct)?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">PlayCover не работает, хотя я выполнил все шаги правильно (даже в результатах диагностики сказано, что моя система настроена правильно)?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -418,7 +420,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>You will need to install XCode from the app store.</p>
+						<p>Вам необходимо установить XCode из App Store.</p>
 					</div>
 				</div>
 
@@ -426,7 +428,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Do I have to reinstall Genshin Impact every PlayCover release?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Нужно ли мне переустанавливать Genshin Impact каждый раз, когда выходит новая версия PlayCover?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -436,7 +438,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Yes, in order to apply latest changes to the app you need to install the .ipa again, however you won’t need to download any game data, since that is just going to replace the old patched version.</p>
+						<p>Да, для применения новых изменений в программе вам нужно заново установить .ipa, однако вам не потребуется загружать данные игры, так как просто будет заменена старая пропатченная версия.</p>
 					</div>
 				</div>
 
@@ -444,7 +446,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How do I reset the "sudo nvram boot-args..." command?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Как мне отменить команду "sudo nvram boot-args..."</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -454,7 +456,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>By running the following command:</p>
+						<p>Запустив следующую команду:</p>
 						<br />
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args=""</code></div>
 					</div>
@@ -464,7 +466,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Why do I see random text when I restart or switch my Mac on?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Почему я вижу текст при перезагрузке или включении Mac?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -474,9 +476,9 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>That's called verbose mode, it displays what's going on inside the system. It was enabled by the following command:</p>
+						<p>Это режим подробного протоколирования, он показывает, что происходит в системе. Он был включен следующей командой:</p>
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args...</code></div>
-						<br />You can disable the texts by running the following commands in order:
+						<br />Вы можете отключить появление текста, запустив по порядку следующие команды:
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args=""</code></div>
 						<br />
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args="cs_enforcement_disable=1 amfi_get_out_of_my_way=1 keepsyms=1 intcoproc_unrestricted=1 amfi_unrestrict_task_for_pid=1 amfi_allow_any_signature=1 cs_debug=1"</code></div>
@@ -487,7 +489,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I can’t disable SIP or add boot-args because of a *blank password*?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Я не могу отключить SIP или добавить boot-args из-за пустого места вместо пароля?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -497,7 +499,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>This is normal. *nix systems blank out the password while you’re typing it. This is a form of security and it’s completely expected. Just type your password normally and press enter once you’re done.</p>
+						<p>Это нормально. В системах *nix не пишется пароль, пока вы его печатаете. Это сделано ради безопасности и абсолютно ожидаемо. Просто введите свой пароль как обычно и нажмите Enter.</p>
 					</div>
 				</div>
 
@@ -505,7 +507,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I am getting "This application is not supported on this Mac" error?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">У меня появляется ошибка «Это приложение не поддерживается на этом Mac»?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -515,7 +517,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Intel machines are currently not supported on Playcover. However, the devs are trying to make this happen so stay tuned.</p>
+						<p>В данный момент PlayCover не поддерживает компьютеры с процессором Intel. Однако разработчики стараются это исправить, так что следите за новостями.</p>
 					</div>
 				</div>
 
@@ -523,7 +525,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I am getting "You do not have permission" error?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">У меня появляется ошибка «У вас нет разрешения»?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -534,16 +536,16 @@
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<ol class="list-decimal">
-							<li>Make sure you have disabled SIP.</li>
+							<li>Проверьте, что вы отключили SIP.</li>
 							<li>
-								Or go in terminal and type: (without the <> text) <br />
+								Или перейдите в терминал и напишите: (без <>)<br />
 								<!-- code -->
 								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
 									<code class="text-yellow-400">chmod -R 755 &#60;drag app here&#62;</code>
 								</div>
 							</li>
 							<li>
-								Or go in terminal and type: (without the <> text) <br />
+								Или перейдите в терминал и напишите: (без <>)<br />
 								<!-- code -->
 								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
 									<code class="text-yellow-400">xattr -rd com.apple.quarantine &#60;drag app here&#62;</code>
@@ -557,7 +559,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Моя привязка клавиш в Genshin Impact работает странно, и перезапуск приложения и компьютера не помогает?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -568,10 +570,10 @@
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<p>
-							You could either: <br />
+							Вы можете:<br />
 							<br />
-							1. Delete and reinstall the app with 'clear app cache' checked. <br />
-							2. Run the following command to remove the .plist file which contains keybindings settings:
+							1. Удалить и переустановить приложение, поставив флажок «Очистить кэш приложения»<br />
+							2. Запустить следующую команду, чтобы удалить файл .plist, содержащий настройки назначения клавиш:
 						</p>
 						<!-- code -->
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
@@ -597,7 +599,7 @@
 					</div>
 
 					<!-- text -->
-					<p class="pt-12 pb-8 font-light text-white text-3xl">Donate via...</p>
+					<p class="pt-12 pb-8 font-light text-white text-3xl">Пожертвовать через ...</p>
 
 					<!-- donate options -->
 					<div class="flex items-center pb-4 space-x-4 px-8 lg:px-0">
@@ -663,7 +665,7 @@
 					<!-- content -->
 					<div class="flex flex-col items-center justify-center pt-2 md:pt-0">
 						<!-- heading -->
-						<p class="pt-12 pb-8 font-light text-white text-3xl md:text-4xl">Contact Details</p>
+						<p class="pt-12 pb-8 font-light text-white text-3xl md:text-4xl">Контактная информация</p>
 
 						<!-- details -->
 						<div class="flex flex-col items-center space-y-6 pb-10 pt-3">
@@ -681,8 +683,8 @@
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 								</svg>
-								<p class="text-lg font-medium pr-2 pl-1">Website</p>
-								<a href="mailto:Jay@playcover.app">AJ - kay@playcover.app</a>
+								<p class="text-lg font-medium pr-2 pl-1">Веб-сайт</p>
+								<a href="mailto:Jay@playcover.app">AJ - jay@playcover.app</a>
 							</div>
 
 							<!-- backend -->
@@ -700,7 +702,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
-								<p class="text-lg font-medium pr-2 pl-1">Commercial Agent</p>
+								<p class="text-lg font-medium pr-2 pl-1">Коммерческий агент</p>
 								<a href="mailto:ke@playcover.app">ProfiSpieler - ke@playcover.app</a>
 							</div>
 						</div>
@@ -717,18 +719,18 @@
 					<!-- text -->
 					<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 						<!-- logo -->
-						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
+						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">Продукт команды PlayCover</h1>
 
 						<!-- alex credits -->
 						<div class="relative">
 							<!-- placeholder -->
-							<p class="text-lg text-transparent transition duration-200 ease-in-out">Presented by <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent transition duration-200 ease-in-out">Представлено <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- text -->
-							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Presented by <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Представлено <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- bg blur -->
-							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Presented by <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Представлено <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 						</div>
 					</div>
 
@@ -768,10 +770,10 @@
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
 						<a href="../legal-notice/" pr-4 hidden hover:text-yellow-500 underline text-left">Legal Notice</a>
-						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Copyright Claims</a>
+						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Жалобы на нарушение авторских прав</a>
 					</div>
 
-					<p class="inline">Copyright © 2021 Alexandr Dorofeev. All rights reserved.</p>
+					<p class="inline">Copyright © 2021 Alexandr Dorofeev. Все права защищены.</p>
 				</section>
 			</div>
 		</footer>
