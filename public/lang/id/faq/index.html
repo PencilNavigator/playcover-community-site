@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="site description" />
 		<meta name="keywords" content="8-12 words max" />
-		<title>FAQ</title>
+		<title>Pertanyaan umum</title>
 		<link href="/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.png" />
 		<script src="/js/local-storage-track.js"></script>
@@ -24,10 +24,10 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-1 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
-				<div class="flex items-center lg:mr-10 xl:pl-10">
+				<div class="flex items-center lg:mr-2 xl:pl-10">
 					<a href="../" class="flex items-center">
 						<img class="h-9 rounded-lg" src="/assets/logo.svg" alt="" />
 						<span class="text-2xl pl-2 bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text font-semibold">PlayCover</span>
@@ -36,13 +36,13 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
+					<a href="../" class="w-20 text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Halaman Utama </a>
 					<!-- download nav download -->
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="../changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
-					<a href="../faq/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> FAQ </a>
-					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
-					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Unduhan </a>
+					<a href="../changelog/" class="w-24 text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Sejarah Perubahan </a>
+					<a href="../faq/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Pertanyaan umum </a>
+					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Kredit </a>
+					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Pesan Bantuan</button>
 				</div>
 
 				<!-- secondary nav -->
@@ -51,7 +51,7 @@
 					<div class="relative">
 						<div class="h-[3.5rem] flex items-center">
 							<button class="group donate-nav-button border-b-2 border-yellow-500 hover:border-b-4 bg-yellow-400 dark:bg-[#791c0c] dark:border-[#410e05] active:border-none rounded-md px-3 py-[0.29rem] transition duration-100 ease-linear md:hover:translate-y-[-0.15rem]">
-								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donate </span>
+								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donasi </span>
 							</button>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 						<li class="relative text-[1.05rem]">
 							<!-- language btn -->
 							<button class="language-button flex items-center space-x-1 border border-gray-500 dark:border-gray-400 rounded-md px-3 py-1 transition-colors duration-200 group hover:border-yellow-600 dark:hover:border-yellow-500">
-								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"> English </span>
+								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 text-sm"> Bahasa Indonesia </span>
 								<!-- icon -->
 								<div class="">
 									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 dark:text-gray-300 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -80,14 +80,14 @@
 									<li>
 										<a href="/lang/ru" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Русский </a>
 									</li>
-									<li>
+									<li class="hidden">
 										<a href="/lang/jp" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 日本語 </a>
 									</li>
 									<li>
 										<a href="/lang/de" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Deutsch </a>
 									</li>
 									<li>
-										<a href="/lang/id" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Bahasa Indonesia </a>
+										<a href="/lang/id" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> English </a>
 									</li>
 
 									<li>
@@ -136,16 +136,16 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Download</a>
-					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
-					<a href="../faq/" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">FAQ</a>
-					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
-					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
+					<a href="../" class="block text-gray-600 dark:text-gray-300">Halaman Utama</a>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Unduhan</a>
+					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Sejarah Perubahan</a>
+					<a href="../faq/" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Pertanyaan umum</a>
+					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Kredit</a>
+					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Pesan Bantuan</button>
 
 					<!-- mobile language button -->
 					<button class="mobile-language-button text-gray-600 dark:text-gray-300 flex items-center space-x-1">
-						<p class="pl-3">English</p>
+						<p class="pl-3">Bahasa Indonesia</p>
 						<!-- icon -->
 						<div class="pt-0">
 							<svg xmlns="http://www.w3.org/2000/svg" class="mobile-lang-icon transform h-5 w-5 transition-colors duration-200 group-hover:text-pink-500" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -159,15 +159,15 @@
 							<a href="/lang/cn">简体中文</a>
 							<a href="/lang/ru">Pусский</a>
 							<a href="/lang/de">Deutsch</a>
-							<a href="/lang/jp">ホーム </a>
+							<a href="/lang/jp" class="hidden">ホーム </a>
 							<a href="/lang/es">Español</a>
 							
 							<a href="/lang/kr">한국어</a>
-							<a href="/lang/id" class="flex flex-col items-center justify-center">Bahasa <span>Indonesia</span> </a>
+							<a href="/" class="flex flex-col items-center justify-center">English </a>
 						</div>
 					</div>
 
-					<button class="mobile-donate-button block text-gold">Donate</button>
+					<button class="mobile-donate-button block text-gold">Donasi</button>
 				</div>
 			</div>
 		</nav>
@@ -179,11 +179,9 @@
 		<main class="pb-16">
 			<!-- heading -->
 			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
-				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Frequently asked questions</span>
+				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Pertanyaan umum</span>
 				<span class="lg:hidden flex flex-col items-center text-4xl font-semibold text-gray-700 dark:text-yellow-500 transition duration-200 space-y-3">
-					<p>Frequently</p>
-					<p>asked</p>
-					<p>questions</p>
+					<p>Pertanyaan umum</p>
 				</span>
 			</header>
 
@@ -192,7 +190,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Is there any step by step guide that I could follow?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Apakah ada guide yang bisa diikuti?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -202,9 +200,9 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<a href="https://www.youtube.com/watch?v=H3CoI84s_FI" class="underline">YouTube Video Guide</a>
+						<a href="https://www.youtube.com/watch?v=H3CoI84s_FI" class="underline">Youtube Video Guide</a>
 						<p><br /></p>
-						<p>Note: some options in PlayCover might differ from the video due to different versions being used however, the major steps remain the same.</p>
+						<p>Catatan: beberapa opsi di PlayCover mungkin berbeda karena perbedaan versi yang digunakan, tapi langkah-langkah utama masih sama</p>
 					</div>
 				</div>
 
@@ -212,7 +210,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Keybindings Instructions</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Petunjuk Keybindings</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -222,16 +220,16 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p class="pl-3 mb-10 border-l-4 rounded-sm border-yellow-500">Last updated for version 0.7.0</p>
+						<p class="pl-3 mb-10 border-l-4 rounded-sm border-yellow-500">Terakhir diupdate untuk versi 0.7.0</p>
 
 						<ul class="list-inside list-disc">
-							<h2 class="text-xl font-bold">Keymapper Toggle</h2>
-							<li class=""><kbd>CTRL + P</kbd>&nbsp; →&nbsp; Toggle keymapping mode</li>
+							<h2 class="text-xl font-bold">Tombol Keymapper</h2>
+							<li class=""><kbd>CTRL + P</kbd>&nbsp; →&nbsp; Tombol mode Keymapper</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">Controller Guide:</h2>
-							<li class=""><kbd>CTRL + N</kbd> and then <kbd>Shift + A,X,B,Y</kbd></li>
+							<h2 class="text-xl font-bold">Panduan Pengontrol:</h2>
+							<li class=""><kbd>CTRL + N</kbd> Lalu <kbd>Shift + A,X,B,Y</kbd></li>
 							<li class=""><kbd>Shift + 1,2,3,4</kbd> for Dpad</li>
 							<li class=""><kbd>Shift + 5,6,7,8</kbd> for L1,L2,R1,R2</li>
 							<li class=""><kbd>Shift + 9</kbd> for Left Stick</li>
@@ -239,15 +237,15 @@
 
 							<br />
 
-							<h2 class="text-xl font-bold">Button Events:</h2>
-							<li class=""><kbd>CTRL + J</kbd>&nbsp; →&nbsp; Add W/A/S/D Joystick</li>
-							<li class=""><kbd>CTRL + N</kbd>&nbsp; →&nbsp; Add New Button</li>
-							<li class=""><kbd>CTRL + M</kbd>&nbsp; →&nbsp; Mouse/Camera Movements</li>
+							<h2 class="text-xl font-bold">Acara Tombol:</h2>
+							<li class=""><kbd>CTRL + J</kbd>&nbsp; →&nbsp; Tambah W/A/S/D Joystick</li>
+							<li class=""><kbd>CTRL + N</kbd>&nbsp; →&nbsp; Tambah tombol baru</li>
+							<li class=""><kbd>CTRL + M</kbd>&nbsp; →&nbsp; Mouse/Gerakan Camera</li>
 
 							<br />
 
-							<h2 class="text-xl font-bold">After Selecting a New Button:</h2>
-							<li class=""><kbd>*key*</kbd>&nbsp; →&nbsp; Press any key to bind it</li>
+							<h2 class="text-xl font-bold">Setelah Memilih Tombol Baru:</h2>
+							<li class=""><kbd>*key*</kbd>&nbsp; →&nbsp; Tekan tombol apapun untuk di bind</li>
 							<li class=""><kbd>SHIFT + L (L key on keyboard)</kbd>&nbsp; →&nbsp; Bind Left Mouse Click</li>
 							<li class=""><kbd>SHIFT + R (R key on keyboard)</kbd>&nbsp; →&nbsp; Bind Right Mouse Click</li>
 							<li class=""><kbd>CTRL + ‘+’</kbd>&nbsp; →&nbsp; Increase Button Size</li>
@@ -256,21 +254,21 @@
 
 							<br />
 
-							<h2 class="text-xl font-bold">Miscellaneous:</h2>
-							<li class=""><kbd>CTRL + F</kbd>&nbsp; →&nbsp; Adjust resolution</li>
+							<h2 class="text-xl font-bold">Lain lain:</h2>
+							<li class=""><kbd>CTRL + F</kbd>&nbsp; →&nbsp; Atur resolusi</li>
 
 							<br />
 
 							<h2 class="text-xl font-bold">Macros:</h2>
-							<li class=""><kbd>CTRL + U</kbd>&nbsp; →&nbsp; Start Recording</li>
-							<li class=""><kbd>CTRL + I</kbd>&nbsp; →&nbsp; End Recording</li>
+							<li class=""><kbd>CTRL + U</kbd>&nbsp; →&nbsp; Rekam</li>
+							<li class=""><kbd>CTRL + I</kbd>&nbsp; →&nbsp; Berhenti</li>
 							<li class=""><kbd>CTRL + O</kbd>&nbsp; →&nbsp; Replay Macro</li>
 
 							<br />
 
 							<h2 class="text-xl font-bold">Flow Control:</h2>
-							<li class=""><kbd>Press option</kbd>&nbsp; →&nbsp; Show/Hide cursor</li>
-							<li class=""><kbd>CTRL + W/A/S/D</kbd>&nbsp; →&nbsp; Nudge button</li>
+							<li class=""><kbd>Press option</kbd>&nbsp; →&nbsp; Tampilkan/Sembunyikan cursos</li>
+							<li class=""><kbd>CTRL + W/A/S/D</kbd>&nbsp; →&nbsp; Geser tombol</li>
 						</ul>
 					</div>
 				</div>
@@ -279,7 +277,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">What is the supporter version of PlayCover?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Apa itu PlayCover versi supporter?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -289,7 +287,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>The supporter version is a build that is pushed to supporters before releasing to the general public. It generally has newer and more features, but is more buggy. Check #how-to-donate channel in our <a href="https://discord.com/invite/FYVuF6CNzP" class="underline">discord server</a> for more info.</p>
+						<p>Versi supporter adalah versi yang diberikan ke supporter sebelum dirilis ke pengguna umum. Versi ini memiliki fitur-fitur baru, tapi memiliki bug lebih banyak. Cek channel #how-to-donate di server discord kita untuk informasi lebih lanjut.</p>
 					</div>
 				</div>
 
@@ -297,7 +295,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">When will the next version of Playcover be released?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Kapan versi PlayCover selanjutnya akan rilis?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -307,7 +305,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>We may not be able to provide an ETA on the next release, but rest assured that we are working hard to develop the app and release new features!</p>
+						<p>Kita mungkin tidak bisa memberikan tanggal tepat untuk rilis selanjutnya, tapi jangan khawatir karena kita bekerja keras untuk mengembangkan app dan merilis fitur baru!</p>
 					</div>
 				</div>
 
@@ -315,7 +313,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Do I have to disable SIP (System Integrity Protection) and is it safe to?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Apakah SIP (System Integrity Protection) harus di disable? Apakah itu aman?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -325,7 +323,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Currently, yes. But disabling SIP will not be required in future releases. It is also very safe, especially on M1 Macs.</p>
+						<p>Sementara, iya. Tapi disable SIP tidak akan diperlukan pada rilis yang akan mendatang. Itu juga aman, terutama di Mac M1.</p>
 					</div>
 				</div>
 
@@ -333,7 +331,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How can I change Genshin settings?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Bagaimana cara mengatur pengaturan Genshin?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -343,7 +341,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Press <kbd>option</kbd> key on your keyboard while playing to enable the cursor, then click top left icon (next to map) and click setting. There you can change all settings.</p>
+						<p>Di dalam game, tekan tombol Option di keyboard untuk menampilkan cursor. Lalu tekan icon di kiri atas (sebelah map) dan klik settings. Disana semua pengaturan bisa diubah.</p>
 					</div>
 				</div>
 
@@ -351,7 +349,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How do I add mouse left or right clicks?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Gimana cara menambahkan klik kiri dan kanan?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -361,7 +359,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>To add mouse clicks, select a button and press 'Shift + L or R' (the actual L or R keys on keyboard, not the mouse buttons).</p>
+						<p>Untuk menambahkan mouse click, pilih tombol dan tekan 'Shift + L atau R' (tombol L dan R di keyboard, bukan di mouse).</p>
 					</div>
 				</div>
 
@@ -369,7 +367,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Camera movement is not working in games?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Gerakan kamera tidak berfungsi di game?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -380,8 +378,8 @@
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<ul class="list-outside list-disc">
-							<li>Press CTRL + M in keymapper and place it in the middle.</li>
-							<li>Try disconnecting and reconnecting your mouse if an external one.</li>
+							<li>Tekan CTRL + M di keymapper lalu tempatkan di tengah.</li>
+							<li>Jika menggunakan mouse external, coba cabut dan pasang mouse.</li>
 						</ul>
 					</div>
 				</div>
@@ -390,7 +388,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I have followed all steps correctly as shown in the video but my keybindings still don't work?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Semua langkah yang ditampilkan di video sudah dijalankan dengan benar tapi keybindings masih tidak berfungsi.</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -400,7 +398,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Please check if you moved the game to Applications folder after install. If yes, delete it and reinstall. Let it remain in the documents folder.</p>
+						<p>Cek apabila game dipindah ke folder Applications setelah di install. Jika iya, hapus dan reinstall. Biarkan game berada di folder Documents.</p>
 					</div>
 				</div>
 
@@ -408,7 +406,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">PlayCover is not working even though I did all the steps correctly (even troubleshoot says that my system is correct)?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">PlayCover tidak berjalan meskipun sudah mengikuti petunjuk dengan benar (troubleshoot juga menunjukkan sistem sudah benar)</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -418,7 +416,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>You will need to install XCode from the app store.</p>
+						<p>XCode harus di install dari App Store.</p>
 					</div>
 				</div>
 
@@ -426,7 +424,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Do I have to reinstall Genshin Impact every PlayCover release?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Apakah Genshin Impact harus reinstall tiap rilis PlayCover terbaru?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -436,7 +434,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Yes, in order to apply latest changes to the app you need to install the .ipa again, however you won’t need to download any game data, since that is just going to replace the old patched version.</p>
+						<p>Iya, untuk menerapkan perubahan terbaru .ipa harus di install ulang. Tapi, Game Data tidak perlu di download, karena itu hanya akan menggantikan versi lama yang di patch.</p>
 					</div>
 				</div>
 
@@ -444,7 +442,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">How do I reset the "sudo nvram boot-args..." command?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Bagaimana cara reset command “sudo nvram boot-args…”?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -454,7 +452,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>By running the following command:</p>
+						<p>Dengan menjalankan command berikut:</p>
 						<br />
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args=""</code></div>
 					</div>
@@ -464,7 +462,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Why do I see random text when I restart or switch my Mac on?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Kenapa ada teks random muncul saat Mac di restart atau dinyalakan?</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -474,9 +472,9 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>That's called verbose mode, it displays what's going on inside the system. It was enabled by the following command:</p>
+						<p>Namanya mode verbose, teks menunjukkan apa yang sedang dilakukan sistem. Verbose mode diaktifkan dengan command berikut:</p>
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args...</code></div>
-						<br />You can disable the texts by running the following commands in order:
+						<br />Teks bisa di disable dengan menjalankan command berikut secara urut:
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args=""</code></div>
 						<br />
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args="cs_enforcement_disable=1 amfi_get_out_of_my_way=1 keepsyms=1 intcoproc_unrestricted=1 amfi_unrestrict_task_for_pid=1 amfi_allow_any_signature=1 cs_debug=1"</code></div>
@@ -487,7 +485,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I can’t disable SIP or add boot-args because of a *blank password*?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">SIP tidak bisa disable dan tidak bisa menambah boot-args karena *blank password*</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -497,7 +495,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>This is normal. *nix systems blank out the password while you’re typing it. This is a form of security and it’s completely expected. Just type your password normally and press enter once you’re done.</p>
+						<p>Ini normal. Sistem nix memang mengosongkan password saat diketik. Ini hanya bentuk keamanan dan memang sengaja. Ketik password seperti biasanya dan tekan enter jika sudah. </p>
 					</div>
 				</div>
 
@@ -505,7 +503,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I am getting "This application is not supported on this Mac" error?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Error “This application is not supported on this Mac” muncul.</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -515,7 +513,7 @@
 
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
-						<p>Intel machines are currently not supported on Playcover. However, the devs are trying to make this happen so stay tuned.</p>
+						<p>Perangkat Intel sementara tidak didukung oleh PlayCover. Pantau terus karena developer sedang bekerja untuk mendukung perangkat Intel</p>
 					</div>
 				</div>
 
@@ -523,7 +521,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">I am getting "You do not have permission" error?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Error “You do not have permission” muncul</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -534,16 +532,16 @@
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<ol class="list-decimal">
-							<li>Make sure you have disabled SIP.</li>
+							<li>Pastikan SIP sudah disabled</li>
 							<li>
-								Or go in terminal and type: (without the <> text) <br />
+								Atau masuk terminal dan ketik: (tanpa teks <>) <br />
 								<!-- code -->
 								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
 									<code class="text-yellow-400">chmod -R 755 &#60;drag app here&#62;</code>
 								</div>
 							</li>
 							<li>
-								Or go in terminal and type: (without the <> text) <br />
+								Atau masuk terminal dan ketik: (tanpa teks <>) <br />
 								<!-- code -->
 								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
 									<code class="text-yellow-400">xattr -rd com.apple.quarantine &#60;drag app here&#62;</code>
@@ -557,7 +555,7 @@
 				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
 					<!-- question -->
 					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-5 xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-md border border-gray-500 dark:border-[#555555] bg-gray-50 dark:bg-[#2b2b2b] shadow dark:shadow transition duration-200 cursor-pointer">
-						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either?</p>
+						<p class="xl:max-w-[61rem] pl-2 pr-4 py-5">Keybindings di Genshin Impact bertingkah aneh dan restart app dan Mac tidak membantu</p>
 
 						<!-- arrow icon -->
 						<span>
@@ -568,10 +566,10 @@
 					<!-- answer -->
 					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
 						<p>
-							You could either: <br />
+							Coba: <br />
 							<br />
-							1. Delete and reinstall the app with 'clear app cache' checked. <br />
-							2. Run the following command to remove the .plist file which contains keybindings settings:
+							1. Hapus dan reinstall app dengan memilih ‘clear app cache’. <br />
+							2. Jalankan command berikut untuk menghapus file .plist yang mengandung pengaturan keybindings:
 						</p>
 						<!-- code -->
 						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
@@ -597,7 +595,7 @@
 					</div>
 
 					<!-- text -->
-					<p class="pt-12 pb-8 font-light text-white text-3xl">Donate via...</p>
+					<p class="pt-12 pb-8 font-light text-white text-3xl">Donasi melalui...</p>
 
 					<!-- donate options -->
 					<div class="flex items-center pb-4 space-x-4 px-8 lg:px-0">
@@ -696,7 +694,7 @@
 							</div>
 
 							<!-- commercial agent -->
-							<div class="flex flex-col items-center text-white">
+							<div class="hidden  flex-col items-center text-white">
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
@@ -717,18 +715,18 @@
 					<!-- text -->
 					<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 						<!-- logo -->
-						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
+						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">Produk Tim PlayCover</h1>
 
 						<!-- alex credits -->
 						<div class="relative">
 							<!-- placeholder -->
-							<p class="text-lg text-transparent transition duration-200 ease-in-out">Presented by <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent transition duration-200 ease-in-out">Disajikan oleh <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- text -->
-							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Presented by <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Disajikan oleh <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- bg blur -->
-							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Presented by <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Disajikan oleh <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 						</div>
 					</div>
 
@@ -768,7 +766,7 @@
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
 						<a href="../legal-notice/" pr-4 hidden hover:text-yellow-500 underline text-left">Legal Notice</a>
-						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Copyright Claims</a>
+						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Klaim Hak Cipta</a>
 					</div>
 
 					<p class="inline">Copyright © 2021 Alexandr Dorofeev. All rights reserved.</p>

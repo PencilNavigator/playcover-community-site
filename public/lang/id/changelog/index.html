@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="site description" />
 		<meta name="keywords" content="8-12 words max" />
-		<title>Changelog</title>
+		<title>Sejarah Perubahan</title>
 		<link href="/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.png" />
 		<script src="/js/local-storage-track.js"></script>
@@ -24,10 +24,10 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-1 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
-				<div class="flex items-center lg:mr-10 xl:pl-10">
+				<div class="flex items-center lg:mr-2 xl:pl-10">
 					<a href="../" class="flex items-center">
 						<img class="h-9 rounded-lg" src="/assets/logo.svg" alt="" />
 						<span class="text-2xl pl-2 bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text font-semibold">PlayCover</span>
@@ -36,13 +36,13 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
+					<a href="../" class="w-20 text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Halaman Utama </a>
 					<!-- download nav download -->
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="../changelog/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Changelog </a>
-					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
-					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
-					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.7.3/PlayCover.0.7.3.zip" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Unduhan </a>
+					<a href="../changelog/" class="w-24 text-yellow-500 border-b-2 border-yellow-500 py-3"> Sejarah Perubahan </a>
+					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Pertanyaan umum </a>
+					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Kredit </a>
+					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Pesan Bantuan</button>
 				</div>
 
 				<!-- secondary nav -->
@@ -51,7 +51,7 @@
 					<div class="relative">
 						<div class="h-[3.5rem] flex items-center">
 							<button class="group donate-nav-button border-b-2 border-yellow-500 hover:border-b-4 bg-yellow-400 dark:bg-[#791c0c] dark:border-[#410e05] active:border-none rounded-md px-3 py-[0.29rem] transition duration-100 ease-linear md:hover:translate-y-[-0.15rem]">
-								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donate </span>
+								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donasi </span>
 							</button>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 						<li class="relative text-[1.05rem]">
 							<!-- language btn -->
 							<button class="language-button flex items-center space-x-1 border border-gray-500 dark:border-gray-400 rounded-md px-3 py-1 transition-colors duration-200 group hover:border-yellow-600 dark:hover:border-yellow-500">
-								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"> English </span>
+								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 text-sm"> Bahasa Indonesia </span>
 								<!-- icon -->
 								<div class="">
 									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 dark:text-gray-300 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -80,14 +80,14 @@
 									<li>
 										<a href="/lang/ru" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Русский </a>
 									</li>
-									<li>
+									<li class="hidden">
 										<a href="/lang/jp" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 日本語 </a>
 									</li>
 									<li>
 										<a href="/lang/de" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Deutsch </a>
 									</li>
 									<li>
-										<a href="/lang/id" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Bahasa Indonesia </a>
+										<a href="/lang/id" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> English </a>
 									</li>
 
 									<li>
@@ -136,16 +136,16 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
-					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Download</a>
-					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Changelog</a>
-					<a href="../faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
-					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
-					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
+					<a href="../" class="block text-gray-600 dark:text-gray-300">Halaman Utama</a>
+					<a href="https://github.com/Letscoder/PlayCover/releases/download/0.6.2/PlayCover.0.6.2.zip" class="block text-gray-600 dark:text-gray-300">Unduhan</a>
+					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Sejarah Perubahan</a>
+					<a href="../faq/" class="block text-gray-600 dark:text-gray-300">Pertanyaan umum</a>
+					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Kredit</a>
+					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Pesan Bantuan</button>
 
 					<!-- mobile language button -->
 					<button class="mobile-language-button text-gray-600 dark:text-gray-300 flex items-center space-x-1">
-						<p class="pl-3">English</p>
+						<p class="pl-3">Bahasa Indonesia</p>
 						<!-- icon -->
 						<div class="pt-0">
 							<svg xmlns="http://www.w3.org/2000/svg" class="mobile-lang-icon transform h-5 w-5 transition-colors duration-200 group-hover:text-pink-500" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -159,15 +159,15 @@
 							<a href="/lang/cn">简体中文</a>
 							<a href="/lang/ru">Pусский</a>
 							<a href="/lang/de">Deutsch</a>
-							<a href="/lang/jp">ホーム </a>
+							<a href="/lang/jp" class="hidden">ホーム </a>
 							<a href="/lang/es">Español</a>
 							
 							<a href="/lang/kr">한국어</a>
-							<a href="/lang/id" class="flex flex-col items-center justify-center">Bahasa <span>Indonesia</span> </a>
+							<a href="/" class="flex flex-col items-center justify-center">English </a>
 						</div>
 					</div>
 
-					<button class="mobile-donate-button block text-gold">Donate</button>
+					<button class="mobile-donate-button block text-gold">Donasi</button>
 				</div>
 			</div>
 		</nav>
@@ -180,9 +180,9 @@
 		<main class="pb-16">
 			<!-- heading -->
 			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
-				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Changelog</span>
+				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Sejarah Perubahan</span>
 				<span class="lg:hidden flex flex-col items-center text-4xl font-semibold text-gray-700 dark:text-yellow-500 transition duration-200 space-y-3">
-					<p>Changelog</p>
+					<p>Sejarah Perubahan</p>
 				</span>
 			</header>
 
@@ -274,7 +274,7 @@
 
 				<!-- right side -->
 				<div class="flex flex-col">
-					<div class="h-20"><p class="text-sm">More new features are under development...</p></div>
+					<div class="h-20"><p class="text-sm">Fitur baru sedang dalam pengembangan...</p></div>
 
 					<!-- 0.7.3 -->
 					<!-- copy for latest release -->
@@ -292,23 +292,22 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>Game controller key mapping for games that don’t support gamepads (NOTICE: Genshin Impact's native controller support is not working for now)</li>
-										<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
-										<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
-										<li>Smoother mouse movement</li>
-										<li>Fixed improper scaling in Windowed mode (edited)</li>
-										<li>App launcher now allows you run apps directly from PlayCover</li>
-										<li>With 'Update PlayTools' context-menu option you can install new versions of in-game controls without reinstalling the whole app</li>
-										<li>If something goes wrong, you can erase PlayTools settings with 'Reset PlayTools settings' option instead of whole app cache clear</li>
-										<li>'Downloads' tab of sidebar contains links for latest decrypted app versions (I will extended this list and make this dynamic next update)</li>
-										<li>Fixed error with iCloud / Dropbox documents syncing folders</li>
-										<li>Now sidebar has fixed min width and also app has new minimum size</li>
-										<li>Improved downloads UI, so it will provide download link based on your region</li>
-										<li>Improved Settings Ui, so now you can copy the command</li>
-										<li>Multi-lang Support</li>
-										<li>Fixed crash on startup for some users</li>
-										<li>Now Alt/Option button also hides/shows menu bar, so you can easily access settings of Window control buttons</li>
-										<li>PlayCover shows a notification when finished installing an app</li>
+										<li>Mapping controller game untuk beberapa game yang tidak mendukung penggunaan controller (saat ini dukungan native controller belum tersedia)</li>
+										<li>Bug mouse yang tidak responsif setelah Burst di Genshin Impact sudah diperbaiki.</li>
+										<li>Pergerakkan mouse yang lebih halus.</li>
+										<li>Perbaikkan scaling resolusi saat di mode Windowed.</li>
+										<li>Launcher aplikasi sekarang dapat menjalankan aplikasi yang terinstall secara langsung.</li>
+										<li>Dengan opsi ‘Update Playtools’ dalam konteks menu, dapat digunakan untuk menginstall control versi terbaru tanpa harus menginstall ulang seluruh aplikasi.</li>
+										<li>Jika bermasalah, dapat dilakukan penghapusan data pengaturan Playtools dengan opsi “Reset Playtools”, daripada menghapus seluruh cache aplikasi.</li>
+										<li>Tab ‘Unduhan’ berisi link untuk mengunduh versi aplikasi  terbaru yang sudah di dekripsi (Kedepannya akan di update secara berkala)</li>
+										<li>Error sinkronisasi folder pada Icloud/Dropbox sudah diperbaiki.</li>
+										<li>Ukuran sidebar dan ukuran aplikasi sudah diperbaiki.</li>
+										<li>Tampilan unduhan yang ditingkatkan, link unduhan akan otomatis mengikuti region pengguna.</li>
+										<li>Tampilang pengaturan yang ditingkatkan, dapat langsung melakukan copy command.</li>
+										<li>Dukungan banyak Bahasa.</li>
+										<li>Crash saat menjalakan aplikasi sudah diperbaiki.</li>
+										<li>Tombol Alt juga dapat digunakan untuk memunculkan/menyembunyikan bar menu, jadi akan lebih mudah untuk mengakses jendela pengaturan control.</li>
+										<li>Playcover akan memberikan notifikasi saat selesai melakukan penginstallan.</li>
 									</ul>
 								</div>
 							</div>
@@ -338,18 +337,18 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>Keymapping elements will resize on window size change</li>
-										<li>Special indicator will be shown on entering and leaving editor mode</li>
-										<li>All parent UIViews scale properly (web announcements inside Genshin Impact are fixed, some games as such as Genshin Impact currently require restarting for proper scale after window change)</li>
-										<li>Fixed MenuBar that covered game window in Windowed mode</li>
-										<li>Resolved problem of not saving key mappings for some users</li>
-										<li>Fixed crash on entering party menu in Genshin Impact for some users</li>
-										<li>Improved graphics in 3x times</li>
-										<li>Total average memory usage by games decreased by x2 times</li>
-										<li>Fixed problem when camera movement vanished after cutscene</li>
-										<li>Camera now properly appears after mapping without additional manipulations</li>
-										<li>Now PlayCover contains automated crashes report system, which works not only inside app, but also every game converted with PlayCover</li>
-										<li>Started migrate games settings to PlayCover for syncing and easily management</li>
+										<li>Keymapping akan otomatis mengikuti ukuran screen.</li>
+										<li>Akan ada indikator khusus a pada layar saat masuk mode editor.</li>
+										<li>Semua parent UIViews sudah di scale dengan benar (papan pengumuman pada Genshin Impact sudah diperbaiki, beberapa game seperti Genshin Impact saat ini perlu di restart saat mengganti ukuran screen aplikasi)</li>
+										<li>MenuBar yang menutupi game saat game berjalan di mode Windowed sudah diperbaiki.</li>
+										<li>Bug keymapping yang tidak tersimpan saat keluar aplikasi sudah diperbaiki.</li>
+										<li>Bug crash saat memasuki menu party sudah diperbaiki.</li>
+										<li>Kualitas grafis 3x lebih baik.</li>
+										<li>Penggunaan memory rata-rata turun 2x lipat.</li>
+										<li>Bug tidak bisa gerakkan kamera setelah cutscene sudah diperbaiki.</li>
+										<li>Kamera sekarang muncul dengan benar tanpa pengaturan tambahan.</li>
+										<li>PlayCover sekarang memiliki crash report system otomatis yang tidak hanya bekerja dalam PlayCover, tapi pada setiap aplikasi yang sudah diinstall menggunakan PlayCover.</li>
+										<li>Mulai migrasi game settings ke PlayCover untuk sinkronisasi dan mempermudah pengaturan.</li>
 									</ul>
 								</div>
 							</div>
@@ -378,9 +377,9 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>This release contains the most common bug fixes of 0.6.0</li>
-										<li>NSInvocation Dynamic error on launch solved</li>
-										<li>Resolved problem when dock and menu bars sometimes are not hidden in Fullscreen mode</li>
+										<li>Versi rilis ini berisi perbaikan bug umum dari versi 0.6.0</li>
+										<li>NSInvocation Dynamic error sudah diperbaiki.</li>
+										<li>Bug menu bar dan dock yang muncul dalam mode Fullscreen sudah diperbaiki.</li>
 									</ul>
 								</div>
 							</div>
@@ -409,19 +408,19 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>'Fix login' option is now available for everyone. Follow <a href="https://www.youtube.com/watch?v=H3CoI84s_FI&t=94s" target="_blank" class="underline">video instruction</a> to use it. Also you can find <a href="https://www.applegamingwiki.com/wiki/PlayCover" target="_blank" class="underline">text version</a> here. If you have any problems, please, click on 'Troubleshoot' button. Be aware that all this you perform at your own responsibility, I am providing help with this method only for Supporters.</li>
-										<li>App decryption was significantly improved since last release</li>
-										<li>Keymapping elements are now saved properly. No more random vanishing.</li>
-										<li>Now dock and menu dock are hidden during Gaming mode. Press Alt or Option to switch between modes.</li>
-										<li>Fixed bug with mouse stuck after cutscenes in game</li>
-										<li>Alternative decryption method is now available for everyone</li>
-										<li>LMB / RMB / MMB bind (use Shift + R , L, M to bind)</li>
-										<li>Auto screen resize. Now screen will be resized automatically in such games as Wildrift, Among Us e.t.c. No more broken resolution</li>
-										<li>However if you would like to set custom resolution, you can use Shift + Arrows to move screen, or Shift + '+' / '-' to change screen width. Or Control + Shift + '+' / '-' to change screen height</li>
-										<li>External mouse users be aware, that right now you should unplug the mouse after each setup. I'll make feature to select Trackpad/ Mouse optionally in future</li>
-										<li>Intel user notice</li>
-										<li>Now to show or hide cursor, you will just need to press 'Alt' button. No need to hold anymore</li>
-										<li>Various UI bugs were fixed</li>
+										<li>"Fix Login" sekarang sudah tersedia untuk pengguna umum, ikuti instruksi video untuk panduan penggunaan. Panduan secara tulis dapat ditemukan disini. Jika bermasalah, klik tombol "Troubleshoot". Kami tidak bertanggung jawab atas apapun yang terjadi, kami menyediakan bantuan hanya untuk para donatur.</li>
+										<li>App decryption jauh lebih baik dari versi sebelumnya.</li>
+										<li>Elemen keymapping akan disimpan dengan baik. Tidak lagi menghilang dengan sendirinya.</li>
+										<li>Menu bar dan dock akan tersembunyi saat mengaktifkan Gaming mode. Tekan Alt atau Option untuk mengganti mode.</li>
+										<li>Bug mouse nyangkut setelah cutscene dalam game sudah diperbaiki.</li>
+										<li>Alternative decryption tersedia untuk pengguna umum.</li>
+										<li>LMB / RMB / MMB bind (pakai Shift + R , L, M untuk binding)</li>
+										<li>Ukuran layar berubah otomatis. Ukuran layar akan berubah secara otomatis pada game seperti Wildrift, Among Us, dll. Tidak ada lagi resolusi pecah.</li>
+										<li>Jika ingin mengatur resolusi custom, gunakan Shift + Panah untuk menggeser screen, atau Shift + '+' / '-' untuk mengubah lebar screen. Gunakan Control + Shift + '+' / '-' untuk mengubah tinggi screen.</li>
+										<li>Pengingat untuk pengguna mouse external, cabut dan pasang mouse setelah melakukan pengaturan.</li>
+										<li>Peringatan pengguna Intel</li>
+										<li>Sekarang cukup tekan ‘Alt’ untuk menampilkan atau sembunyikan cursor. Tidak perlu ditahan lagi.</li>
+										<li>Berbagai bug UI diperbaiki</li>
 									</ul>
 								</div>
 							</div>
@@ -450,9 +449,9 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>For those apps which currently crashes there is a new checkbox. Now you can export such apps for Sideloadly and then install on Mac</li>
-										<li>iOS support. With PlayCover, you can also play any game with Mouse & Keyboard support. Just enable them in Assistive Touch menu. Fullscreen is ofc disabled</li>
-										<li>System specific bug fixes</li>
+										<li>Ada checkbox baru untuk app yang sekarang nge-crash. Sekarang app bisa di export tersebut untuk Sideloadly lalu di install di Mac</li>
+										<li>Support untuk iOS. Dengan Sideloadly, game apapun bisa dimainkan dengan Mouse & Keyboard. Cukup diaktifkan di menu Assistive Touches. Fullscreen tentunya disabled</li>
+										<li>Perbaikan bug dalam sistem</li>
 									</ul>
 								</div>
 							</div>
@@ -481,12 +480,12 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>In this release you still can't decrypt some apps, but this system was massively improved</li>
-										<li>If you have decryption error, please download .ipa from AppDb</li>
-										<li>Better error handling for decryption</li>
-										<li>New decryption method</li>
-										<li>New patch method</li>
-										<li>Now app will clear cache on crash</li>
+										<li>Di versi rilis ini beberapa app masih belum bisa didecrypt, tapi sistem bertambah baik</li>
+										<li>Jika mendapatkan error decryption, download .ipa dari AppDb</li>
+										<li>Error handling lebih baik untuk decryption</li>
+										<li>Metode decryption baru</li>
+										<li>Metode patch baru</li>
+										<li>App akan menghapus cache saat crash</li>
 									</ul>
 								</div>
 							</div>
@@ -515,10 +514,10 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>Now you are able to use .ipa from iMazing or M1 Checker</li>
-										<li>Keymapping fix</li>
-										<li>Dynamic screen support</li>
-										<li>Fixed file open crashes</li>
+										<li>Sekarang .ipa dari iMazing atau M1 Checker bisa digunakan</li>
+										<li>Perbaikan Keymapping</li>
+										<li>Dukungan dynamic screen</li>
+										<li>Perbaikan crash file open</li>
 									</ul>
 								</div>
 							</div>
@@ -547,11 +546,11 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>Fixed endless loading bug on discard File Open dialog</li>
-										<li>Improved log system (real time)</li>
-										<li>Optionally Fullscreen</li>
-										<li>Fixed bug when opened .ipa file will be deleted</li>
-										<li>Now app will be save in Documents/PlayCover folder</li>
+										<li>Perbaikan endless loading saat menutup dialog File Open</li>
+										<li>Perbaikan log system (real time)</li>
+										<li>Opsi Fullscreen</li>
+										<li>Perbaikan bug .ipa file dihapus saat akan dibuka</li>
+										<li>Sekarang app akan disimpan di folder Documents/PlayCover</li>
 									</ul>
 								</div>
 							</div>
@@ -580,10 +579,10 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>Now you can import decrypted .ipa directly</li>
-										<li>Fixed "System Error 4"</li>
-										<li>Fixed bug with copying system files to zip</li>
-										<li>Fixed bug with "Minimum required OS version is 13.0"</li>
+										<li>Sekarang file .ipa yang sudah decrypted bisa diimport</li>
+										<li>Perbaikan “System Error 4”</li>
+										<li>Perbaikan bug saat copy system files ke zip</li>
+										<li>Perbaikan bug “Minimum required OS version is 13.0”</li>
 									</ul>
 								</div>
 							</div>
@@ -612,12 +611,12 @@
 								<!-- release notes -->
 								<div>
 									<ul class="text-sm space-y-2">
-										<li>This release just to publish source code</li>
-										<li>Fixed "App cannot be opened" error</li>
-										<li>Now the app is able to open any decrypted .app file ( you can find them by downloading .ipa from AppDb, renaming .ipa to .zip and extracting it)</li>
-										<li>Fullscreen and game controller currently not functional</li>
-										<li>Fixed icon size</li>
-										<li>Added debug log</li>
+										<li>Perbaikan bug “Minimum required OS version is 13.0” Rilis ini hanya untuk menerbitkan source code</li>
+										<li>Perbaikan error “App cannot be opened”</li>
+										<li>Sekarang app bisa membuka file .ipa apapun yang sudah decrypted (dapat dilakukan dengan download file .ipa dari AppDb, rename file .ipa ke .zip lalu di extract)</li>
+										<li>Fullscreen dan controller sedang tidak fungsional</li>
+										<li>Ukuran icon diperbaiki</li>
+										<li>Debug log ditambahkan</li>
 									</ul>
 								</div>
 							</div>
@@ -648,7 +647,7 @@
 					</div>
 
 					<!-- text -->
-					<p class="pt-12 pb-8 font-light text-white text-3xl">Donate via...</p>
+					<p class="pt-12 pb-8 font-light text-white text-3xl">Donasi melalui...</p>
 
 					<!-- donate options -->
 					<div class="flex items-center pb-4 space-x-4 px-8 lg:px-0">
@@ -747,7 +746,7 @@
 							</div>
 
 							<!-- commercial agent -->
-							<div class="flex flex-col items-center text-white">
+							<div class="hidden  flex-col items-center text-white">
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
@@ -768,18 +767,18 @@
 					<!-- text -->
 					<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 						<!-- logo -->
-						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
+						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">Produk Tim PlayCover</h1>
 
 						<!-- alex credits -->
 						<div class="relative">
 							<!-- placeholder -->
-							<p class="text-lg text-transparent transition duration-200 ease-in-out">Presented by <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent transition duration-200 ease-in-out">Disajikan oleh <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- text -->
-							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Presented by <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Disajikan oleh <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- bg blur -->
-							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Presented by <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Disajikan oleh <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 						</div>
 					</div>
 
@@ -819,7 +818,7 @@
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
 						<a href="../legal-notice/" pr-4 hidden hover:text-yellow-500 underline text-left">Legal Notice</a>
-						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Copyright Claims</a>
+						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Klaim Hak Cipta</a>
 					</div>
 
 					<p class="inline">Copyright © 2021 Alexandr Dorofeev. All rights reserved.</p>

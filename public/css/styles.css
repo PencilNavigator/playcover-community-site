@@ -847,16 +847,12 @@ video {
   max-height: 19.5rem;
 }
 
-.max-h-\[16rem\] {
-  max-height: 16rem;
-}
-
-.max-h-\[16\.1rem\] {
-  max-height: 16.1rem;
-}
-
 .max-h-\[16\.2rem\] {
   max-height: 16.2rem;
+}
+
+.max-h-\[16rem\] {
+  max-height: 16rem;
 }
 
 .min-h-\[4\.5rem\] {
@@ -957,6 +953,10 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-full {
@@ -1730,6 +1730,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -2471,6 +2476,10 @@ video {
     margin-right: 1rem;
   }
 
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2550,6 +2559,22 @@ video {
     padding-left: 0px;
   }
 
+  .lg\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .lg\:pl-1 {
+    padding-left: 0.25rem;
+  }
+
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
+  .lg\:pr-1 {
+    padding-right: 0.25rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2615,20 +2640,12 @@ video {
     max-height: 26.5rem;
   }
 
-  .\32xl\:max-h-\[23\.2rem\] {
-    max-height: 23.2rem;
-  }
-
-  .\32xl\:max-h-\[22rem\] {
-    max-height: 22rem;
-  }
-
-  .\32xl\:max-h-\[24rem\] {
-    max-height: 24rem;
-  }
-
   .\32xl\:max-h-\[23\.3rem\] {
     max-height: 23.3rem;
+  }
+
+  .\32xl\:max-h-\[23\.2rem\] {
+    max-height: 23.2rem;
   }
 
   .\32xl\:max-w-\[55rem\] {
