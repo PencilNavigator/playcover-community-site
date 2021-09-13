@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,10 +24,10 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-0 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
-				<div class="flex items-center lg:mr-4 xl:pl-10">
+				<div class="flex items-center lg:mr-10 xl:pl-10">
 					<a href="../" class="flex items-center">
 						<img class="h-9 rounded-lg" src="/assets/logo.svg" alt="" />
 						<span class="text-2xl pl-2 bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text font-semibold">PlayCover</span>
@@ -36,13 +36,13 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Домой </a>
+					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
 					<!-- download nav download -->
-					<a href="" class="download-buttons text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Скачать </a>
-					<a href="../changelog/" class="text-gray-800 w-44 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Журнал изменений </a>
-					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> ЧаВо </a>
-					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Кредиты </a>
-					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Связаться с нами</button>
+					<a href="" class="download-buttons text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
+					<a href="../changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
+					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
+					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
+					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
 				</div>
 
 				<!-- secondary nav -->
@@ -51,8 +51,7 @@
 					<div class="relative">
 						<div class="h-[3.5rem] flex items-center">
 							<button class="group donate-nav-button border-b-2 border-yellow-500 hover:border-b-4 bg-yellow-400 dark:bg-[#791c0c] dark:border-[#410e05] active:border-none rounded-md px-3 py-[0.29rem] transition duration-100 ease-linear md:hover:translate-y-[-0.15rem]">
-								<span class="text-[1.05rem] text-white transition-colors duration-200"> Пожертвовать
- </span>
+								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donate </span>
 							</button>
 						</div>
 					</div>
@@ -62,7 +61,7 @@
 						<li class="relative text-[1.05rem]">
 							<!-- language btn -->
 							<button class="language-button flex items-center space-x-1 border border-gray-500 dark:border-gray-400 rounded-md px-3 py-1 transition-colors duration-200 group hover:border-yellow-600 dark:hover:border-yellow-500">
-								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"> Русский </span>
+								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500"> English </span>
 								<!-- icon -->
 								<div class="">
 									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 dark:text-gray-300 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -79,7 +78,7 @@
 										<a href="/lang/cn" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 简体中文 </a>
 									</li>
 									<li>
-										<a href="/" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> English </a>
+										<a href="/lang/ru" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> Русский </a>
 									</li>
 									<li class="hidden">
 										<a href="/lang/jp" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 日本語 </a>
@@ -138,12 +137,12 @@
 			<!-- mobile menu -->
 			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="../" class="block text-gray-600 dark:text-gray-300">Домой</a>
-					<a href="" class="download-buttons block text-gray-600 dark:text-gray-300">Скачать</a>
-					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Журнал изменений</a>
-					<a href="../faq/" class="block text-gray-600 dark:text-gray-300">ЧаВо</a>
-					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Кредиты</a>
-					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Связаться с нами</button>
+					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
+					<a href="" class="download-buttons block text-gray-600 dark:text-gray-300">Download</a>
+					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
+					<a href="../faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
+					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
+					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
 
 					<!-- mobile language button -->
 					<button class="mobile-language-button text-gray-600 dark:text-gray-300 flex items-center space-x-1">
@@ -159,7 +158,7 @@
 					<div class="mobile-language-menu hidden rounded-lg">
 						<div class="w-[85vw] bg-gray-50 dark:bg-[#1E1E1E] shadow-inner grid grid-cols-2 place-items-center py-4 gap-y-5 text-gray-600 dark:text-gray-300 transition duration-200 ease-in-out">
 							<a href="/lang/cn">简体中文</a>
-							<a href="/">English</a>
+							<a href="/lang/ru">Pусский</a>
 							<a href="/lang/de">Deutsch</a>
 							<a href="/lang/jp" class="hidden">ホーム </a>
 							<a href="/lang/es">Español</a>
@@ -169,8 +168,7 @@
 						</div>
 					</div>
 
-					<button class="mobile-donate-button block text-gold">Пожертвовать
-</button>
+					<button class="mobile-donate-button block text-gold">Donate</button>
 				</div>
 			</div>
 		</nav>
@@ -196,8 +194,8 @@
 					<h2 class="font-medium text-2xl">Copyright Notice</h2>
 					<div class="pl-5 pt-2">
 						<ul class="list-outside list-disc space-y-3">
-							<li>All contents, software, programs, code, technologies and user interfaces contained on this website are protected by the copyright laws. The copyright belongs to Alexandr Dorofeev and is subject to relevant copyright conventions. Exclusive publishing by [Profispieler] [云玩家].</li>
-							<li>[Profispieler] [云玩家] reserves the right to pursue legal responsibilities if any use of the aforesaid copyright is beyond the scope of reasonable use and without its written permission.</li>
+							<li>All contents, software, programs, code, technologies and user interfaces contained on this website are protected by the copyright laws. The copyright belongs to Alexandr Dorofeev and is subject to relevant copyright conventions.</li>
+							<li>Alexandr Dorofeev reserves the right to pursue legal responsibilities if any use of the aforesaid copyright is beyond the scope of reasonable use and without its written permission.</li>
 						</ul>
 					</div>
 				</section>
@@ -206,8 +204,8 @@
 					<h2 class="font-medium text-2xl">Trademark Statement</h2>
 					<div class="pl-5 pt-2">
 						<ul class="list-outside list-disc space-y-3">
-							<li>All trademarks and marks used and displayed on this website belong to [Profispieler] [云玩家] and are protected by the Trademark Law of the People's Republic of China, the Anti Unfair Competition Law of the People's Republic of China and relevant international conventions.</li>
-							<li>Without prior written permission of [Profispieler] [云玩家] , trademarks, marks and software names of [Profispieler] [云玩家] shall not be used in any manner whatsoever. Unauthorized use of the aforesaid trademarks may constitute trademark infringement and [Profispieler] [云玩家] reserves the right to pursue legal responsibilities.</li>
+							<li>All trademarks and marks used and displayed on this website belong to Alexandr Dorofeev and are protected by international conventions.</li>
+							<li>Without prior written permission of Alexandr Dorofeev, trademarks, marks and software names of Alexandr Dorofeev shall not be used in any manner whatsoever. Unauthorized use of the aforesaid trademarks may constitute trademark infringement and Alexandr Dorofeev reserves the right to pursue legal responsibilities.</li>
 						</ul>
 					</div>
 				</section>
@@ -229,7 +227,7 @@
 					</div>
 
 					<!-- text -->
-					<p class="pt-12 pb-8 font-light text-white text-3xl">Пожертвовать через ...</p>
+					<p class="pt-12 pb-8 font-light text-white text-3xl">Donate via...</p>
 
 					<!-- donate options -->
 					<div class="flex items-center pb-4 space-x-4 px-8 lg:px-0">
@@ -295,7 +293,7 @@
 					<!-- content -->
 					<div class="flex flex-col items-center justify-center pt-2 md:pt-0">
 						<!-- heading -->
-						<p class="pt-12 pb-8 font-light text-white text-3xl md:text-4xl">Контактная информация</p>
+						<p class="pt-12 pb-8 font-light text-white text-3xl md:text-4xl">Contact Details</p>
 
 						<!-- details -->
 						<div class="flex flex-col items-center space-y-6 pb-10 pt-3">
@@ -313,7 +311,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 								</svg>
-								<p class="text-lg font-medium pr-2 pl-1">Веб-сайт</p>
+								<p class="text-lg font-medium pr-2 pl-1">Website</p>
 								<a href="mailto:Jay@playcover.app">AJ - jay@playcover.app</a>
 							</div>
 
@@ -332,7 +330,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
-								<p class="text-lg font-medium pr-2 pl-1">Коммерческий агент</p>
+								<p class="text-lg font-medium pr-2 pl-1">Commercial Agent</p>
 								<a href="mailto:ke@playcover.app">ProfiSpieler - ke@playcover.app</a>
 							</div>
 						</div>
@@ -349,18 +347,18 @@
 					<!-- text -->
 					<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 						<!-- logo -->
-						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">Продукт команды PlayCover</h1>
+						<h1 class="font-semibold text-xl bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">A PlayCover Team Product</h1>
 
 						<!-- alex credits -->
 						<div class="relative">
 							<!-- placeholder -->
-							<p class="text-lg text-transparent transition duration-200 ease-in-out">Представлено <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent transition duration-200 ease-in-out">Presented by <span class="font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- text -->
-							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Представлено <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg absolute inset-0 z-30 transition duration-200 ease-in-out">Presented by <span class="text-pink-600 dark:text-gray-300 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 
 							<!-- bg blur -->
-							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Представлено <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
+							<p class="text-lg text-transparent bg-gradient-to-r absolute inset-0 blur-sm dark:text-transparent transition duration-200 ease-in-out">Presented by <span class="text-pink-100 dark:text-red-600 transition duration-200 ease-in-out font-neon font-medium">Alexandr Dorofeev</span></p>
 						</div>
 					</div>
 
@@ -399,11 +397,11 @@
 				<section class="flex flex-col md:flex-row md:justify-between pb-5 md:items-center space-y-2">
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
-						<a href="../legal-notice/" pr-4 hidden hover:text-yellow-500 underline text-left">Legal Notice</a>
-						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Жалобы на нарушение авторских прав</a>
+						<a href="../legal-notice/" class="pr-4 hover:text-yellow-500 underline text-left">Legal Notice</a>
+						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Copyright Claims</a>
 					</div>
 
-					<p class="inline">Copyright © 2021 Alexandr Dorofeev. Все права защищены.</p>
+					<p class="inline">Copyright © 2021 Alexandr Dorofeev. All rights reserved.</p>
 				</section>
 			</div>
 		</footer>

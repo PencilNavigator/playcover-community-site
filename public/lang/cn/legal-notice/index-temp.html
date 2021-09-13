@@ -6,14 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="site description" />
 		<meta name="keywords" content="8-12 words max" />
-		<title>PlayCover</title>
+		<title>Legal Notice</title>
 		<link href="/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.png" />
 		<script src="/js/local-storage-track.js"></script>
-
-		<!-- splide JS -->
-		<link href="/css/splide.min.css" rel="stylesheet" />
-		<link href="/css/splide-core.min.css" rel="stylesheet" />
 
 		<!-- fonts import -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,11 +24,11 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-montserrat transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-40">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
 				<div class="flex items-center lg:mr-10 xl:pl-10">
-					<a href="./" class="flex items-center">
+					<a href="../" class="flex items-center">
 						<img class="h-9 rounded-lg" src="/assets/logo.svg" alt="" />
 						<span class="text-2xl pl-2 bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text font-semibold">PlayCover</span>
 					</a>
@@ -40,12 +36,12 @@
 
 				<!-- primary nav -->
 				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="./" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Home </a>
+					<a href="../" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Home </a>
 					<!-- download nav download -->
 					<a href="" class="download-buttons text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="./changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
-					<a href="./faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
-					<a href="./credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
+					<a href="../changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
+					<a href="../faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
+					<a href="../credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
 					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
 				</div>
 
@@ -137,14 +133,15 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- mobile menu -->
 			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
-					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Home</a>
+					<a href="../" class="block text-gray-600 dark:text-gray-300">Home</a>
 					<a href="" class="download-buttons block text-gray-600 dark:text-gray-300">Download</a>
-					<a href="./changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
-					<a href="./faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
-					<a href="./credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
+					<a href="../changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
+					<a href="../faq/" class="block text-gray-600 dark:text-gray-300">FAQ</a>
+					<a href="../credits/" class="block text-gray-600 dark:text-gray-300">Credits</a>
 					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
 
 					<!-- mobile language button -->
@@ -157,7 +154,6 @@
 							</svg>
 						</div>
 					</button>
-
 					<!-- mobile language menu -->
 					<div class="mobile-language-menu hidden rounded-lg">
 						<div class="w-[85vw] bg-gray-50 dark:bg-[#1E1E1E] shadow-inner grid grid-cols-2 place-items-center py-4 gap-y-5 text-gray-600 dark:text-gray-300 transition duration-200 ease-in-out">
@@ -178,179 +174,49 @@
 		</nav>
 
 		<!-- auto closer for lang menu -->
+		<!-- auto closer for lang menu -->
 		<div class="auto-closer hidden z-10 w-[100%] h-2 absolute"></div>
 
 		<!-- content -->
-		<main>
-			<!-- hero section -->
-			<section id="hero-content" class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-20 2xl:space-x-48 pt-28 pb-4 md:pb-8 lg:mt-auto">
-				<!-- text -->
-				<div id="hero-text" class="flex flex-col space-y-6">
-					<!-- intro text -->
-					<div id="intro-text" class="max-w-full flex flex-col items-center md:block dark:text-gray-300">
-						<!-- logo -->
-						<h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-logo-orange text-transparent bg-clip-text">PlayCover</h1>
+		<main class="pb-16">
+			<!-- heading -->
+			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
+				<span class="hidden lg:flex font-semibold lg:text-5xl text-gray-700 dark:text-yellow-500 transition duration-200">Legal Notice</span>
+				<span class="lg:hidden flex flex-col text-4xl font-semibold text-gray-700 dark:text-yellow-500 transition duration-200 space-y-3">
+					<p>Legal</p>
+					<p>Notice</p>
+				</span>
+			</header>
 
-						<!-- hero text -->
-						<p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">allows you to run iOS apps on your Mac in fullscreen with Mouse, Keyboard & Controller.</p>
-
-						<!-- Download buttons -->
-						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4 pt-8 lg:pt-6 items-center text-center">
-							<!-- M1 -->
-							<div class="flex items-center md:h-10 md:w-52">
-								<a class="download-buttons py-2 px-4 drop-shadow-sm bg-yellow-500 dark:bg-[#791c0c] text-white dark:text-gray-200 rounded-md cursor-pointer border-b-2 md:hover:border-b-4 border-yellow-600 md:hover:translate-y-[-0.15rem] active:border-none dark:border-[#410e05] dark:active:border-none transition duration-100 ease-linear" href=""> Download for M1 Mac </a>
-							</div>
-
-							<!-- intel -->
-							<div class="flex items-center">
-								<a class="py-2 px-4 cursor-default bg-gray-200 dark:bg-[#272727] text-gray-400 dark:text-[#494949] transition-colors duration-200 rounded-md" href="#"> Download for Intel Mac </a>
-
-								<!-- coming soon text -->
-								<div class="relative text-gray-50 dark:text-gray-200">
-									<div class="transform rotate-12 absolute shadow text-[0.75rem] bg-gray-400 dark:bg-[#353535] rounded-full py-[2px] right-[-2.125rem] bottom-[0.2rem] md:right-[-1.4rem] md:bottom-[0.45rem] transition duration-200 cursor-default"><p class="w-24 text-center">coming soon</p></div>
-								</div>
-							</div>
-						</div>
+			<!-- paras -->
+			<section class="px-10 lg:px-52 pt-20 space-y-10 text-gray-700 dark:text-gray-300">
+				<section class="space-y-2">
+					<h2 class="font-medium text-2xl">版权声明</h2>
+					<div class="pl-5 pt-2">
+						<ul class="list-outside list-disc space-y-3">
+							<li>本网站包含的所有内容、软件、程序、代码、技术和用户界面均受版权法保护。版权属于 Alexandr Dorofeev 并受相关版权公约的约束。</li>
+							<li>Alexandr Dorofeev 保留对上述版权的任何超出合理使用范围的使用以及未经其书面许可追究法律责任的权利。</li>
+						</ul>
 					</div>
+				</section>
 
-					<!-- build text -->
-					<div id="latest-build-text" class="hidden group lg:flex rounded-lg max-h-[17.5rem] 2xl:max-h-[25rem] w-[27.7rem] cursor-default border-2 dark:border-[#3d3d3d] hover:border-transparent dark:hover:border-transparent hover:shadow-lg hover:bg-white dark:hover:bg-[#363636] transition-all duration-300">
-						<div class="mt-6 mb-[24px] ml-8 mr-2 pr-2 overflow-hidden group-hover:overflow-y-auto text-gray-400 dark:text-[#636363] group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all duration-300 relative">
-							<h2 class="font-medium text-lg pb-4">Latest Update Info (0.7.3)</h2>
-
-							<ul class="text-sm space-y-4">
-								<li>Game controller key mapping for games that don’t support gamepads (NOTICE: Genshin Impact's native controller support is not working for now)</li>
-								<li>Fixed bug of mouse reset on Burst (Ultimate) in Genshin Impact</li>
-								<li>Smoother mouse movement</li>
-								<li>Fixed improper scaling in Windowed mode (edited)</li>
-								<li>App launcher now allows you run apps directly from PlayCover</li>
-								<li>With 'Update PlayTools' context-menu option you can install new versions of in-game controls without reinstalling the whole app</li>
-								<li>If something goes wrong, you can erase PlayTools settings with 'Reset PlayTools settings' option instead of whole app cache clear</li>
-								<li>'Downloads' tab of sidebar contains links for latest decrypted app versions (I will extended this list and make this dynamic next update)</li>
-								<li>Fixed error with iCloud / Dropbox documents syncing folders</li>
-								<li>Now sidebar has fixed min width and also app has new minimum size</li>
-								<li>Improved downloads UI, so it will provide download link based on your region</li>
-								<li>Improved Settings Ui, so now you can copy the command</li>
-								<li>Multi-lang Support</li>
-								<li>Fixed crash on startup for some users</li>
-								<li>Now Alt/Option button also hides/shows menu bar, so you can easily access settings of Window control buttons</li>
-								<li>PlayCover shows a notification when finished installing an app</li>
-							</ul>
-						</div>
+				<section class="space-y-2">
+					<h2 class="font-medium text-2xl">商标声明</h2>
+					<div class="pl-5 pt-2">
+						<ul class="list-outside list-disc space-y-3">
+							<li>本网站上使用和展示的所有商标和标志均属于 Alexandr Dorofeev，并受国际公约保护。</li>
+							<li>未经 Alexandr Dorofeev 事先书面许可，不得以任何方式使用 Alexandr Dorofeev 的商标、标志和软件名称。未经授权使用上述商标可能构成商标侵权，Alexandr Dorofeev保留追究法律责任的权利。</li>
+						</ul>
 					</div>
-				</div>
-
-				<!-- hero image -->
-				<div id="hero-image" class="">
-					<div class="group relative">
-						<!-- bg gradient -->
-						<!-- <div class="rounded-lg absolute -inset-0.5 bg-gradient-to-b from-red-500 to-yellow-500 blur opacity-30 dark:opacity-40 md:group-hover:opacity-50 md:dark:group-hover:opacity-70 transform md:group-hover:scale-105 transition ease-out duration-1000 group-hover:duration-700"></div> -->
-
-						<img class="shadow-md dark:hidden max-w-xs md:max-w-[44.7rem] 2xl:max-w-[55rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-light.png" alt="playcover screenshot light" />
-
-						<img class="shadow-md hidden dark:block max-w-xs md:max-w-[44.7rem] 2xl:max-w-[55rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot light" />
-					</div>
-				</div>
+				</section>
 			</section>
 		</main>
-
-		<!-- splide js -->
-		<div class="flex justify-center mt-3 md:mt-0">
-			<div class="splide">
-				<!-- content -->
-				<div class="splide__track md:mx-14">
-					<ul class="h-64 md:h-80 splide__list">
-						<!-- genshin impact -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-gameplay.jpeg" alt="Genshin Impact gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-logo.png" alt="Genshin Impact logo image" />
-							</div>
-						</li>
-
-						<!-- kart rider -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-gameplay.png" alt="kart rider gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-cover.jpeg" alt="kart rider logo image" />
-							</div>
-						</li>
-
-						<!-- among us  -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us gameplay.jpeg" alt="among us gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us logo.jpeg" alt="among us logo image" />
-							</div>
-						</li>
-
-						<!-- guardian tales  -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/guardian-tales-gameplay.png" alt="Guardian Tales gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Guardian-Tales-Cover.jpeg" alt="Guardian Tales logo image" />
-							</div>
-						</li>
-
-						<!-- wild rift -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-gameplay.jpeg" alt="League of Legends Wild Rift gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-logo.jpeg" alt="League of Legends Wild Rift logo image" />
-							</div>
-						</li>
-
-						<!-- honkai impact 3  -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-gameplay.jpeg" alt="honkai impact 3 gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-cover.jpeg" alt="honkai impact 3 logo image" />
-							</div>
-						</li>
-
-						<!-- arknights global -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-gameplay.jpeg" alt="arknights global gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-logo.png" alt="arknights global logo image" />
-							</div>
-						</li>
-
-						<!-- mu archangel -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-gameplay.jpeg" alt="mu archangel gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-logo.jpeg" alt="mu archangel logo image" />
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<!-- arrows -->
-				<div class="group splide__arrows">
-					<button class="splide__arrow splide__arrow--prev">
-						<div class="bg-yellow-500 h-8 w-9 flex items-center justify-center shadow-lg md:shadow-none md:bg-transparent rounded-full md:rounded-none dark:text-gray-600 text-gray-500 md:dark:group-hover:text-gray-300 md:group-hover:text-gray-900 transition duration-300">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-							</svg>
-						</div>
-					</button>
-					<button class="splide__arrow splide__arrow--next">
-						<div class="bg-yellow-500 h-8 w-9 flex items-center justify-center shadow-lg md:shadow-none md:bg-transparent rounded-full md:rounded-none dark:text-gray-600 text-gray-500 md:dark:group-hover:text-gray-300 md:group-hover:text-gray-900 transition duration-300">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-							</svg>
-						</div>
-					</button>
-				</div>
-			</div>
-		</div>
 
 		<!-- donate popup -->
 		<section class="hidden donate-wrapper donate-popup z-40 fixed w-screen h-screen bg-[rgba(0,0,0,0.8)] dark:bg-[rgba(0,0,0,0.8)]">
 			<!-- modal -->
 			<div class="w-screen h-screen flex flex-col items-center justify-center">
-				<div class="donate-modal flex flex-col items-center lg:w-[30rem] bg-gradient-to-bl from-purple-900 to-[#C33764] rounded-lg shadow">
+				<div class="donate-modal flex flex-col items-center lg:w-[30rem] bg-gradient-to-l from-purple-900 to-[#C33764] rounded-lg shadow">
 					<!-- close button -->
 					<div class="relative pt-4">
 						<button class="donate-close-button absolute top-5 lg:top-4 left-[7.5rem] lg:left-48">
@@ -531,7 +397,7 @@
 				<section class="flex flex-col md:flex-row md:justify-between pb-5 md:items-center space-y-2">
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
-						<a href="./legal-notice/" class="pr-4 hover:text-yellow-500 underline text-left">Legal Notice</a>
+						<a href="../legal-notice/" class="pr-4 hover:text-yellow-500 underline text-left">Legal Notice</a>
 						<a href="mailto:write2me4help@gmail.com" class="underline hover:text-yellow-500">Copyright Claims</a>
 					</div>
 
@@ -554,38 +420,5 @@
 		<script src="/js/contact-popup.js"></script>
 		<script src="/js/auto-closer.js"></script>
 		<script src="/js/animator.js"></script>
-
-		<!-- splide js -->
-		<script src="/js/splide.min.js"></script>
-		<script>
-			const config = {
-				type: "loop",
-				perMove: 1,
-				pagination: false,
-				speed: 800,
-				width: "100%",
-				easing: "ease",
-				// padding: { right: 300 },
-				autoplay: true,
-				interval: 4000,
-				rewind: true,
-				breakpoints: {
-					800: {
-						perPage: 1,
-						width: "95%",
-					},
-					1200: {
-						perPage: 2,
-					},
-					1900: {
-						perPage: 3,
-					},
-					4000: {
-						perPage: 4,
-					},
-				},
-			};
-			new Splide(".splide", config).mount();
-		</script>
 	</body>
 </html>
