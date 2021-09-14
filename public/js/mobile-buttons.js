@@ -22,21 +22,3 @@ mobileBtn.addEventListener("click", () => {
 		toggleMobLangMenu();
 	}
 });
-
-const htmlTagMob = document.querySelector("html");
-const themeBtnMob = document.querySelector(".switch-theme-mobile");
-
-themeBtnMob.addEventListener("click", () => {
-	// stop pulse animation
-	if (themeBtnMob.classList.contains("animate-pulse")) {
-		themeBtnMob.classList.remove("animate-pulse");
-	}
-	let htmlClasses = htmlTagMob.classList;
-	if (localStorage.theme == "dark") {
-		htmlClasses.remove("dark");
-		localStorage.removeItem("theme");
-	} else {
-		htmlClasses.add("dark");
-		localStorage.theme = "dark";
-	}
-});
