@@ -202,27 +202,25 @@
 		<!-- content -->
 		<main class="md:pt-3 2xl:pt-8">
 			<!-- hero section -->
-			<section id="hero-content" class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-20 2xl:space-x-48 pt-28 pb-4 md:pb-8 lg:mt-auto">
+			<section id="hero-content" class="flex flex-col items-center justify-center space-y-10 pt-28 pb-4 md:pb-8">
 				<!-- text -->
 				<div id="hero-text" class="flex flex-col space-y-6">
 					<!-- intro text -->
-					<div id="intro-text" class="max-w-full flex flex-col items-center md:block dark:text-gray-300">
+					<div id="intro-text" class="max-w-full flex flex-col items-center justify-center dark:text-gray-300">
 						<!-- logo -->
-						<h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-text-purple text-transparent bg-clip-text">PlayCover</h1>
+						<h1 class="font-extrabold text-[48px] md:text-[5rem] bg-gradient-to-b from-logo-pink to-text-purple text-transparent bg-clip-text">PlayCover</h1>
 
 						<!-- hero text -->
-						<p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">Позволяет запускать приложения iOS на вашем Mac в полноэкранном режиме с помощью мыши, клавиатуры и контроллера.</p>
+						<p class="md:pl-1 max-w-xs md:max-w-7xl pt-6 md:pt-4 text-center text-lg md:text-2xl">Позволяет запускать приложения iOS на вашем Mac в полноэкранном режиме с помощью мыши, клавиатуры и контроллера.</p>
 
 						<!-- download buttons -->
-						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4 pt-8 lg:pt-6 items-center text-center">
+						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 pt-8 lg:pt-6 items-center text-center">
 							<!-- M1 -->
-							<div class="flex items-center md:h-10 md:w-52">
-								<a class="download-buttons py-2 px-5 drop-shadow-sm bg-logo-purple dark:bg-logo-purple-dark hover:bg-logo-purple-darker dark:hover:bg-logo-purple-darker font-semibold text-white dark:text-gray-200 rounded-full cursor-pointer  transition duration-100 ease-linear download-buttons" href=""> Скачать для M1 Mac </a>
-							</div>
+							<a class="download-buttons text-md uppercase py-3 px-12 rounded-full drop-shadow-sm bg-logo-purple dark:bg-logo-purple-dark hover:bg-logo-purple-darker dark:hover:bg-logo-purple-darker  text-white dark:text-gray-200 cursor-pointer  transition duration-100 ease-linear" href=""> Скачать для M1 Mac </a>
 
 							<!-- intel -->
 							<div class="flex items-center">
-								<a class="py-2 px-4 cursor-default bg-gray-200 dark:bg-[#272727] text-gray-400 dark:text-[#494949] transition-colors duration-200 rounded-md" href="#"> Скачать для Intel Mac </a>
+								<a class="download-buttons text-md uppercase py-3 px-12 rounded-full cursor-default bg-gray-200 dark:bg-[#272727] text-gray-400 dark:text-[#494949] transition-colors duration-200" href="#"> Скачать для Intel Mac </a>
 
 								<!-- скоро будет text -->
 								<div class="relative text-gray-50 dark:text-gray-200">
@@ -231,43 +229,14 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- build text -->
-					<div id="latest-build-text" class="hidden group lg:flex rounded-lg max-h-[16rem] 2xl:max-h-[23.2rem] w-[27.7rem] cursor-default border-2 dark:border-[#3d3d3d] hover:border-transparent dark:hover:border-transparent hover:shadow-lg hover:bg-white dark:hover:bg-[#363636] transition-all duration-300">
-						<div class="mt-6 mb-[24px] ml-7 mr-2 pr-0 overflow-hidden group-hover:overflow-y-auto text-gray-400 dark:text-[#636363] group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all duration-300 relative">
-							<h2 class="font-medium text-lg pb-4">Информация о последнем обновлении (0.7.3)</h2>
-
-							<ul class="list-inside list-disc text-sm space-y-4">
-								<li>Назначение клавиш геймпада в играх, не поддерживающих геймпад (ВНИМАНИЕ: встроенная поддержка геймпада в Genshin Impact пока не работает)</li>
-								<li>Исправлена ошибка с остановкой камеры после использования Взрыва стихий в Genshin Impact</li>
-								<li>Более ровное движение мыши</li>
-								<li>Исправлено неправильное масштабирование в оконном режиме (изменено)</li>
-								<li>Возможность запуска приложений непосредственно из PlayCover</li>
-								<li>С помощью пункта меню «Обновить PlayTools» можно устанавливать новые версии игрового управления без переустановки всего приложения</li>
-								<li>При возникновении проблем можно сбросить настройки PlayTools с функцией «Восстановить исходные настройки PlayTools» вместо очистки всего кэша приложения</li>
-								<li>Пункт «Загрузки» в боковом меню содержит ссылки на последние версии расшифрованных приложений (я расширю этот список и сделаю его динамическим в следующем обновлении)</li>
-								<li>Исправлена ошибка с синхронизацией папок в iCloud/Dropbox</li>
-								<li>Теперь у бокового меню есть минимальная ширина, а у приложения минимальный размер окна</li>
-								<li>Улучшен пользовательский интерфейс загрузок, теперь он будет предлагать ссылку для скачивания в зависимости от вашего региона</li>
-								<li>Улучшен пользовательский интерфейс настроек, теперь можно скопировать команду</li>
-								<li>Поддержка нескольких языков</li>
-								<li>Исправлен вылет при запуске у некоторых пользователей</li>
-								<li>Теперь клавиша Alt скрывает/показывает еще и строку меню, так что доступ к настройкам контроля окна стал проще</li>
-								<li>PlayCover показывает уведомление после окончания установки приложения</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 
 				<!-- hero image -->
 				<div id="hero-image" class="">
 					<div class="group relative">
-						<!-- bg gradient -->
-						<!-- <div class="rounded-lg absolute -inset-0.5 bg-gradient-to-b from-red-500 to-text-purple blur opacity-30 dark:opacity-40 md:group-hover:opacity-50 md:dark:group-hover:opacity-70 transform md:group-hover:scale-105 transition ease-out duration-1000 group-hover:duration-700"></div> -->
+						<img class="shadow-md dark:hidden max-w-xs md:max-w-[70rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-light.png" alt="playcover screenshot light" />
 
-						<img class="shadow-md dark:hidden max-w-xs md:max-w-[48rem] 2xl:max-w-[58.5rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-light.png" alt="playcover screenshot light" />
-
-						<img class="shadow-md hidden dark:block max-w-xs md:max-w-[48rem] 2xl:max-w-[58.5rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot dark" />
+						<img class="shadow-md hidden dark:block max-w-xs md:max-w-[70rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot dark" />
 					</div>
 				</div>
 			</section>

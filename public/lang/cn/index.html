@@ -202,27 +202,25 @@
 		<!-- content -->
 		<main class="md:pt-3 2xl:pt-8">
 			<!-- hero section -->
-			<section id="hero-content" class="flex flex-col items-center lg:items-start lg:flex-row justify-center space-y-10 lg:space-y-0 lg:space-x-20 2xl:space-x-48 pt-28 pb-4 md:pb-8 lg:mt-auto">
+			<section id="hero-content" class="flex flex-col items-center justify-center space-y-10 pt-28 pb-4 md:pb-8">
 				<!-- text -->
 				<div id="hero-text" class="flex flex-col space-y-6">
 					<!-- intro text -->
-					<div id="intro-text" class="max-w-full flex flex-col items-center md:block dark:text-gray-300">
+					<div id="intro-text" class="max-w-full flex flex-col items-center justify-center dark:text-gray-300">
 						<!-- logo -->
-						<h1 class="font-extrabold text-[48px] bg-gradient-to-b from-logo-pink to-text-purple text-transparent bg-clip-text">PlayCover</h1>
+						<h1 class="font-extrabold text-[48px] md:text-[5rem] bg-gradient-to-b from-logo-pink to-text-purple text-transparent bg-clip-text">PlayCover</h1>
 
 						<!-- hero text -->
-						<p class="md:pl-1 max-w-xs md:max-w-sm pt-6 md:pt-0 text-center md:text-left text-lg">允许您使用鼠标、键盘和控制器在 Mac 上全屏运行 iOS 应用程序。</p>
+						<p class="md:pl-1 max-w-xs md:max-w-7xl pt-6 md:pt-4 text-center text-lg md:text-2xl">允许您使用鼠标、键盘和控制器在 Mac 上全屏运行 iOS 应用程序。</p>
 
 						<!-- Download buttons -->
-						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-4 pt-8 lg:pt-6 items-center text-center">
+						<div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 pt-8 lg:pt-6 items-center text-center">
 							<!-- M1 -->
-							<div class="flex items-center md:h-10 md:w-56">
-								<a class="py-2 px-16 drop-shadow-sm bg-logo-purple dark:bg-logo-purple-dark hover:bg-logo-purple-darker dark:hover:bg-logo-purple-darker font-semibold text-white dark:text-gray-200 rounded-full cursor-pointer  transition duration-100 ease-linear download-buttons" href=""> 下载 M1 Mac </a>
-							</div>
+							<a class="download-buttons text-md uppercase py-3 px-12 rounded-full drop-shadow-sm bg-logo-purple dark:bg-logo-purple-dark hover:bg-logo-purple-darker dark:hover:bg-logo-purple-darker  text-white dark:text-gray-200 cursor-pointer  transition duration-100 ease-linear" href=""> 下载 M1 Mac </a>
 
 							<!-- intel -->
 							<div class="flex items-center md:w-56">
-								<a class="py-2 px-11 cursor-default bg-gray-200 dark:bg-[#272727] text-gray-400 dark:text-[#494949] transition-colors duration-200 rounded-md" href="#"> 下载 Intel Mac </a>
+								<a class="download-buttons text-md uppercase py-3 px-12 rounded-full cursor-default bg-gray-200 dark:bg-[#272727] text-gray-400 dark:text-[#494949] transition-colors duration-200" href="#"> 下载 Intel Mac </a>
 
 								<!-- coming soon text -->
 								<div class="relative text-gray-50 dark:text-gray-200">
@@ -231,43 +229,14 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- build text -->
-					<div id="latest-build-text" class="hidden group lg:flex rounded-lg max-h-[19.5rem] 2xl:max-h-[26.5rem] w-[27.7rem] cursor-default border-2 dark:border-[#3d3d3d] hover:border-transparent dark:hover:border-transparent hover:shadow-lg hover:bg-white dark:hover:bg-[#363636] transition-all duration-300">
-						<div class="mt-6 mb-[24px] ml-7 mr-2 pr-0 overflow-hidden group-hover:overflow-y-auto text-gray-400 dark:text-[#636363] group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all duration-300 relative">
-							<h2 class="font-medium text-lg pb-4">最新更新信息 (0.7.3)</h2>
-
-							<ul class="list-inside list-disc text-sm space-y-4">
-								<li>不支持游戏手柄的游戏的游戏控制器键映射（注意：Genshin Impact 的本机控制器支持目前不起作用）</li>
-								<li>修复了元神冲击中爆发（终极）时鼠标重置的错误</li>
-								<li>更流畅的鼠标移动</li>
-								<li>修复了窗口模式下不正确的缩放（已编辑）</li>
-								<li>应用启动器现在允许您直接从 PlayCover 运行应用</li>
-								<li>使用“更新 PlayTools”上下文菜单选项，您无需重新安装整个应用程序即可安装新版本的游戏内控件</li>
-								<li>如果出现问题，您可以使用“重置 PlayTools 设置”选项清除 PlayTools 设置，而不是清除整个应用程序缓存</li>
-								<li>侧边栏的“下载”选项卡包含最新解密应用程序版本的链接（我将扩展此列表并在下次更新时进行动态更新）</li>
-								<li>修复了 iCloud / Dropbox 文档同步文件夹的错误</li>
-								<li>现在侧边栏有固定的最小宽度，应用程序也有新的最小尺寸</li>
-								<li>改进了下载用户界面，因此它将根据您所在的地区提供下载链接</li>
-								<li>改进了设置用户界面，现在您可以复制命令</li>
-								<li>多语言支持</li>
-								<li>修复了某些用户启动时崩溃的问题</li>
-								<li>现在 Alt/Option 按钮还隐藏/显示菜单栏，因此您可以轻松访问窗口控制按钮的设置</li>
-								<li>PlayCover 在完成安装应用程序时显示通知</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 
 				<!-- hero image -->
 				<div id="hero-image" class="">
 					<div class="group relative">
-						<!-- bg gradient -->
-						<!-- <div class="rounded-lg absolute -inset-0.5 bg-gradient-to-b from-red-500 to-text-purple blur opacity-30 dark:opacity-40 md:group-hover:opacity-50 md:dark:group-hover:opacity-70 transform md:group-hover:scale-105 transition ease-out duration-1000 group-hover:duration-700"></div> -->
+						<img class="shadow-md dark:hidden max-w-xs md:max-w-[70rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-light.png" alt="playcover screenshot light" />
 
-						<img class="shadow-md dark:hidden max-w-xs md:max-w-[48rem] 2xl:max-w-[58.5rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-light.png" alt="playcover screenshot light" />
-
-						<img class="shadow-md hidden dark:block max-w-xs md:max-w-[48rem] 2xl:max-w-[58.5rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot dark" />
+						<img class="shadow-md hidden dark:block max-w-xs md:max-w-[70rem] rounded-lg transition ease-out duration-1000 group-hover:duration-700" src="/assets/playcover-screenshot-dark.png" alt="playcover screenshot dark" />
 					</div>
 				</div>
 			</section>
