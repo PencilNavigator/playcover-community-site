@@ -2617,6 +2617,22 @@ video {
     padding-top: 1.5rem;
   }
 
+  .lg\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
