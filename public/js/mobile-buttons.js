@@ -7,6 +7,7 @@ const toggleMobileMenu = function () {
 	mobileMenu.classList.toggle("hidden");
 };
 
+
 // add event listeners
 mobileBtn.addEventListener("click", () => {
 	toggleMobileMenu();

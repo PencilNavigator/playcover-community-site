@@ -10,11 +10,6 @@
 		<link href="/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.png" />
 		<script src="/js/local-storage-track.js"></script>
-
-		<!-- splide JS -->
-		<link href="/css/splide.min.css" rel="stylesheet" />
-		<link href="/css/splide-core.min.css" rel="stylesheet" />
-
 		<!-- fonts import -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -98,7 +93,7 @@
 										<a href="/lang/kr" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> 한국어 </a>
 									</li>
 									<li>
-										<a href="/" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> English </a>
+										<a href="/index.html" class="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-500 transition-colors duration-200"> English </a>
 									</li>
 									
 								</ul>
@@ -138,7 +133,7 @@
 				</div>
 			</div>
 			<!-- mobile menu -->
-			<div class="mobile-menu max-h-[85vh] overflow-auto hidden relative">
+			<div class="mobile-menu xl:hidden max-h-[85vh] overflow-auto hidden relative">
 				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
 					<a href="./" class="block text-yellow-600 pb-1 border-b-2 border-yellow-600">Inicio</a>
 					<a href="" class="download-buttons block text-gray-600 dark:text-gray-300">Descargar</a>
@@ -165,7 +160,7 @@
 							<a href="/lang/ru">Pусский</a>
 							<a href="/lang/de">Deutsch</a>
 							<a href="/lang/jp" class="hidden">ホーム </a>
-							<a href="/">English</a>
+							<a href="/index.html">English</a>
 							
 							<a href="/lang/kr" class="hidden">한국어</a>
 							<a href="/lang/id" class="flex flex-col items-center justify-center">Bahasa <span>Indonesia</span> </a>
@@ -253,99 +248,6 @@
 				</div>
 			</section>
 		</main>
-
-		<!-- splide js -->
-		<div class="flex justify-center mt-3 md:mt-0">
-			<div class="splide">
-				<!-- content -->
-				<div class="splide__track md:mx-14">
-					<ul class="h-64 md:h-80 splide__list">
-						<!-- genshin impact -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-gameplay.jpeg" alt="Genshin Impact gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/genshin-impact-logo.png" alt="Genshin Impact logo image" />
-							</div>
-						</li>
-
-						<!-- kart rider -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-gameplay.png" alt="kart rider gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/kartrider-cover.jpeg" alt="kart rider logo image" />
-							</div>
-						</li>
-
-						<!-- among us  -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us gameplay.jpeg" alt="among us gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Among us logo.jpeg" alt="among us logo image" />
-							</div>
-						</li>
-
-						<!-- guardian tales  -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/guardian-tales-gameplay.png" alt="Guardian Tales gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/Guardian-Tales-Cover.jpeg" alt="Guardian Tales logo image" />
-							</div>
-						</li>
-
-						<!-- wild rift -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-gameplay.jpeg" alt="League of Legends Wild Rift gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/wildrift-logo.jpeg" alt="League of Legends Wild Rift logo image" />
-							</div>
-						</li>
-
-						<!-- honkai impact 3  -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-gameplay.jpeg" alt="honkai impact 3 gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/honkai-impact-3-cover.jpeg" alt="honkai impact 3 logo image" />
-							</div>
-						</li>
-
-						<!-- arknights global -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-gameplay.jpeg" alt="arknights global gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/arknights-global-logo.png" alt="arknights global logo image" />
-							</div>
-						</li>
-
-						<!-- mu archangel -->
-						<li class="splide__slide px-2 md:px-2" style="width: 10px">
-							<div class="group relative">
-								<img class="absolute opacity-100 group-hover:opacity-0 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-gameplay.jpeg" alt="mu archangel gameplay image" />
-								<img class="absolute opacity-0 group-hover:opacity-100 slide-video border-2 border-gray-50 dark:border-black rounded-md transition duration-500 ease-out shadow-lg my-6 w-[120%] md:w-[80rem] 3xl:w-[100rem] h-48 md:h-[15rem] 3xl:h-[17rem]" src="/assets/mu-archangel-logo.jpeg" alt="mu archangel logo image" />
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<!-- arrows -->
-				<div class="group splide__arrows">
-					<button class="splide__arrow splide__arrow--prev">
-						<div class="bg-yellow-500 h-8 w-9 flex items-center justify-center shadow-lg md:shadow-none md:bg-transparent rounded-full md:rounded-none dark:text-gray-600 text-gray-500 md:dark:group-hover:text-gray-300 md:group-hover:text-gray-900 transition duration-300">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-							</svg>
-						</div>
-					</button>
-					<button class="splide__arrow splide__arrow--next">
-						<div class="bg-yellow-500 h-8 w-9 flex items-center justify-center shadow-lg md:shadow-none md:bg-transparent rounded-full md:rounded-none dark:text-gray-600 text-gray-500 md:dark:group-hover:text-gray-300 md:group-hover:text-gray-900 transition duration-300">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-							</svg>
-						</div>
-					</button>
-				</div>
-			</div>
-		</div>
-
 		<!-- donate popup -->
 		<section class="hidden donate-wrapper donate-popup z-40 fixed w-screen h-screen bg-[rgba(0,0,0,0.8)] dark:bg-[rgba(0,0,0,0.8)]">
 			<!-- modal -->
@@ -553,39 +455,5 @@
 		<script src="/js/donate-popup.js"></script>
 		<script src="/js/contact-popup.js"></script>
 		<script src="/js/auto-closer.js"></script>
-		<script src="/js/animator.js"></script>
-
-		<!-- splide js -->
-		<script src="/js/splide.min.js"></script>
-		<script>
-			const config = {
-				type: "loop",
-				perMove: 1,
-				pagination: false,
-				speed: 800,
-				width: "100%",
-				easing: "ease",
-				// padding: { right: 300 },
-				autoplay: true,
-				interval: 4000,
-				rewind: true,
-				breakpoints: {
-					800: {
-						perPage: 1,
-						width: "95%",
-					},
-					1200: {
-						perPage: 2,
-					},
-					1900: {
-						perPage: 3,
-					},
-					4000: {
-						perPage: 4,
-					},
-				},
-			};
-			new Splide(".splide", config).mount();
-		</script>
-	</body>
+		<script src="/js/animator.js"></script>	</body>
 </html>
