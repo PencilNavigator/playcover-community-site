@@ -2250,6 +2250,22 @@ video {
     max-width: 44.7rem;
   }
 
+  .md\:max-w-\[50rem\] {
+    max-width: 50rem;
+  }
+
+  .md\:max-w-\[100rem\] {
+    max-width: 100rem;
+  }
+
+  .md\:max-w-\[47rem\] {
+    max-width: 47rem;
+  }
+
+  .md\:max-w-\[48rem\] {
+    max-width: 48rem;
+  }
+
   .md\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -2527,10 +2543,26 @@ video {
     max-width: 55rem;
   }
 
+  .\32xl\:max-w-\[60rem\] {
+    max-width: 60rem;
+  }
+
+  .\32xl\:max-w-\[59rem\] {
+    max-width: 59rem;
+  }
+
+  .\32xl\:max-w-\[58\.5rem\] {
+    max-width: 58.5rem;
+  }
+
   .\32xl\:space-x-48 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(12rem * var(--tw-space-x-reverse));
     margin-left: calc(12rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:pt-8 {
+    padding-top: 2rem;
   }
 }
 
