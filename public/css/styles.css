@@ -826,6 +826,30 @@ video {
   height: 3.5rem;
 }
 
+.h-\[1\.10rem\] {
+  height: 1.10rem;
+}
+
+.h-\[10px\] {
+  height: 10px;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[0\.85rem\] {
+  height: 0.85rem;
+}
+
+.h-\[0\.75rem\] {
+  height: 0.75rem;
+}
+
+.h-\[0\.80rem\] {
+  height: 0.80rem;
+}
+
 .max-h-\[85vh\] {
   max-height: 85vh;
 }
@@ -940,6 +964,38 @@ video {
 
 .w-11 {
   width: 2.75rem;
+}
+
+.w-\[1\.10rem\] {
+  width: 1.10rem;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
+}
+
+.w-\[3\.2rem\] {
+  width: 3.2rem;
+}
+
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[3\.5rem\] {
+  width: 3.5rem;
+}
+
+.w-\[3\.3rem\] {
+  width: 3.3rem;
+}
+
+.w-\[3\.4rem\] {
+  width: 3.4rem;
 }
 
 .max-w-full {
@@ -1809,6 +1865,50 @@ video {
   padding-left: 0.15rem;
 }
 
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-\[0\.4rem\] {
+  padding-right: 0.4rem;
+}
+
+.pr-\[0\.6rem\] {
+  padding-right: 0.6rem;
+}
+
+.pr-\[10rem\] {
+  padding-right: 10rem;
+}
+
+.pr-\[2rem\] {
+  padding-right: 2rem;
+}
+
+.pr-\[1rem\] {
+  padding-right: 1rem;
+}
+
+.pr-\[0\.5rem\] {
+  padding-right: 0.5rem;
+}
+
+.pr-\[0\.7rem\] {
+  padding-right: 0.7rem;
+}
+
+.pr-\[0\.55rem\] {
+  padding-right: 0.55rem;
+}
+
+.pl-\[0\.25rem\] {
+  padding-left: 0.25rem;
+}
+
+.pl-\[0\.20rem\] {
+  padding-left: 0.20rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2263,12 +2363,31 @@ video {
   display: inline;
 }
 
+.dark .dark\:flex {
+  display: flex;
+}
+
 .dark .dark\:hidden {
   display: none;
 }
 
 .dark .dark\:translate-x-7 {
   --tw-translate-x: 1.75rem;
+  transform: var(--tw-transform);
+}
+
+.dark .dark\:translate-x-6 {
+  --tw-translate-x: 1.5rem;
+  transform: var(--tw-transform);
+}
+
+.dark .dark\:translate-x-\[1\.65rem\] {
+  --tw-translate-x: 1.65rem;
+  transform: var(--tw-transform);
+}
+
+.dark .dark\:translate-x-\[1\.68rem\] {
+  --tw-translate-x: 1.68rem;
   transform: var(--tw-transform);
 }
 
@@ -2470,6 +2589,14 @@ video {
 
 .dark .dark\:opacity-40 {
   opacity: 0.4;
+}
+
+.dark .dark\:opacity-100 {
+  opacity: 1;
+}
+
+.dark .dark\:opacity-0 {
+  opacity: 0;
 }
 
 .dark .dark\:shadow {
