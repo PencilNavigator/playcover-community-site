@@ -31,7 +31,7 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			sourceCodePro: "'Source Sans Pro', Arial, sans-serif",
+			sourceSansPro: "'Source Sans Pro', Arial, sans-serif",
 			neon: "'Quicksand', cursive;",
 		},
 	},
