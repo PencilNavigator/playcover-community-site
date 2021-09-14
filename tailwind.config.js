@@ -31,7 +31,7 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			montserrat: "Montserrat, Arial, sans-serif",
+			sourceCodePro: "'Source Sans Pro', Arial, sans-serif",
 			neon: "'Quicksand', cursive;",
 		},
 	},

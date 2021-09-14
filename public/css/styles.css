@@ -1649,12 +1649,12 @@ video {
   text-align: center;
 }
 
-.font-montserrat {
-  font-family: Montserrat, Arial, sans-serif;
-}
-
 .font-neon {
   font-family: 'Quicksand', cursive;;
+}
+
+.font-sourceCodePro {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
 .text-2xl {
@@ -2246,22 +2246,6 @@ video {
     max-width: 24rem;
   }
 
-  .md\:max-w-\[44\.7rem\] {
-    max-width: 44.7rem;
-  }
-
-  .md\:max-w-\[50rem\] {
-    max-width: 50rem;
-  }
-
-  .md\:max-w-\[100rem\] {
-    max-width: 100rem;
-  }
-
-  .md\:max-w-\[47rem\] {
-    max-width: 47rem;
-  }
-
   .md\:max-w-\[48rem\] {
     max-width: 48rem;
   }
@@ -2537,18 +2521,6 @@ video {
 
   .\32xl\:max-h-\[23\.2rem\] {
     max-height: 23.2rem;
-  }
-
-  .\32xl\:max-w-\[55rem\] {
-    max-width: 55rem;
-  }
-
-  .\32xl\:max-w-\[60rem\] {
-    max-width: 60rem;
-  }
-
-  .\32xl\:max-w-\[59rem\] {
-    max-width: 59rem;
   }
 
   .\32xl\:max-w-\[58\.5rem\] {
