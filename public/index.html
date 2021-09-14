@@ -23,26 +23,25 @@
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-sourceSansPro transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-4 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-6 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
-				<div class="flex items-center lg:mr-10">
+				<div class="flex items-center lg:mr-10 space-x-8">
 					<a href="/" class="flex items-center">
 						<img class="h-14 rounded-lg" src="/assets/logo.png" alt="PlayCover logo" />
-						
 					</a>
+					<!-- primary nav -->
+					<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
+						<a href="/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Home </a>
+						<!-- download nav download -->
+						<a href="" class="download-buttons text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
+						<a href="/changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
+						<a href="/faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
+						<a href="/credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
+						<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
+					</div>
 				</div>
 
-				<!-- primary nav -->
-				<div class="hidden xl:flex items-center space-x-10 pt-1 text-[1.05rem]">
-					<a href="/" class="text-yellow-500 border-b-2 border-yellow-500 py-3"> Home </a>
-					<!-- download nav download -->
-					<a href="" class="download-buttons text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Download </a>
-					<a href="/changelog/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Changelog </a>
-					<a href="/faq/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> FAQ </a>
-					<a href="/credits/" class="text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150"> Credits </a>
-					<button class="contact-nav-button text-gray-800 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-500 transition-colors duration-150">Contact Us</button>
-				</div>
 
 				<!-- secondary nav -->
 				<div class="hidden xl:flex items-center space-x-5">
