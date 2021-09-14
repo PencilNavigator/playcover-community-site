@@ -28,6 +28,8 @@ module.exports = {
 				"gold-light": "#FFD700",
 				"logo-pink": "#FF0F7B",
 				"logo-orange": "#F89B29",
+				"body": "#171717",
+				"nav-footer": "#141414",
 			},
 		},
 		fontFamily: {

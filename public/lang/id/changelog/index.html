@@ -22,9 +22,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 	</head>
 
-	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-[#171717] font-sourceSansPro transition duration-200 ease-in-out">
+	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-body font-sourceSansPro transition duration-200 ease-in-out">
 		<!-- nav bar -->
-		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-5 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-[#141414] transition duration-200 ease-in-out filter drop-shadow-md z-20">
+		<nav class="max-w-screen px-6 lg:pr-12 lg:pl-5 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-white dark:bg-nav-footer transition duration-200 ease-in-out filter drop-shadow-md z-20">
 			<div class="flex justify-between">
 				<!-- logo -->
 				<div class="flex items-center lg:mr-10 space-x-7">
@@ -33,12 +33,12 @@
 					</a>
 					<!-- primary nav -->
 					<div class="hidden xl:flex items-center space-x-5 pt-1 text-[1.05rem]">
-						<a href="/lang/id" class="text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#E6349E]  hover:bg-[#E6349E] transition duration-300"> Halaman Utama </a>
+						<a href="/lang/id" class="text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#B02AF5]  hover:bg-[#B02AF5] transition duration-300"> Halaman Utama </a>
 						
-						<a href="/lang/id/changelog/" class="text-gray-100 rounded-full px-5 py-1 bg-[#E6349E] transition duration-300"> Sejarah Perubahan </a>
-						<a href="/lang/id/faq/" class="text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#E6349E]  hover:bg-[#E6349E] transition duration-300"> Pertanyaan umum </a>
-						<a href="/lang/id/credits/" class="text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#E6349E]  hover:bg-[#E6349E] transition duration-300"> Kredit </a>
-						<button class="contact-nav-button text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#E6349E]  hover:bg-[#E6349E] transition duration-300">Pesan Bantuan</button>
+						<a href="/lang/id/changelog/" class="text-gray-100 rounded-full px-5 py-1 bg-[#B02AF5] transition duration-300"> Sejarah Perubahan </a>
+						<a href="/lang/id/faq/" class="text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#B02AF5]  hover:bg-[#B02AF5] transition duration-300"> Pertanyaan umum </a>
+						<a href="/lang/id/credits/" class="text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#B02AF5]  hover:bg-[#B02AF5] transition duration-300"> Kredit </a>
+						<button class="contact-nav-button text-gray-600 dark:text-gray-300 hover:text-gray-100 rounded-full  px-5 py-1 hover:border-[#B02AF5]  hover:bg-[#B02AF5] transition duration-300">Pesan Bantuan</button>
 					</div>
 				</div>
 
@@ -48,7 +48,7 @@
 					<!-- donate button -->
 					<div class="relative">
 						<div class="h-[3.5rem] flex items-center">
-							<button class="group donate-nav-button border-b-2 border-yellow-500 hover:border-b-4 bg-yellow-400 dark:bg-[#791c0c] dark:border-[#410e05] active:border-none rounded-md px-3 py-[0.29rem] transition duration-100 ease-linear md:hover:translate-y-[-0.15rem]">
+							<button class="group donate-nav-button  bg-yellow-500 dark:bg-[#791c0c] hover:bg-yellow-400 dark:hover:bg-[#992511] rounded-full px-5 py-1 transition duration-300">
 								<span class="text-[1.05rem] text-white transition-colors duration-200"> Donasi </span>
 							</button>
 						</div>
@@ -58,18 +58,18 @@
 					<ul>
 						<li class="relative text-[1.05rem]">
 							<!-- language btn -->
-							<button class="language-button flex items-center space-x-1 border border-gray-500 dark:border-gray-400 rounded-md px-3 py-1 transition-colors duration-200 group hover:border-yellow-600 dark:hover:border-yellow-500">
+							<button class="language-button flex items-center space-x-1 border border-gray-500 dark:border-gray-300 rounded-full px-5 py-1 transition-colors duration-200 group hover:border-gray-200 dark:hover:border-gray-200">
 								<span class="text-gray-800 dark:text-gray-300 transition-colors duration-200 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 text-sm"> Bahasa Indonesia </span>
 								<!-- icon -->
 								<div class="">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 dark:text-gray-300 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 dark:text-gray-300 group-hover:text-gray-200 dark:group-hover:text-gray-200 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
 									</svg>
 								</div>
 							</button>
 
 							<!-- language menu -->
-							<div class="language-menu absolute bg-white dark:bg-[#141414] right-0 rounded-md px-[18px] pb-3 pt-6 transform transition-all duration-200 scale-0 opacity-0 -translate-y-2/4 ease-in-out">
+							<div class="language-menu absolute bg-white dark:bg-nav-footer right-0 rounded-md px-[18px] pb-3 pt-6 transform transition-all duration-200 scale-0 opacity-0 -translate-y-2/4 ease-in-out">
 								<!-- text -->
 								<ul class="space-y-4">
 									<li>
@@ -741,7 +741,7 @@
 		</section>
 
 		<!-- footer -->
-		<footer class="bg-white dark:bg-[#141414] text-gray-400 dark:text-gray-500 transition duration-200 ease-in-out">
+		<footer class="bg-white dark:bg-nav-footer text-gray-400 dark:text-gray-500 transition duration-200 ease-in-out">
 			<div class="mx-5 md:mx-16">
 				<!-- above line -->
 				<section class="flex md:items-end justify-between max-w-screen mx-auto pt-8 flex-col-reverse md:flex-row">
