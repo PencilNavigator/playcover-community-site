@@ -2462,6 +2462,14 @@ video {
     padding-left: 0.25rem;
   }
 
+  .lg\:pl-2 {
+    padding-left: 0.5rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2510,6 +2518,18 @@ video {
 
   .xl\:pt-36 {
     padding-top: 9rem;
+  }
+
+  .xl\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .xl\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .xl\:pl-1 {
+    padding-left: 0.25rem;
   }
 
   .xl\:text-lg {
