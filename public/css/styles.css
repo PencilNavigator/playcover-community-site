@@ -1873,6 +1873,10 @@ video {
   transition-duration: 1000ms;
 }
 
+.duration-\[2000ms\] {
+  transition-duration: 2000ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1883,6 +1887,10 @@ video {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hover\:scale-125:hover {
@@ -2277,6 +2285,11 @@ video {
     transform: var(--tw-transform);
   }
 
+  .md\:translate-y-8 {
+    --tw-translate-y: 2rem;
+    transform: var(--tw-transform);
+  }
+
   .md\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -2377,6 +2390,18 @@ video {
 
   .md\:opacity-100 {
     opacity: 1;
+  }
+
+  .md\:opacity-50 {
+    opacity: 0.5;
+  }
+
+  .md\:opacity-25 {
+    opacity: 0.25;
+  }
+
+  .md\:opacity-20 {
+    opacity: 0.2;
   }
 }
 
