@@ -1,6 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
+	<!-- local fonts import -->
+		<style>
+			/* Source Sans Pro local import */
+			@font-face {
+				font-family: "Source Sans Pro";
+				src: 
+					local("Source Sans Pro"),
+					url("/assets/fonts/SourceSansPro/SourceSansPro-Light.woff") format("woff");
+				font-weight: 300;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Source Sans Pro";
+				src: 
+					local("Source Sans Pro"),
+					url("/assets/fonts/SourceSansPro/SourceSansPro-Regular.woff") format("woff");
+				font-weight: 400;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Source Sans Pro";
+				src: 
+					local("Source Sans Pro"),
+					url("/assets/fonts/SourceSansPro/SourceSansPro-Italic.woff") format("woff");
+				font-weight: 400;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: "Source Sans Pro";
+				src: 
+					local("Source Sans Pro"),
+					url("/assets/fonts/SourceSansPro/SourceSansPro-SemiBold.woff") format("woff");
+				font-weight: 600;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Source Sans Pro";
+				src: 
+					local("Source Sans Pro"),
+					url("/assets/fonts/SourceSansPro/SourceSansPro-Bold.woff") format("woff");
+				font-weight: 700;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Source Sans Pro";
+				src: 
+					local("Source Sans Pro"),
+					url("/assets/fonts/SourceSansPro/SourceSansPro-Black.woff") format("woff");
+				font-weight: 800;
+				font-style: normal;
+			}
+
+			/* Open Sans local import*/
+			@font-face {
+				font-family: "Open Sans";
+				src: 
+					local("Open Sans"),
+					url("/assets/fonts/OpenSans/OpenSans-Light-webfont.woff") format("woff");
+				font-weight: 300;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Open Sans";
+				src: 
+					local("Open Sans"),
+					url("/assets/fonts/OpenSans/OpenSans-Regular-webfont.woff") format("woff");
+				font-weight: 400;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Open Sans";
+				src: 
+					local("Open Sans"),
+					url("/assets/fonts/OpenSans/OpenSans-Italic-webfont.woff") format("woff");
+				font-weight: 400;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: "Open Sans";
+				src: 
+					local("Open Sans"),
+					url("/assets/fonts/OpenSans/OpenSans-Semibold-webfont.woff") format("woff");
+				font-weight: 600;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Open Sans";
+				src: 
+					local("Open Sans"),
+					url("/assets/fonts/OpenSans/OpenSans-Bold-webfont.woff") format("woff");
+				font-weight: 700;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Open Sans";
+				src: 
+					local("Open Sans"),
+					url("/assets/fonts/OpenSans/OpenSans-ExtraBold-webfont.woff") format("woff");
+				font-weight: 800;
+				font-style: normal;
+			}
+		</style>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,14 +114,14 @@
 		<script src="/js/local-storage-track.js"></script>
 
 		<!-- fonts import -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
 		<!-- Roboto Font -->
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" /> -->
 		<!-- Source Sans Pro font-->
-		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet"> -->
 		<!-- Open Sans font -->
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
 	</head>
 
 	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-body font-sourceSansPro transition duration-200 ease-in-out">
