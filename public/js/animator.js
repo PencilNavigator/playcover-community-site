@@ -11,10 +11,3 @@ if (localStorage.getItem("visited") == null) {
 		themeBtnMob.classList.remove("animate-pulse");
 	}, 6000);
 }
-
-// coming soon hover text on intel button
-const intelDownloadButton = document.querySelector(".intel-download-button");
-const comingSoonButton = document.querySelector(".coming-soon-button");
-console.log(comingSoonButton.clientWidth);
-comingSoonButton.style.width = `${intelDownloadButton.clientWidth}px`;
-console.log(comingSoonButton.clientWidth);
