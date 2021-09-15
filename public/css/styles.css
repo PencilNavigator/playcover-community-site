@@ -942,6 +942,11 @@ video {
   transform: var(--tw-transform);
 }
 
+.translate-y-44 {
+  --tw-translate-y: 11rem;
+  transform: var(--tw-transform);
+}
+
 .rotate-\[140deg\] {
   --tw-rotate: 140deg;
   transform: var(--tw-transform);
@@ -2216,6 +2221,16 @@ video {
     max-width: 70rem;
   }
 
+  .md\:translate-y-44 {
+    --tw-translate-y: 11rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: var(--tw-transform);
+  }
+
   .md\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -2293,6 +2308,14 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:opacity-0 {
+    opacity: 0;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
   }
 }
 
