@@ -692,21 +692,12 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mt-auto {
-  margin-top: auto;
 }
 
 .block {
@@ -887,6 +878,34 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[20em\] {
+  width: 20em;
+}
+
+.w-\[329px\] {
+  width: 329px;
+}
+
+.w-\[349px\] {
+  width: 349px;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
+.w-\[21em\] {
+  width: 21em;
+}
+
+.w-\[22em\] {
+  width: 22em;
+}
+
+.w-\[30em\] {
+  width: 30em;
 }
 
 .max-w-full {
@@ -1835,10 +1854,6 @@ body {
   font-display: optional;
 }
 
-.hover\:flex:hover {
-  display: flex;
-}
-
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1871,13 +1886,17 @@ body {
   color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
 .active\:text-logo-purple-dark:active {
   --tw-text-opacity: 1;
   color: rgba(149, 42, 191, var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:flex {
-  display: flex;
 }
 
 .group:hover .group-hover\:text-gray-600 {
@@ -1901,6 +1920,34 @@ body {
 
 .dark .dark\:hidden {
   display: none;
+}
+
+.dark .dark\:w-\[2\.5625em\] {
+  width: 2.5625em;
+}
+
+.dark .dark\:w-\[20\.5625em\] {
+  width: 20.5625em;
+}
+
+.dark .dark\:w-\[200\.5625em\] {
+  width: 200.5625em;
+}
+
+.dark .dark\:w-\[30\.5625em\] {
+  width: 30.5625em;
+}
+
+.dark .dark\:w-\[22\.5625em\] {
+  width: 22.5625em;
+}
+
+.dark .dark\:w-\[23\.5625em\] {
+  width: 23.5625em;
+}
+
+.dark .dark\:w-\[25\.5625em\] {
+  width: 25.5625em;
 }
 
 .dark .dark\:translate-x-\[1\.73rem\] {
@@ -2098,21 +2145,9 @@ body {
   color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
-.dark .group:hover .dark\:group-hover\:hidden {
-  display: none;
-}
-
 .dark .group:hover .dark\:group-hover\:text-gray-200 {
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
-}
-
-.dark .group:hover .dark\:group-hover\:opacity-0 {
-  opacity: 0;
-}
-
-.dark .group:hover .dark\:group-hover\:opacity-100 {
-  opacity: 1;
 }
 
 @media (min-width: 768px) {
