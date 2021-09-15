@@ -917,6 +917,31 @@ video {
   transform: var(--tw-transform);
 }
 
+.translate-y-12 {
+  --tw-translate-y: 3rem;
+  transform: var(--tw-transform);
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: var(--tw-transform);
+}
+
+.translate-y-10 {
+  --tw-translate-y: 2.5rem;
+  transform: var(--tw-transform);
+}
+
+.translate-y-20 {
+  --tw-translate-y: 5rem;
+  transform: var(--tw-transform);
+}
+
+.translate-y-56 {
+  --tw-translate-y: 14rem;
+  transform: var(--tw-transform);
+}
+
 .rotate-\[140deg\] {
   --tw-rotate: 140deg;
   transform: var(--tw-transform);
@@ -1780,6 +1805,10 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .shadow-inner {
