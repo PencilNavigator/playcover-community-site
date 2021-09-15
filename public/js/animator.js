@@ -11,3 +11,15 @@ if (localStorage.getItem("visited") == null) {
 		themeBtnMob.classList.remove("animate-pulse");
 	}, 6000);
 }
+
+const intelDownloadButton = document.querySelector(".intel-download-button");
+
+intelDownloadButton.addEventListener("mouseover", () => {
+	intelDownloadButton.textContent = "coming soon";
+})
+
+intelDownloadButton.addEventListener("mouseleave", () => {
+	setTimeout(() => {
+		intelDownloadButton.textContent = "Download for intel Mac";
+	}, 400);
+})
