@@ -1855,6 +1855,12 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* removes highlight of button press on mobile */
+
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -2439,4 +2445,3 @@ video {
     padding-top: 2rem;
   }
 }
-
