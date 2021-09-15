@@ -1233,7 +1233,7 @@ video {
 
 .border-text-purple {
   --tw-border-opacity: 1;
-  border-color: rgba(156, 102, 255, var(--tw-border-opacity));
+  border-color: rgba(152, 97, 255, var(--tw-border-opacity));
 }
 
 .border-gray-400 {
@@ -1248,12 +1248,12 @@ video {
 
 .border-r-text-purple {
   --tw-border-opacity: 1;
-  border-right-color: rgba(156, 102, 255, var(--tw-border-opacity));
+  border-right-color: rgba(152, 97, 255, var(--tw-border-opacity));
 }
 
 .border-t-text-purple {
   --tw-border-opacity: 1;
-  border-top-color: rgba(156, 102, 255, var(--tw-border-opacity));
+  border-top-color: rgba(152, 97, 255, var(--tw-border-opacity));
 }
 
 .bg-gray-100 {
@@ -1342,7 +1342,7 @@ video {
 }
 
 .to-text-purple {
-  --tw-gradient-to: #9c66ff;
+  --tw-gradient-to: #9861ff;
 }
 
 .to-\[\#C33764\] {
@@ -1706,7 +1706,7 @@ video {
 
 .text-text-purple {
   --tw-text-opacity: 1;
-  color: rgba(156, 102, 255, var(--tw-text-opacity));
+  color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
 .text-gold {
@@ -1887,7 +1887,7 @@ video {
 
 .hover\:text-text-purple:hover {
   --tw-text-opacity: 1;
-  color: rgba(156, 102, 255, var(--tw-text-opacity));
+  color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
 .active\:text-logo-purple-dark:active {
@@ -1907,7 +1907,7 @@ video {
 
 .group:hover .group-hover\:text-text-purple {
   --tw-text-opacity: 1;
-  color: rgba(156, 102, 255, var(--tw-text-opacity));
+  color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
 .dark .dark\:block {
@@ -1954,12 +1954,12 @@ video {
 
 .dark .dark\:border-r-text-purple {
   --tw-border-opacity: 1;
-  border-right-color: rgba(156, 102, 255, var(--tw-border-opacity));
+  border-right-color: rgba(152, 97, 255, var(--tw-border-opacity));
 }
 
 .dark .dark\:border-t-text-purple {
   --tw-border-opacity: 1;
-  border-top-color: rgba(156, 102, 255, var(--tw-border-opacity));
+  border-top-color: rgba(152, 97, 255, var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-body {
@@ -2068,7 +2068,7 @@ video {
 
 .dark .dark\:text-text-purple {
   --tw-text-opacity: 1;
-  color: rgba(156, 102, 255, var(--tw-text-opacity));
+  color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
 .dark .dark\:text-\[\#ADAEAD\] {
@@ -2115,7 +2115,7 @@ video {
 
 .dark .dark\:hover\:text-text-purple:hover {
   --tw-text-opacity: 1;
-  color: rgba(156, 102, 255, var(--tw-text-opacity));
+  color: rgba(152, 97, 255, var(--tw-text-opacity));
 }
 
 .dark .group:hover .dark\:group-hover\:text-gray-200 {

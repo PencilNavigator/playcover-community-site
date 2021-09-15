@@ -30,7 +30,7 @@ module.exports = {
 				"logo-purple": "#b634e9",
 				"logo-purple-dark": "#952abf",
 				"logo-purple-darker": "#7f24a3",
-				"text-purple": "#9c66ff",
+				"text-purple": "#9861ff",
 				"body": "#171717",
 				"nav-footer": "#141414",
 			},
