@@ -1584,11 +1584,11 @@ video {
 }
 
 .font-sourceSansPro {
-  font-family: 'Source Sans Pro', Arial, sans-serif;;
+  font-family: 'Source Sans Pro', Calibri, sans-serif;;
 }
 
 .font-openSans {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans', Calibri, sans-serif;
 }
 
 .text-\[1\.05rem\] {
@@ -1859,6 +1859,7 @@ video {
 
 body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-display: optional;
 }
 
 .hover\:scale-125:hover {
