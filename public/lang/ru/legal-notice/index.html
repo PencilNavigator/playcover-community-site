@@ -364,10 +364,10 @@
 		</section>
 
 		<!-- footer -->
-		<footer class="bg-white dark:bg-nav-footer text-gray-400 dark:text-gray-500 transition duration-200 ease-in-out">
+		<footer class="py-8 bg-white dark:bg-nav-footer text-gray-400 dark:text-gray-500 transition duration-200 ease-in-out">
 			<div class="mx-5 md:mx-16">
 				<!-- above line -->
-				<section class="flex md:items-end justify-between max-w-screen mx-auto pt-8 flex-col-reverse md:flex-row">
+				<section class="hidden  md:items-end justify-between max-w-screen mx-auto pt-8 flex-col-reverse md:flex-row">
 					<!-- text -->
 					<div class="pt-6 md:pt-0 flex flex-col space-y-1">
 						
@@ -393,12 +393,12 @@
 				</section>
 
 				<!-- line -->
-				<section class="w-100% flex justify-center">
+				<section class="w-100% hidden justify-center">
 					<hr class="h-px my-5 w-[100%] bg-gray-300 dark:bg-gray-400 border-none" />
 				</section>
 
 				<!-- below line -->
-				<section class="flex flex-col md:flex-row md:justify-between pb-5 md:items-center space-y-2">
+				<section class="flex flex-col-reverse md:flex-row md:justify-between md:items-center space-y-2">
 					<!-- legal notice and copyright claim -->
 					<div class="flex items-center">
 						<a href="/lang/ru/legal-notice/" class="pr-4 hover:text-text-purple underline text-left">Правовая информация</a>
@@ -406,6 +406,21 @@
 					</div>
 
 					<p class="inline">Copyright © 2021 Alexandr Dorofeev. Все права защищены.</p>
+
+					<!-- footer links -->
+					<div class="flex items-end space-x-0 md:pt-0">
+						
+
+						<!-- github -->
+						<a href="https://github.com/Letscoder/PlayCover" target="_blank" class="flex flex-col group pr-5">
+							<svg class="h-9 pb-1 md:pb-[0] fill-current text-gray-900 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M256 5.3C114.6 5.3 0 120.4 0 262.3a257 257 0 00175.1 244c12.8 2.3 17.5-5.6 17.5-12.5l-.4-43.7C121 465.6 106 415.7 106 415.7 94.4 386 77.6 378 77.6 378c-23.3-16 1.7-15.7 1.7-15.7 25.7 1.9 39.2 26.5 39.2 26.5 22.8 39.3 60 28 74.5 21.4 2.3-16.6 9-28 16.3-34.4-56.9-6.5-116.6-28.5-116.6-127 0-28 10-51 26.3-69-2.6-6.5-11.4-32.6 2.5-68 0 0 21.5-6.9 70.4 26.4a244.2 244.2 0 01128.2 0C369 105 390.5 112 390.5 112c14 35.3 5.1 61.5 2.5 68 16.4 18 26.3 40.9 26.3 69 0 98.7-59.8 120.4-116.8 126.8 9.1 7.9 17.3 23.6 17.3 47.5 0 34.4-.3 62.1-.3 70.5 0 7 4.6 15 17.6 12.4A257 257 0 00512 262.4c0-142-114.6-257-256-257z" /></svg>
+						</a>
+
+						<!-- discord -->
+						<a href="https://discord.gg/FYVuF6CNzP" target="_blank" class="flex flex-col group">
+							<img class="h-9 pb-1 md:pb-[0]" src="/assets/discord.svg" alt="discord" />
+						</a>
+					</div>
 				</section>
 			</div>
 		</footer>
