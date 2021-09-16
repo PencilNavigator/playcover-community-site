@@ -26,6 +26,7 @@ module.exports = {
 			colors: {
 				gold: "#D2AC4A",
 				"gold-light": "#FFD700",
+				"pastel-pink": "#9c2f64",
 				"menu-pink": "#E23B8B",
 				"logo-pink": "#FF0066",
 				"logo-purple": "#b634e9",
