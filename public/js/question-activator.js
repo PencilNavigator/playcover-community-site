@@ -11,15 +11,15 @@ class activator {
 			this.answer.classList.toggle("hidden");
 
 			this.activator.classList.toggle("shadow");
-			this.activator.classList.toggle("dark:shadow");
 			this.activator.classList.toggle("border-gray-500");
-			this.activator.classList.toggle("dark:border-[#747474]");
+			this.activator.classList.toggle("dark:border-menu-pink"); // testing
+			// this.activator.classList.toggle("dark:border-[#747474]");
 			this.activator.classList.toggle("border-transparent");
 			this.activator.classList.toggle("dark:border-transparent");
-			this.activator.classList.toggle("bg-gray-50");
-			this.activator.classList.toggle("dark:bg-[#2b2b2b]");
-			this.activator.classList.toggle("bg-gray-300");
-			this.activator.classList.toggle("dark:bg-[#222222]");
+			// this.activator.classList.toggle("bg-gray-50");
+			// this.activator.classList.toggle("dark:bg-[#1d1d1d]");
+			// this.activator.classList.toggle("bg-gray-300");
+			// this.activator.classList.toggle("dark:bg-[#222222]");
 		});
 	}
 }
