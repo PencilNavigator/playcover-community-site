@@ -1435,6 +1435,26 @@ video {
   padding-right: 2.25rem;
 }
 
+.px-\[3\.3rem\] {
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
+}
+
+.px-\[3\.5rem\] {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.px-\[3\.7rem\] {
+  padding-left: 3.7rem;
+  padding-right: 3.7rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
