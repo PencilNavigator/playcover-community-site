@@ -1036,6 +1036,11 @@ video {
   transform: var(--tw-transform);
 }
 
+.-translate-x-14 {
+  --tw-translate-x: -3.5rem;
+  transform: var(--tw-transform);
+}
+
 .rotate-\[140deg\] {
   --tw-rotate: 140deg;
   transform: var(--tw-transform);
@@ -2373,6 +2378,21 @@ body {
 
   .md\:translate-x-3 {
     --tw-translate-x: 0.75rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-11 {
+    --tw-translate-x: -2.75rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-10 {
+    --tw-translate-x: -2.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-4 {
+    --tw-translate-x: 1rem;
     transform: var(--tw-transform);
   }
 
