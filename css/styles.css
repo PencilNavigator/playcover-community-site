@@ -1011,6 +1011,31 @@ video {
   transform: var(--tw-transform);
 }
 
+.translate-x-10 {
+  --tw-translate-x: 2.5rem;
+  transform: var(--tw-transform);
+}
+
+.-translate-x-60 {
+  --tw-translate-x: -15rem;
+  transform: var(--tw-transform);
+}
+
+.-translate-x-20 {
+  --tw-translate-x: -5rem;
+  transform: var(--tw-transform);
+}
+
+.translate-x-3 {
+  --tw-translate-x: 0.75rem;
+  transform: var(--tw-transform);
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: var(--tw-transform);
+}
+
 .rotate-\[140deg\] {
   --tw-rotate: 140deg;
   transform: var(--tw-transform);
@@ -1023,6 +1048,11 @@ video {
 
 .rotate-45 {
   --tw-rotate: 45deg;
+  transform: var(--tw-transform);
+}
+
+.skew-y-6 {
+  --tw-skew-y: 6deg;
   transform: var(--tw-transform);
 }
 
@@ -1848,6 +1878,18 @@ video {
   opacity: 0;
 }
 
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1861,6 +1903,16 @@ video {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.blur-xl {
+  --tw-blur: blur(24px);
+  filter: var(--tw-filter);
+}
+
+.blur-sm {
+  --tw-blur: blur(4px);
+  filter: var(--tw-filter);
 }
 
 .drop-shadow-sm {
@@ -1908,6 +1960,22 @@ video {
   transition-duration: 2000ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-\[1500ms\] {
+  transition-duration: 1500ms;
+}
+
+.duration-\[1200ms\] {
+  transition-duration: 1200ms;
+}
+
+.duration-\[1000ms\] {
+  transition-duration: 1000ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1918,6 +1986,10 @@ video {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* removes highlight of button press on mobile */
@@ -2244,9 +2316,159 @@ body {
     transform: var(--tw-transform);
   }
 
+  .md\:-translate-x-20 {
+    --tw-translate-x: -5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-10 {
+    --tw-translate-x: 2.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-12 {
+    --tw-translate-x: -3rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-14 {
+    --tw-translate-x: -3.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-2 {
+    --tw-translate-x: 0.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-8 {
+    --tw-translate-x: -2rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-5 {
+    --tw-translate-x: -1.25rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-20 {
+    --tw-translate-x: 5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-6 {
+    --tw-translate-x: 1.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-5 {
+    --tw-translate-x: 1.25rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:translate-x-3 {
+    --tw-translate-x: 0.75rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:rotate-12 {
+    --tw-rotate: 12deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:rotate-0 {
+    --tw-rotate: 0deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:rotate-3 {
+    --tw-rotate: 3deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-rotate-3 {
+    --tw-rotate: -3deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-rotate-2 {
+    --tw-rotate: -2deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:skew-y-6 {
+    --tw-skew-y: 6deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:skew-y-0 {
+    --tw-skew-y: 0deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:skew-x-6 {
+    --tw-skew-x: 6deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:skew-x-0 {
+    --tw-skew-x: 0deg;
+    transform: var(--tw-transform);
+  }
+
+  .md\:skew-y-2 {
+    --tw-skew-y: 2deg;
+    transform: var(--tw-transform);
+  }
+
   .md\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
+    transform: var(--tw-transform);
+  }
+
+  .md\:scale-0 {
+    --tw-scale-x: 0;
+    --tw-scale-y: 0;
+    transform: var(--tw-transform);
+  }
+
+  .md\:scale-50 {
+    --tw-scale-x: .5;
+    --tw-scale-y: .5;
+    transform: var(--tw-transform);
+  }
+
+  .md\:scale-95 {
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+    transform: var(--tw-transform);
+  }
+
+  .md\:scale-125 {
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: var(--tw-transform);
+  }
+
+  .md\:scale-110 {
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: var(--tw-transform);
+  }
+
+  .md\:scale-90 {
+    --tw-scale-x: .9;
+    --tw-scale-y: .9;
+    transform: var(--tw-transform);
+  }
+
+  .md\:transform {
     transform: var(--tw-transform);
   }
 
@@ -2363,6 +2585,68 @@ body {
 
   .md\:opacity-100 {
     opacity: 1;
+  }
+
+  .md\:opacity-25 {
+    opacity: 0.25;
+  }
+
+  .md\:opacity-0 {
+    opacity: 0;
+  }
+
+  .md\:opacity-30 {
+    opacity: 0.3;
+  }
+
+  .md\:opacity-10 {
+    opacity: 0.1;
+  }
+
+  .md\:blur-sm {
+    --tw-blur: blur(4px);
+    filter: var(--tw-filter);
+  }
+
+  .md\:blur-none {
+    --tw-blur: blur(0);
+    filter: var(--tw-filter);
+  }
+
+  .md\:transition {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .md\:duration-1000 {
+    transition-duration: 1000ms;
+  }
+
+  .md\:duration-\[3000ms\] {
+    transition-duration: 3000ms;
+  }
+
+  .md\:duration-\[1500ms\] {
+    transition-duration: 1500ms;
+  }
+
+  .md\:duration-\[1200ms\] {
+    transition-duration: 1200ms;
+  }
+
+  .md\:ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .md\:ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .md\:ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
