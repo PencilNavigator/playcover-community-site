@@ -2332,6 +2332,16 @@ html {
     transform: var(--tw-transform);
   }
 
+  .md\:-translate-x-3 {
+    --tw-translate-x: -0.75rem;
+    transform: var(--tw-transform);
+  }
+
+  .md\:-translate-x-4 {
+    --tw-translate-x: -1rem;
+    transform: var(--tw-transform);
+  }
+
   .md\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -2465,8 +2475,20 @@ html {
     transition-duration: 1200ms;
   }
 
+  .md\:duration-\[1000ms\] {
+    transition-duration: 1000ms;
+  }
+
   .md\:ease-out {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .md\:ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .md\:ease-linear {
+    transition-timing-function: linear;
   }
 }
 
