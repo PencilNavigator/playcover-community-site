@@ -1644,6 +1644,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -2291,6 +2295,10 @@ html {
 
   .md\:w-\[83vw\] {
     width: 83vw;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:max-w-7xl {
