@@ -1,4 +1,3 @@
-const searchBar = document.querySelector ('.search-bar');
 const searchField = document.querySelector ('.search-bar input');
 const questionsList = document.querySelectorAll ('.question .activator');
 
