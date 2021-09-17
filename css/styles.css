@@ -1706,6 +1706,16 @@ video {
   line-height: 2rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1724,6 +1734,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .uppercase {
@@ -2177,6 +2191,14 @@ html {
   .sm\:hidden {
     display: none;
   }
+
+  .sm\:h-\[40px\] {
+    height: 40px;
+  }
+
+  .sm\:w-\[40px\] {
+    width: 40px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2430,8 +2452,16 @@ html {
     display: none;
   }
 
+  .lg\:h-\[40px\] {
+    height: 40px;
+  }
+
   .lg\:w-\[30rem\] {
     width: 30rem;
+  }
+
+  .lg\:w-\[40px\] {
+    width: 40px;
   }
 
   .lg\:scale-100 {
@@ -2508,6 +2538,10 @@ html {
     display: none;
   }
 
+  .xl\:h-\[40px\] {
+    height: 40px;
+  }
+
   .xl\:w-auto {
     width: auto;
   }
@@ -2538,6 +2572,10 @@ html {
 
   .xl\:w-\[40rem\] {
     width: 40rem;
+  }
+
+  .xl\:w-\[40px\] {
+    width: 40px;
   }
 
   .xl\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
