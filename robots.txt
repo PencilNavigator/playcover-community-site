@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /src/
+Disallow: /translations/
+Disallow: /node_modules/
+Disallow: /tailwind.config.js
+Disallow: /postcss.config.js
+Disallow: /package.json
+Disallow: /package-lock.json
+
+User-agent: *
+Allow: /
+
+Sitemap: /sitemap.xml

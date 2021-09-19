@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.w3.org/1999/xhtml
+    http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+
+
+<url>
+	<loc>https://www.playcover.me/</loc>
+		<xhtml:link
+								rel="alternate"
+								hreflang="de"
+								href="https://www.playcover.me/lang/de/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="cn"
+								href="https://www.playcover.me/lang/cn/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="ru"
+								href="https://www.playcover.me/lang/ru/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="id"
+								href="https://www.playcover.me/lang/id/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="es"
+								href="https://www.playcover.me/lang/es/"/>
+	<lastmod>2021-09-16T19:44:35+00:00</lastmod>
+	<priority>1.00</priority>
+</url>
+<url>
+	<loc>https://www.playcover.me/changelog/</loc>
+		<xhtml:link
+								rel="alternate"
+								hreflang="de"
+								href="https://www.playcover.me/lang/de/changelog/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="cn"
+								href="https://www.playcover.me/lang/cn/changelog/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="ru"
+								href="https://www.playcover.me/lang/ru/changelog/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="id"
+								href="https://www.playcover.me/lang/id/changelog/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="es"
+								href="https://www.playcover.me/lang/es/changelog/"/>
+	<lastmod>2021-09-16T19:44:35+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+<url>
+	<loc>https://www.playcover.me/faq/</loc>
+		<xhtml:link
+								rel="alternate"
+								hreflang="de"
+								href="https://www.playcover.me/lang/de/faq/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="cn"
+								href="https://www.playcover.me/lang/cn/faq/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="ru"
+								href="https://www.playcover.me/lang/ru/faq/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="id"
+								href="https://www.playcover.me/lang/id/faq/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="es"
+								href="https://www.playcover.me/lang/es/faq/"/>
+	<lastmod>2021-09-16T19:44:35+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+<url>
+	<loc>https://www.playcover.me/team/</loc>
+		<xhtml:link
+								rel="alternate"
+								hreflang="de"
+								href="https://www.playcover.me/lang/de/team/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="cn"
+								href="https://www.playcover.me/lang/cn/team/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="ru"
+								href="https://www.playcover.me/lang/ru/team/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="id"
+								href="https://www.playcover.me/lang/id/team/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="es"
+								href="https://www.playcover.me/lang/es/team/"/>
+	<lastmod>2021-09-16T19:44:35+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+<url>
+	<loc>https://www.playcover.me/legal-notice/</loc>
+		<xhtml:link
+								rel="alternate"
+								hreflang="de"
+								href="https://www.playcover.me/lang/de/legal-notice/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="cn"
+								href="https://www.playcover.me/lang/cn/legal-notice/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="ru"
+								href="https://www.playcover.me/lang/ru/legal-notice/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="id"
+								href="https://www.playcover.me/lang/id/legal-notice/"/>
+		<xhtml:link
+								rel="alternate"
+								hreflang="es"
+								href="https://www.playcover.me/lang/es/legal-notice/"/>
+	<lastmod>2021-09-16T19:44:35+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+</urlset>

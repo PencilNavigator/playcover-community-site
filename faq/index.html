@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Run iOS apps & games in fullscreen mode with mouse, keyboard & controller support." />
+		<meta name="keywords" content="Play Cover, Play Cover download, Play Cover changelog, Play Cover donate, Play Cover team, Play Cover mac, Play Cover intel mac, Play Cover faq, Play Cover contact, Play Cover copyright, Play Cover legal notice, Play Cover PlayPass, PlayPass" />
+		<title>FAQ | PlayCover </title>
+		<link href="/css/styles.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/jpg" href="/assets/favicon.ico" />
+		<script src="/js/local-storage-track.js"></script>
+
+		<!-- fonts import -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- Open Sans and Source Sans Pro import -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-body font-sourceSansPro transition duration-200 ease-in-out">
+		<!-- nav bar -->
+		<nav class="nav-bar max-w-screen px-6 lg:pr-12 lg:pl-14 mx-auto py-3 lg:py-1 fixed w-screen top-0 bg-gray-100 dark:bg-body transition duration-200 ease-in-out filter z-20 select-none">
+			<div class="flex justify-between">
+				<!-- logo -->
+				<div class="flex items-center lg:mr-10 space-x-10">
+					<a href="/" class="flex items-center">
+						<img class="h-14 md:h-16 w-14 md:w-16 rounded-lg" src="/assets/logo.png" alt="PlayCover logo" />
+					</a>
+					<!-- primary nav -->
+					<div class="hidden xl:flex items-center space-x-5 pt-1 text-[1.05rem] font-semibold text-center">
+						<a href="/" class="text-gray-600 dark:text-gray-300 rounded-full  px-5 py-1 border-2 border-transparent hover:border-menu-pink dark:hover:border-menu-pink transition duration-300"> Home </a>
+						
+						<a href="/changelog/" class="text-gray-600 dark:text-gray-300 rounded-full  px-5 py-1 border-2 border-transparent hover:border-menu-pink dark:hover:border-menu-pink transition duration-300"> Changelog </a>
+						<a href="/faq/" class="rounded-full px-5 py-1 border-2 border-menu-pink text-[#f54399] transition duration-300"> FAQ </a>
+						<a href="/team/" class="text-gray-600 dark:text-gray-300 rounded-full  px-5 py-1 border-2 border-transparent hover:border-menu-pink dark:hover:border-menu-pink transition duration-300"> Team </a>
+						<button class="font-semibold contact-nav-button text-gray-600 dark:text-gray-300 rounded-full  px-5 py-1 border-2 border-transparent hover:border-menu-pink dark:hover:border-menu-pink transition duration-300">Contact Us</button>
+					</div>
+				</div>
+
+
+				<!-- secondary nav -->
+				<div class="hidden xl:flex items-center space-x-5">
+					<!-- playpass button -->
+					<div class="relative">
+						<div class="h-[3.5rem] flex items-center">
+							<button class="group playpass-nav-button  bg-gray-700 dark:bg-gray-300 text-gray-200 dark:text-gray-800 hover:bg-gray-900 dark:hover:bg-white rounded-full px-5 py-1 transition duration-300">
+								<span class="text-[1.05rem] font-semibold"> Get PlayPass </span>
+							</button>
+						</div>
+					</div>
+
+					<!-- language button and menu-->
+					<ul>
+						<li class="relative text-[1.05rem] font-semibold">
+							<!-- language button -->
+							<button class="language-button flex items-center space-x-1 rounded-full px-5 py-1 border-2 border-transparent hover:border-menu-pink dark:hover:border-menu-pink transition duration-300 group">
+								<span class="text-gray-600 dark:text-gray-300 transition-colors duration-200 group-hover:text-gray-600 dark:group-hover:text-gray-200 font-semibold"> English </span>
+								<!-- icon -->
+								<div class="">
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition duration-200 text-gray-600 dark:text-gray-300 group-hover:text-gray-600 dark:group-hover:text-gray-200 transform language-menu-icon" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</div>
+							</button>
+
+							<!-- language menu -->
+							<div class="language-menu absolute bg-gray-100 dark:bg-body right-0 rounded-md w-[100%] pb-3 pt-6 transform transition-all duration-200 scale-0 opacity-0 -translate-y-2/4 ease-in-out">
+								<!-- text -->
+								<ul class="space-y-4 flex flex-col items-center">
+									<li>
+										<a href="/lang/cn" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200"> 简体中文 </a>
+									</li>
+									<li>
+										<a href="/lang/ru" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200"> Русский </a>
+									</li>
+									<li class="hidden">
+										<a href="/lang/jp" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200"> 日本語 </a>
+									</li>
+									<li>
+										<a href="/lang/de" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200"> Deutsch </a>
+									</li>
+									<li>
+										<a href="/lang/id" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200 flex flex-col items-center"><span>Bahasa</span>   Indonesia </a>
+									</li>
+
+									<li class="hidden">
+										<a href="/lang/kr" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200"> 한국어 </a>
+									</li>
+									<li>
+										<a href="/lang/es" class="text-gray-700 hover:text-menu-pink dark:text-gray-300 dark:hover:text-menu-pink transition-colors duration-200"> Español </a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					<!-- light/dark theme button -->
+					<div class="relative select-none">
+						<label for="theme-toggle" class="theme-label w-[3.5rem] h-7 rounded-full bg-gray-100 dark:bg-[#272727] border border-gray-600 dark:border-[#414141] flex items-center justify-between transition duration-300 ease-in-out cursor-pointer select-none">
+							<!-- sun -->
+							<div class="pl-[0.26rem] opacity-0 dark:opacity-100 transition duration-300 ease-in-out">
+								<svg class="h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" /> 
+								</svg>
+							</div>
+
+							<!-- moon -->
+							<div class="pr-[0.55rem] dark:opacity-0 transition duration-300 ease-in-out">
+								<svg class=" h-[0.80rem] rotate-[140deg] text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330" xml:space="preserve">
+									<path d="M37.502 35.07a15 15 0 0 0 7.489 12.984c41.64 24.088 67.507 68.898 67.507 116.947 0 48.045-25.867 92.855-67.507 116.943a14.999 14.999 0 0 0 0 25.967C69.972 322.362 98.505 330 127.506 330c90.977 0 164.992-74.018 164.992-164.998C292.498 74.02 218.482 0 127.506 0 98.504 0 69.971 7.637 44.991 22.086a15 15 0 0 0-7.489 12.984z"/>
+								</svg>
+							</div>
+
+							<!-- ball -->
+							<div class="ball dark:translate-x-[1.73rem] left-1 flex w-[20px] h-[20px] rounded-full bg-gray-600 dark:bg-gray-300 absolute transition ease-in-out duration-200"></div>
+						</label>
+					</div>
+				</div>
+
+				<!-- mobile buttons -->
+				<div class="xl:hidden flex items-center space-x-4">
+					<!-- light/dark theme button -->
+					<div class="relative select-none">
+						<label for="theme-toggle" class="theme-label w-[3.5rem] h-7 rounded-full bg-gray-100 dark:bg-[#272727] border border-gray-600 dark:border-[#414141] flex items-center justify-between transition duration-300 ease-in-out cursor-pointer select-none">
+							<!-- sun -->
+							<div class="pl-[0.26rem] opacity-0 dark:opacity-100 transition duration-300 ease-in-out">
+								<svg class="h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" /> 
+								</svg>
+							</div>
+
+							<!-- moon -->
+							<div class="pr-[0.55rem] dark:opacity-0 transition duration-300 ease-in-out">
+								<svg class=" h-[0.80rem] rotate-[140deg] text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330" xml:space="preserve">
+									<path d="M37.502 35.07a15 15 0 0 0 7.489 12.984c41.64 24.088 67.507 68.898 67.507 116.947 0 48.045-25.867 92.855-67.507 116.943a14.999 14.999 0 0 0 0 25.967C69.972 322.362 98.505 330 127.506 330c90.977 0 164.992-74.018 164.992-164.998C292.498 74.02 218.482 0 127.506 0 98.504 0 69.971 7.637 44.991 22.086a15 15 0 0 0-7.489 12.984z"/>
+								</svg>
+							</div>
+
+							<!-- ball -->
+							<div class="ball dark:translate-x-[1.73rem] left-1 flex w-[20px] h-[20px] rounded-full bg-gray-600 dark:bg-gray-300 absolute transition ease-in-out duration-200"></div>
+						</label>
+					</div>
+					<!-- nav button -->
+					<div class="flex items-center">
+						<button class="mobile-button text-menu-pink active:text-logo-purple-dark transition-colors">
+							<!-- icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="mobile-menu xl:hidden max-h-[85vh] overflow-auto hidden relative">
+				<div class="flex flex-col items-center space-y-5 pt-5 pb-3 text-lg md:text-xl">
+					<a href="/" class="block text-gray-600 dark:text-gray-300">Home</a>
+					
+					<a href="/changelog/" class="block text-gray-600 dark:text-gray-300">Changelog</a>
+					<a href="/faq/" class="block text-menu-pink dark:text-menu-pink
+					pb-1 border-2 rounded-full px-5 py-1 border-menu-pink">FAQ</a>
+					<a href="/team/" class="block text-gray-600 dark:text-gray-300">Team</a>
+					<button class="mobile-contact-button block text-gray-600 dark:text-gray-300">Contact Us</button>
+
+					<!-- mobile language button -->
+					<button class="mobile-language-button text-gray-600 dark:text-gray-300 flex items-center space-x-1">
+						<p class="pl-3">English</p>
+						<!-- icon -->
+						<div class="pt-0">
+							<svg xmlns="http://www.w3.org/2000/svg" class="mobile-lang-icon transform h-5 w-5 transition-colors duration-200 group-hover:text-pink-500" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+							</svg>
+						</div>
+					</button>
+					<!-- mobile language menu -->
+					<div class="mobile-language-menu hidden rounded-lg">
+						<div class="w-[85vw] bg-gray-50 dark:bg-[#1E1E1E] shadow-inner grid grid-cols-2 place-items-center py-4 gap-y-5 text-gray-600 dark:text-gray-300 transition duration-200 ease-in-out rounded-lg">
+							<a href="/lang/cn">简体中文</a>
+							<a href="/lang/ru">Pусский</a>
+							<a href="/lang/de">Deutsch</a>
+							<a href="/lang/jp" class="hidden">ホーム </a>
+							<a href="/lang/es">Español</a>
+
+							<a href="/lang/kr" class="hidden">한국어</a>
+							<a href="/lang/id" class="flex flex-col items-center justify-center">Bahasa <span>Indonesia</span> </a>
+						</div>
+					</div>
+
+					<button class="mobile-playpass-button block bg-gray-700 dark:bg-gray-300 text-gray-200 dark:text-gray-800 hover:bg-gray-900 dark:hover:bg-white rounded-full transition duration-300 px-5 py-1">Get PlayPass</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- auto closer for lang menu -->
+		<div class="auto-closer hidden z-10 w-[100%] h-2 absolute"></div>
+
+		<!-- content -->
+		<main class="pb-16">
+			<!-- heading -->
+			<header class="pt-32 xl:pt-36 pb-2 flex justify-center">
+				<span class="hidden sm:flex font-semibold text-5xl text-gray-700 dark:text-menu-pink transition duration-200">Frequently asked questions</span>
+				<span class="sm:hidden flex flex-col items-center text-6xl font-black text-gray-700 dark:text-menu-pink transition duration-200 space-y-3 text-center">
+					<p>FAQ</p>
+				</span>
+			</header>
+
+			<section class="w-full flex flex-col items-center pt-20 space-y-14 text-md xl:text-lg md:transition md:duration-[1000ms] md:ease-out md:opacity-30 transform md:-translate-x-4" data-replace='{"md:opacity-30": "md:opacity-100", "md:-translate-x-4": "md:translate-x-0"}'>
+
+				<!-- search bar -->
+				<div class="px-10 xl:px-0 w-screen xl:w-auto flex justify-center">
+					<form class="search-bar flex text-gray-700 dark:text-gray-300 items-center px-8 w-[83vw] xl:w-[40rem] min-h-[3.5rem] font-semibold rounded-full border border-gray-500 dark:border-logo-purple-dark  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200">
+						<!-- search field -->
+						<input class="bg-transparent outline-none w-[100%] xl:w-[63rem] min-h-[3.5rem]  transition-colors duration-200" type="text" name="search" placeholder="Search...">
+	
+						<!-- search icon -->
+						<svg class="search-icon h-[1.2rem] w-[1.2rem] xl:h-[40px] xl:w-[40px] text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+						</svg>
+					</form>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">Is there any step by step guide that I could follow?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<a href="https://www.youtube.com/watch?v=H3CoI84s_FI" class="underline">YouTube Video Guide</a>
+						<p><br /></p>
+						<p>Note: some options in PlayCover might differ from the video due to different versions being used however, the major steps remain the same.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">Keybindings Instructions</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p class="pl-3 mb-10 border-l-4 rounded-sm border-text-purple ">Last updated for version 0.7.0</p>
+
+						<ul class="list-inside list-disc">
+							<h2 class="text-xl font-bold">Keymapper Toggle</h2>
+							<li class=""><kbd>CTRL + P</kbd>&nbsp; →&nbsp; Toggle keymapping mode</li>
+
+							<br />
+
+							<h2 class="text-xl font-bold">Controller Guide:</h2>
+							<li class=""><kbd>CTRL + N</kbd> and then <kbd>Shift + A,X,B,Y</kbd></li>
+							<li class=""><kbd>Shift + 1,2,3,4</kbd> for Dpad</li>
+							<li class=""><kbd>Shift + 5,6,7,8</kbd> for L1,L2,R1,R2</li>
+							<li class=""><kbd>Shift + 9</kbd> for Left Stick</li>
+							<li class=""><kbd>Ctrl + M</kbd> for Right Stick</li>
+
+							<br />
+
+							<h2 class="text-xl font-bold">Button Events:</h2>
+							<li class=""><kbd>CTRL + J</kbd>&nbsp; →&nbsp; Add W/A/S/D Joystick</li>
+							<li class=""><kbd>CTRL + N</kbd>&nbsp; →&nbsp; Add New Button</li>
+							<li class=""><kbd>CTRL + M</kbd>&nbsp; →&nbsp; Mouse/Camera Movements</li>
+
+							<br />
+
+							<h2 class="text-xl font-bold">After Selecting a New Button:</h2>
+							<li class=""><kbd>*key*</kbd>&nbsp; →&nbsp; Press any key to bind it</li>
+							<li class=""><kbd>SHIFT + L (L key on keyboard)</kbd>&nbsp; →&nbsp; Bind Left Mouse Click</li>
+							<li class=""><kbd>SHIFT + R (R key on keyboard)</kbd>&nbsp; →&nbsp; Bind Right Mouse Click</li>
+							<li class=""><kbd>CTRL + ‘+’</kbd>&nbsp; →&nbsp; Increase Button Size</li>
+							<li class=""><kbd>CTRL + ‘-’</kbd>&nbsp; →&nbsp; Decrease Button Size</li>
+							<li class=""><kbd>CTRL + DEL (Backspace)</kbd>&nbsp; →&nbsp; Delete Button</li>
+
+							<br />
+
+							<h2 class="text-xl font-bold">Miscellaneous:</h2>
+							<li class=""><kbd>CTRL + F</kbd>&nbsp; →&nbsp; Adjust resolution</li>
+
+							<br />
+
+							<h2 class="text-xl font-bold">Macros:</h2>
+							<li class=""><kbd>CTRL + U</kbd>&nbsp; →&nbsp; Start Recording</li>
+							<li class=""><kbd>CTRL + I</kbd>&nbsp; →&nbsp; End Recording</li>
+							<li class=""><kbd>CTRL + O</kbd>&nbsp; →&nbsp; Replay Macro</li>
+
+							<br />
+
+							<h2 class="text-xl font-bold">Flow Control:</h2>
+							<li class=""><kbd>Press option</kbd>&nbsp; →&nbsp; Show/Hide cursor</li>
+							<li class=""><kbd>CTRL + W/A/S/D</kbd>&nbsp; →&nbsp; Nudge button</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">What is the supporter version of PlayCover?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>The supporter version is a build that is pushed to supporters before releasing to the general public. It generally has newer and more features, but is more buggy. Check #how-to-donate channel in our <a href="https://discord.com/invite/FYVuF6CNzP" class="underline">discord server</a> for more info.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">When will the next version of Playcover be released?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>We may not be able to provide an ETA on the next release, but rest assured that we are working hard to develop the app and release new features!</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">Do I have to disable SIP (System Integrity Protection) and is it safe to?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Currently, yes. But disabling SIP will not be required in future releases. It is also very safe, especially on M1 Macs.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">How can I change Genshin settings?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Press <kbd>option</kbd> key on your keyboard while playing to enable the cursor, then click top left icon (next to map) and click setting. There you can change all settings.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">How do I add mouse left or right clicks?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>To add mouse clicks, select a button and press 'Shift + L or R' (the actual L or R keys on keyboard, not the mouse buttons).</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">Camera movement is not working in games?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<ul class="list-outside list-disc">
+							<li>Press CTRL + M in keymapper and place it in the middle.</li>
+							<li>Try disconnecting and reconnecting your mouse if an external one.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">I have followed all steps correctly as shown in the video but my keybindings still don't work?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Please check if you moved the game to Applications folder after install. If yes, delete it and reinstall. Let it remain in the documents folder.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">PlayCover is not working even though I did all the steps correctly (even troubleshoot says that my system is correct)?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>You will need to install XCode from the app store.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">Do I have to reinstall Genshin Impact every PlayCover release?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Yes, in order to apply latest changes to the app you need to install the .ipa again, however you won’t need to download any game data, since that is just going to replace the old patched version.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">How do I reset the "sudo nvram boot-args..." command?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>By running the following command:</p>
+						<br />
+						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args=""</code></div>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">Why do I see random text when I restart or switch my Mac on?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>That's called verbose mode, it displays what's going on inside the system. It was enabled by the following command:</p>
+						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args...</code></div>
+						<br />You can disable the texts by running the following commands in order:
+						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args=""</code></div>
+						<br />
+						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded"><code class="text-yellow-400">sudo nvram boot-args="cs_enforcement_disable=1 amfi_get_out_of_my_way=1 keepsyms=1 intcoproc_unrestricted=1 amfi_unrestrict_task_for_pid=1 amfi_allow_any_signature=1 cs_debug=1"</code></div>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">I can’t disable SIP or add boot-args because of a *blank password*?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>This is normal. *nix systems blank out the password while you’re typing it. This is a form of security and it’s completely expected. Just type your password normally and press enter once you’re done.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">I am getting "This application is not supported on this Mac" error?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>Intel machines are currently not supported on Playcover. However, the devs are trying to make this happen so stay tuned.</p>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">I am getting "You do not have permission" error?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<ol class="list-decimal">
+							<li>Make sure you have disabled SIP.</li>
+							<li>
+								Or go in terminal and type: (without the <> text) <br />
+								<!-- code -->
+								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+									<code class="text-yellow-400">chmod -R 755 &#60;drag app here&#62;</code>
+								</div>
+							</li>
+							<li>
+								Or go in terminal and type: (without the <> text) <br />
+								<!-- code -->
+								<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+									<code class="text-yellow-400">xattr -rd com.apple.quarantine &#60;drag app here&#62;</code>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+
+				<!-- copy - question/answer -->
+				<div class="question flex flex-col items-center space-y-6 xl:space-y-8 px-10 xl:px-0 w-screen xl:w-auto">
+					<!-- question -->
+					<div class="activator text-gray-700 dark:text-gray-300 flex items-center justify-between px-8 w-[83vw] xl:w-[63rem] min-h-[4.5rem] font-semibold rounded-full border border-transparent lg:hover:border-gray-500 lg:dark:hover:border-pastel-pink  bg-gray-50 dark:bg-[#1d1d1d] shadow transition duration-200 cursor-pointer">
+						<p class="w-[100%] xl:w-[63rem] pl-2 pr-4 py-5">My keybindings are acting all weird in Genshin Impact and restarting the app and Mac didn't help either?</p>
+
+						<!-- arrow icon -->
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="q-icon h-5 w-5 transform" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+						</span>
+					</div>
+
+					<!-- answer -->
+					<div class="answer hidden w-[75%] xl:w-[55rem] font-medium text-gray-700 dark:text-gray-300 transition duration-200">
+						<p>
+							You could either: <br />
+							<br />
+							1. Delete and reinstall the app with 'clear app cache' checked. <br />
+							2. Run the following command to remove the .plist file which contains keybindings settings:
+						</p>
+						<!-- code -->
+						<div class="inline-block max-w-[100%] overflow-auto bg-gray-700 dark:bg-gray-800 transition duration-200 ease-in-out my-3 p-3 rounded">
+							<code class="text-yellow-400">rm&nbsp;~/Library/Containers/com.miHoYo.GenshinImpact/Data/Library/Preferences/com.miHoYo.GenshinImpact.plist</code>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- donate popup -->
+		<section class="hidden donate-wrapper donate-popup z-40 fixed w-screen h-screen bg-[rgba(0,0,0,0.8)] dark:bg-[rgba(0,0,0,0.8)]">
+			<!-- modal -->
+			<div class="w-screen h-screen flex flex-col items-center justify-center">
+				<div class="donate-modal flex flex-col items-center w-[90vw] lg:w-[30rem] bg-white dark:bg-[#1E1E1E] rounded-lg shadow">
+					<!-- close button -->
+					<div class="relative pt-4">
+						<button class="donate-close-button absolute top-5 lg:top-4 left-[7.5rem] lg:left-48">
+							<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-100 scale-125 lg:scale-100 transition duration-300 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+
+					<!-- text -->
+					<p class="pt-12 pb-8 font-light text-gray-700 dark:text-gray-100 text-3xl">Get PlayPass</p>
+
+					<!-- donate options -->
+					<div class="flex items-center px-8 lg:px-0 pt-10 pb-10">
+						<a class="hidden donate-button  transition duration-300 bg-gray-100 hover:bg-white dark:bg-[#292929] dark:hover:bg-[#2e2e2e] shadow px-6 py-4 rounded-full" href="https://www.paypal.com/paypalme/playcoverapp" target="_blank">
+							<div class=" transition duration-300">
+								<svg class="w-[6rem] md:w-[7.2rem] drop-shadow-sm" viewBox="-0.09581 0 123.74964 30.22562" xmlns="http://www.w3.org/2000/svg">
+									<path d="M46.211 6.749h-6.839a.95.95 0 0 0-.939.802l-2.766 17.537a.57.57 0 0 0 .564.658h3.265a.95.95 0 0 0 .939-.803l.746-4.73a.95.95 0 0 1 .938-.803h2.165c4.505 0 7.105-2.18 7.784-6.5.306-1.89.013-3.375-.872-4.415-.972-1.142-2.696-1.746-4.985-1.746zM47 13.154c-.374 2.454-2.249 2.454-4.062 2.454h-1.032l.724-4.583a.57.57 0 0 1 .563-.481h.473c1.235 0 2.4 0 3.002.704.359.42.469 1.044.332 1.906zm19.654-.079h-3.275a.57.57 0 0 0-.563.481l-.145.916-.229-.332c-.709-1.029-2.29-1.373-3.868-1.373-3.619 0-6.71 2.741-7.312 6.586-.313 1.918.132 3.752 1.22 5.031.998 1.176 2.426 1.666 4.125 1.666 2.916 0 4.533-1.875 4.533-1.875l-.146.91a.57.57 0 0 0 .562.66h2.95a.95.95 0 0 0 .939-.803l1.77-11.209a.568.568 0 0 0-.561-.658zm-4.565 6.374c-.316 1.871-1.801 3.127-3.695 3.127-.951 0-1.711-.305-2.199-.883-.484-.574-.668-1.391-.514-2.301.295-1.855 1.805-3.152 3.67-3.152.93 0 1.686.309 2.184.892.499.589.697 1.411.554 2.317zm22.007-6.374h-3.291a.954.954 0 0 0-.787.417l-4.539 6.686-1.924-6.425a.953.953 0 0 0-.912-.678h-3.234a.57.57 0 0 0-.541.754l3.625 10.638-3.408 4.811a.57.57 0 0 0 .465.9h3.287a.949.949 0 0 0 .781-.408l10.946-15.8a.57.57 0 0 0-.468-.895z" fill="#253b80"/><path d="M94.992 6.749h-6.84a.95.95 0 0 0-.938.802l-2.766 17.537a.569.569 0 0 0 .562.658h3.51a.665.665 0 0 0 .656-.562l.785-4.971a.95.95 0 0 1 .938-.803h2.164c4.506 0 7.105-2.18 7.785-6.5.307-1.89.012-3.375-.873-4.415-.971-1.142-2.694-1.746-4.983-1.746zm.789 6.405c-.373 2.454-2.248 2.454-4.062 2.454h-1.031l.725-4.583a.568.568 0 0 1 .562-.481h.473c1.234 0 2.4 0 3.002.704.359.42.468 1.044.331 1.906zm19.653-.079h-3.273a.567.567 0 0 0-.562.481l-.145.916-.23-.332c-.709-1.029-2.289-1.373-3.867-1.373-3.619 0-6.709 2.741-7.311 6.586-.312 1.918.131 3.752 1.219 5.031 1 1.176 2.426 1.666 4.125 1.666 2.916 0 4.533-1.875 4.533-1.875l-.146.91a.57.57 0 0 0 .564.66h2.949a.95.95 0 0 0 .938-.803l1.771-11.209a.571.571 0 0 0-.565-.658zm-4.565 6.374c-.314 1.871-1.801 3.127-3.695 3.127-.949 0-1.711-.305-2.199-.883-.484-.574-.666-1.391-.514-2.301.297-1.855 1.805-3.152 3.67-3.152.93 0 1.686.309 2.184.892.501.589.699 1.411.554 2.317zm8.426-12.219-2.807 17.858a.569.569 0 0 0 .562.658h2.822c.469 0 .867-.34.939-.803l2.768-17.536a.57.57 0 0 0-.562-.659h-3.16a.571.571 0 0 0-.562.482z" fill="#179bd7"/><path d="m7.266 29.154.523-3.322-1.165-.027H1.061L4.927 1.292a.316.316 0 0 1 .314-.268h9.38c3.114 0 5.263.648 6.385 1.927.526.6.861 1.227 1.023 1.917.17.724.173 1.589.007 2.644l-.012.077v.676l.526.298a3.69 3.69 0 0 1 1.065.812c.45.513.741 1.165.864 1.938.127.795.085 1.741-.123 2.812-.24 1.232-.628 2.305-1.152 3.183a6.547 6.547 0 0 1-1.825 2c-.696.494-1.523.869-2.458 1.109-.906.236-1.939.355-3.072.355h-.73c-.522 0-1.029.188-1.427.525a2.21 2.21 0 0 0-.744 1.328l-.055.299-.924 5.855-.042.215c-.011.068-.03.102-.058.125a.155.155 0 0 1-.096.035z" fill="#253b80"/><path d="M23.048 7.667c-.028.179-.06.362-.096.55-1.237 6.351-5.469 8.545-10.874 8.545H9.326c-.661 0-1.218.48-1.321 1.132L6.596 26.83l-.399 2.533a.704.704 0 0 0 .695.814h4.881c.578 0 1.069-.42 1.16-.99l.048-.248.919-5.832.059-.32c.09-.572.582-.992 1.16-.992h.73c4.729 0 8.431-1.92 9.513-7.476.452-2.321.218-4.259-.978-5.622a4.667 4.667 0 0 0-1.336-1.03z" fill="#179bd7"/><path d="M21.754 7.151a9.757 9.757 0 0 0-1.203-.267 15.284 15.284 0 0 0-2.426-.177h-7.352a1.172 1.172 0 0 0-1.159.992L8.05 17.605l-.045.289a1.336 1.336 0 0 1 1.321-1.132h2.752c5.405 0 9.637-2.195 10.874-8.545.037-.188.068-.371.096-.55a6.594 6.594 0 0 0-1.017-.429 9.045 9.045 0 0 0-.277-.087z" fill="#222d65"/><path d="M9.614 7.699a1.169 1.169 0 0 1 1.159-.991h7.352c.871 0 1.684.057 2.426.177a9.757 9.757 0 0 1 1.481.353c.365.121.704.264 1.017.429.368-2.347-.003-3.945-1.272-5.392C20.378.682 17.853 0 14.622 0h-9.38c-.66 0-1.223.48-1.325 1.133L.01 25.898a.806.806 0 0 0 .795.932h5.791l1.454-9.225z" fill="#253b80"/>
+								</svg>
+							</div>
+						</a>
+						<!-- patreon -->
+						<a class="donate-button transition duration-300 bg-gray-100 hover:bg-white dark:bg-[#292929] dark:hover:bg-[#2e2e2e] shadow px-6 py-4 rounded-full" href="https://www.patreon.com/playcoverapp" target="_blank">
+							<div class="rounded-full flex items-center space-x-2  transition duration-300">
+								<div>
+									<svg class="w-7 md:w-8" viewBox="0 0 567.18 545.8" xmlns="http://www.w3.org/2000/svg"><circle cx="362.59" cy="204.59" fill="#e85b46" r="204.59"/><path d="M0 0h100v545.8H0z" fill="#241e12"/></svg>
+								</div>
+								<p class="text-red-500 text-xl md:text-2xl uppercase font-bold pt-[0.1rem]">patreon</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- contact popup -->
+		<section class="hidden contact-wrapper contact-popup z-40 fixed w-[100vw] h-screen bg-[rgba(0,0,0,0.8)] dark:bg-[rgba(0,0,0,0.8)]">
+			<!-- modal -->
+			<div class="w-[100vw] h-screen flex flex-col items-center justify-center">
+				<div class="contact-modal flex flex-col items-center w-[22rem] md:w-[35rem] bg-white dark:bg-[#1E1E1E] rounded-lg shadow">
+					<!-- close button -->
+					<div class="relative pt-4">
+						<button class=" contact-close-button absolute top-4 lg:top-4 left-[8.5rem] lg:left-[14.7rem]">
+							<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-600 dark:text-gray-200 md:scale-100 transition duration-300 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<!-- content -->
+					<div class="flex flex-col items-center justify-center pt-2 md:pt-0 text-gray-700 dark:text-gray-100">
+						<!-- heading -->
+						<p class="pt-12 pb-8 font-light text-3xl md:text-4xl">Contact Details</p>
+
+						<!-- details -->
+						<div class="flex flex-col items-center space-y-10 pb-10 pt-3">
+							<!-- app -->
+							<div class="flex flex-col items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+								</svg>
+								<p class="text-lg font-medium pr-2 pl-1">Business</p>
+								<a href="mailto:business@playcover.me">iVoider - business@playcover.me</a>
+							</div>
+
+							<!-- website -->
+							<div class="flex flex-col items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+								<p class="text-lg font-medium pr-2 pl-1">Website</p>
+								<a href="mailto:aj@playcover.me">AJ - aj@playcover.me</a>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="py-8 bg-white dark:bg-nav-footer text-gray-400 dark:text-gray-500 transition duration-200 ease-in-out">
+			<div class="mx-5 md:mx-16">
+				<section class="flex flex-col-reverse md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
+					<!-- legal notice and copyright claim -->
+					<div class="flex items-center">
+						<a href="/legal-notice/" class="pr-4 hover:text-menu-pink underline text-left">Legal Notice</a>
+						<a href="mailto:copyright@playcover.me" class="underline hover:text-menu-pink ">Copyright Claims</a>
+					</div>
+
+					<p class="inline">Copyright © 2021 Alexandr Dorofeev. All rights reserved.</p>
+
+					<!-- footer links -->
+					<div class="flex items-end space-x-4 md:pt-0">
+						<!-- twitter -->
+						<a href="https://twitter.com/playcoverapp" target="_blank" class="flex flex-col group">
+							<svg class="h-9 pb-1 md:pb-[0]"
+								 xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd"
+								 stroke-linejoin="round" stroke-miterlimit="2"
+								 viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404" >
+								<path d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
+									  fill="#1da1f2" fill-rule="nonzero"/>
+							</svg>
+						</a>
+
+						<!-- github -->
+						<a href="https://github.com/Letscoder/PlayCover" target="_blank" class="flex flex-col group">
+							<svg class="h-9 pb-1 md:pb-[0] fill-current text-gray-900 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M256 5.3C114.6 5.3 0 120.4 0 262.3a257 257 0 00175.1 244c12.8 2.3 17.5-5.6 17.5-12.5l-.4-43.7C121 465.6 106 415.7 106 415.7 94.4 386 77.6 378 77.6 378c-23.3-16 1.7-15.7 1.7-15.7 25.7 1.9 39.2 26.5 39.2 26.5 22.8 39.3 60 28 74.5 21.4 2.3-16.6 9-28 16.3-34.4-56.9-6.5-116.6-28.5-116.6-127 0-28 10-51 26.3-69-2.6-6.5-11.4-32.6 2.5-68 0 0 21.5-6.9 70.4 26.4a244.2 244.2 0 01128.2 0C369 105 390.5 112 390.5 112c14 35.3 5.1 61.5 2.5 68 16.4 18 26.3 40.9 26.3 69 0 98.7-59.8 120.4-116.8 126.8 9.1 7.9 17.3 23.6 17.3 47.5 0 34.4-.3 62.1-.3 70.5 0 7 4.6 15 17.6 12.4A257 257 0 00512 262.4c0-142-114.6-257-256-257z" /></svg>
+						</a>
+
+						<!-- discord -->
+						<a href="https://discord.gg/FYVuF6CNzP" target="_blank" class="flex flex-col group">
+							<svg class="h-9 pb-1 md:pb-[0]" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><g fill="#5c6bc0"><path d="M3.58 21.2h14.26l-.68-2.2L23 24V2.48A2.65 2.65 0 0 0 20.35 0H3.58A2.55 2.55 0 0 0 1 2.48v16.24a2.5 2.5 0 0 0 2.58 2.48zM14.13 5.68l-.04.02.02-.02zM6.5 6.95c1.83-1.33 3.53-1.27 3.53-1.27l.14.14C7.92 6.35 6.9 7.35 6.9 7.35c.1-.02 4.63-2.63 10.12.07 0 0-1.02-.94-3.13-1.54l.19-.18c.29 0 1.83.06 3.48 1.26 0 0 1.84 3.15 1.84 7.02-.06-.07-1.14 1.67-3.93 1.73 0 0-.47-.54-.8-1a4.04 4.04 0 0 0 2.23-1.4c-3.17 1.99-5.95 1.68-9.28.33-.03 0-.04-.02-.06-.03a.068.068 0 0 0-.06-.04h-.06c-.2-.13-.34-.2-.34-.2s.6.94 2.17 1.4l-.81 1c-2.79-.06-3.8-1.8-3.8-1.8 0-3.87 1.83-7.02 1.83-7.02z"/><path d="M14.3 12.77c.72 0 1.3-.6 1.3-1.34 0-.73-.58-1.33-1.3-1.33-.7 0-1.28.6-1.28 1.34 0 .73.58 1.33 1.29 1.33zm-4.61 0c.71 0 1.29-.6 1.29-1.34 0-.73-.57-1.33-1.29-1.33-.71 0-1.29.6-1.29 1.34 0 .73.58 1.33 1.29 1.33z"/></g></svg>
+						</a>						
+					</div>
+				</section>
+			</div>
+		</footer>
+
+		<!-- fixer for css classes used in js files but not compiled by tailwind-->
+		<!-- when JIT watch mode is run again, it checks html file and removes all the classes from styles.css that doesn't exist in the html file even tho they exist in the js files hence it breaks stuff -->
+		<!-- add the classes used in js files here to fix -->
+		<div class="hidden rotate-180 dark:shadow border-transparent dark:border-transparent bg-gray-300 dark:bg-[#222222] animate-bounce animate-pulse dark:border-pastel-pink"></div>
+
+		<!-- js -->
+		<script src="/js/faq-search.js"></script>
+		<script src="/js/load-transitions.js"></script>
+		<script src="/js/language-button.js"></script>
+		<script src="/js/download-link.js"></script>
+		<script src="/js/mobile-buttons.js"></script>
+		<script src="/js/dark-mode.js"></script>
+		<script src="/js/scroll-animations.js"></script>
+		<script src="/js/question-activator.js"></script>
+		<script src="/js/donate-popup.js"></script>
+		<script src="/js/contact-popup.js"></script>
+		<script src="/js/auto-closer.js"></script>
+	</body>
+</html>
