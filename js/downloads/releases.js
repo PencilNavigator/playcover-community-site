@@ -6,6 +6,6 @@ export const fetchLastestDownload = async () => {
 		return data[0].assets[0].browser_download_url;
 	} catch (e) {
 		console.error(e);
-		return 'https://github.com/iVoider/PlayCover/releases/download/0.7.6/PlayCover.0.7.6.zip';
+		return 'https://github.com/iVoider/PlayCover/releases/latest';
 	}
 };
