@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Run iOS apps & games in fullscreen mode with mouse, keyboard & controller support." />
+		<meta name="keywords" content="Play Cover, Play Cover download, Play Cover changelog, Play Cover donate, Play Cover team, Play Cover mac, Play Cover intel mac, Play Cover faq, Play Cover contact, Play Cover copyright, Play Cover legal notice, Play Cover PlayPass, PlayPass" />
+		<title>Team | PlayCover </title>
+		<link href="/static/css/styles.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/jpg" href="/static/assets/favicon.ico" />
+		<script src="/static/js/local-storage-track.js"></script>
+
+		<!-- fonts import -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- Open Sans and Source Sans Pro import -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="flex flex-col h-screen justify-between bg-gray-100 dark:bg-body font-sourceSansPro transition duration-200 ease-in-out">
+		{% include 'components/navigation_bar.html' %}
+		<!-- auto closer for lang menu -->
+		<div class="auto-closer hidden z-10 w-[100%] h-2 absolute"></div>
+
+		<!-- content -->
+		<main class="pb-16">
+			<!-- heading -->
+			<header class="pt-32 xl:pt-36 pb-2 flex justify-center text-gray-700 dark:text-menu-pink transition duration-200">
+				<span class="hidden lg:flex font-semibold lg:text-5xl">Team</span>
+				<span class="lg:hidden flex flex-col items-center text-5xl font-semibold space-y-3">
+					<p>Team</p>
+				</span>
+			</header>
+
+			<section class="text-gray-700 dark:text-gray-300 flex justify-center pt-14">
+				<div class="shadow-md w-[85%] md:w-[60%] rounded-lg  bg-gray-200 dark:bg-[#222222] transition duration-200 ease-in-out">
+					<div class="p-4 pt-6 md:p-10 space-y-4 flex flex-col transition duration-[1200ms] ease-out md:transform md:opacity-30 md:translate-x-4" data-replace='{"md:translate-x-4": "md:translate-x-0", "md:opacity-30": "md:opacity-100"}'>
+						<!-- creator -->
+						<div class="space-x-1 flex items-start md:items-center">
+							<!-- icon -->
+							<div class="flex items-start md:items-center space-x-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+								</svg>
+								<!-- title -->
+								<p class="font-semibold pt-[0.5px] md:pt-0">Creator: &nbsp;</p>
+							</div>
+							<div class="flex items-center">
+								<!-- person -->
+								<div class="pt-[0.10rem] dark:divide-gray-600 flex flex-col md:flex-row items-center">
+									<a class="" href="mailto:business@playcover.me">Alex</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- discord community manager -->
+						<div class="space-x-1 flex items-start md:items-center">
+							<!-- icon -->
+							<div class="flex items-start md:items-center space-x-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+								</svg>
+
+								<!-- title -->
+								<div class="flex flex-col md:flex-row md:space-x-4">
+									<p class="pt-[0.10rem] md:pt-0 font-semibold">Discord Community Manager:</p>
+									<p>Sloooopie</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- chinese community manager -->
+						<div class="space-x-1 hidden items-start md:items-center">
+							<!-- icon -->
+							<div class="flex items-start md:items-center space-x-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+								</svg>
+
+								<!-- title -->
+								<div class="flex flex-col md:flex-row md:space-x-4">
+									<p class="pt-[0.10rem] md:pt-0 font-semibold">Chinese Community Manager:</p>
+									<p>Catapalm</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- website -->
+						<div class="space-x-1 flex items-start md:items-center">
+							<!-- icon -->
+							<div class="flex items-start md:items-center space-x-1">
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+
+								<!-- title -->
+								<p class="font-semibold">Website: &nbsp;</p>
+							</div>
+							<div class="flex items-center">
+								<!-- person -->
+								<div class="pt-[0.10rem] dark:divide-gray-600 flex items-start md:items-center">
+									<a class="" href="mailto:aj@playcover.me">AJ&nbsp;</a>
+									<p>and Hades</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- icon -->
+						<div class="space-x-1 flex items-center">
+							<div class="h-7 w-7">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+								</svg>
+							</div>
+							<div class="flex items-center">
+								<!-- title -->
+								<p class="font-semibold">Logo: &nbsp;</p>
+
+								<!-- person -->
+								<div class="dark:divide-gray-600 flex items-center">
+									<p class="">Artemiy</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- translation -->
+						<div>
+							<div class="space-x-1 flex items-center">
+								<div class="h-7 w-7">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+									</svg>
+								</div>
+								<div class="flex items-center">
+									<!-- title -->
+									<p class="font-semibold">Translation Service: &nbsp;</p>
+								</div>
+							</div>
+							<div class="pt-1 pl-9">
+								<p>German: AXDaily</p>
+								<p>Chinese: catalpam</p>
+								<p>Spanish: Hades</p>
+								<p>Japanese: 小霖</p>
+								<p>Korean: Leo</p>
+								<p>Indonesian: Haru and mbah sukocok</p>
+								<p>Russian: Annymone</p>
+							</div>
+						</div>
+
+						<!-- special thanks -->
+						<div>
+							<div class="space-x-1 flex items-center">
+								<div class="h-7 w-7">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+									</svg>
+								</div>
+								<div class="flex items-center">
+									<!-- title -->
+									<p class="font-semibold">Special thanks to...</p>
+								</div>
+							</div>
+							<div class="pt-1 pl-9">
+								<p>All the moderators</p>
+								<p>All the supporters</p>
+								<p>LingFei.Shengtian for ARM Support and Services</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		{% include 'components/donate.html' %}
+
+		{% include 'components/contact.html' %}
+
+		{% include 'components/footer.html' %}
+
+		<!-- fixer for css classes used in js files but not compiled by tailwind-->
+		<!-- when JIT watch mode is run again, it checks html file and removes all the classes from styles.css that doesn't exist in the html file even tho they exist in the js files hence it breaks stuff -->
+		<!-- add the classes used in js files here to fix -->
+		<div class="hidden rotate-180 dark:shadow border-transparent dark:border-transparent bg-gray-300 dark:bg-[#1a1a1a] animate-bounce animate-pulse overflow-hidden"></div>
+
+		<!-- js -->
+		<script src="/static/js/load-transitions.js"></script>
+		<script src="/static/js/language-button.js"></script>
+		<script src="/static/js/download-link.js" type="module"></script>
+		<script src="/static/js/mobile-buttons.js"></script>
+		<script src="/static/js/dark-mode.js"></script>
+		<script src="/static/js/scroll-animations.js"></script>
+		<script src="/static/js/donate-popup.js"></script>
+		<script src="/static/js/contact-popup.js"></script>
+		<script src="/static/js/auto-closer.js"></script>
+		<script src="/static/js/changelog.js"></script>
+	</body>
+</html>
